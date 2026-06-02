@@ -1,229 +1,302 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BUAME GROUP — Filiales | Construction, Trade, Logistics, Immobilier, Agro, Médias</title>
-<meta name="description" content="Les 6 filiales du BUAME GROUP : Construction BTP, Trade import-export, Logistics transport, Immobilier promotion, Agro export, Médias digitaux. Synergies inter-filiales.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.buamegroup.com/filiales.html">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html" onclick="closeMobileMenu()" data-i18n="nav.home">Accueil</a>
-  <a href="groupe.html" onclick="closeMobileMenu()" data-i18n="nav.group">Groupe</a>
-  <a href="gouvernance.html" onclick="closeMobileMenu()" data-i18n="nav.governance">Gouvernance</a>
-  <a href="direction.html" onclick="closeMobileMenu()" data-i18n="nav.direction">Direction</a>
-  <a href="filiales.html" onclick="closeMobileMenu()" data-i18n="nav.filiales">Filiales</a>
-  <a href="actualites.html" onclick="closeMobileMenu()" data-i18n="nav.news">Actualités</a>
-  <a href="blog.html" onclick="closeMobileMenu()" data-i18n="nav.blog">Blog</a>
-  <a href="recrutement.html" onclick="closeMobileMenu()" data-i18n="nav.careers">Carrières</a>
-  <a href="contact.html" onclick="closeMobileMenu()" data-i18n="nav.contact">Contact</a>
-  <div class="nav-lang" style="margin-top:24px">
-    <button class="lang-btn" onclick="setLang('fr');closeMobileMenu()">FR</button>
-    <button class="lang-btn" onclick="setLang('en');closeMobileMenu()">EN</button>
-    <button class="lang-btn" onclick="setLang('pt');closeMobileMenu()">PT</button>
-  </div>
-</div>
-<nav id="mainNav">
-  <a class="nav-logo" href="index.html"><span class="nav-logo-diamond">◆</span> BUAME GROUP</a>
-  <div class="nav-links">
-    <a href="index.html" data-i18n="nav.home">Accueil</a>
-    <a href="groupe.html" data-i18n="nav.group">Groupe</a>
-    <a href="gouvernance.html" data-i18n="nav.governance">Gouvernance</a>
-    <a href="direction.html" data-i18n="nav.direction">Direction</a>
-    <a href="filiales.html" class="active" data-i18n="nav.filiales">Filiales</a>
-    <a href="actualites.html" data-i18n="nav.news">Actualités</a>
-    <a href="blog.html" data-i18n="nav.blog">Blog</a>
-    <a href="recrutement.html" data-i18n="nav.careers">Carrières</a>
-  </div>
-  <div style="display:flex;gap:14px;align-items:center">
-    <div class="nav-lang">
-      <button class="lang-btn active" onclick="setLang('fr')">FR</button>
-      <button class="lang-btn" onclick="setLang('en')">EN</button>
-      <button class="lang-btn" onclick="setLang('pt')">PT</button>
-    </div>
-    <a href="contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
-    <div class="nav-hamburger" id="hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></div>
-  </div>
-</nav>
 
-<section class="page-header">
-  <div class="page-header-bg" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80')"></div>
-  <div class="page-header-overlay"></div>
-  <div class="page-header-content">
-    <div class="page-header-eyebrow" data-i18n="filiales.eyebrow">Nos Filiales</div>
-    <h1 class="page-header-title">Six forces, <em>un seul empire</em></h1>
-    <p class="page-header-subtitle" data-i18n="filiales.subtitle">Des secteurs stratégiques soigneusement sélectionnés pour leur complémentarité et leur potentiel de croissance en Afrique de l'Ouest.</p>
-    <div class="breadcrumbs">
-      <a href="index.html">Accueil</a><span class="sep">◆</span><span class="current">Filiales</span>
-    </div>
-  </div>
-</section>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUAME GROUP — Filiales | Construction, Trade, Logistics, Immobilier, Agro, Médias</title>
+    <meta name="description"
+      content="Les 6 filiales du BUAME GROUP : Construction BTP, Trade import-export, Logistics transport, Immobilier promotion, Agro export, Médias digitaux.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.buamegroup.com/filiales.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<!-- GRILLE FILIALES -->
-<section class="filiales" style="padding:120px 8%">
-  <div class="filiales-grid">
-    <article class="filiale-card reveal" onclick="openFiliale('construction')">
-      <div class="filiale-num">01</div>
-      <div class="filiale-icon">🏗️</div>
-      <div class="filiale-name">CONSTRUCTION</div>
-      <h3 class="filiale-full">BUAME Construction</h3>
-      <p class="filiale-desc">BTP, génie civil, infrastructures routières et bâtiments. Location d'équipements BTP. Marchés publics et privés BOAD, BAD, BM. Certifications ISO 9001 & 14001 en cible.</p>
-      <div class="filiale-tags">
-        <span class="filiale-tag">BTP</span><span class="filiale-tag">Marchés publics</span>
-        <span class="filiale-tag">ISO 9001</span><span class="filiale-tag">📋 Location Engins</span>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" onclick="closeMobileMenu()" data-i18n="nav.home">Accueil</a>
+      <a href="groupe.html" onclick="closeMobileMenu()" data-i18n="nav.group">Groupe</a>
+      <a href="gouvernance.html" onclick="closeMobileMenu()" data-i18n="nav.governance">Gouvernance</a>
+      <a href="direction.html" onclick="closeMobileMenu()" data-i18n="nav.direction">Direction</a>
+      <a href="filiales.html" onclick="closeMobileMenu()" data-i18n="nav.filiales">Filiales</a>
+      <a href="actualites.html" onclick="closeMobileMenu()" data-i18n="nav.news">Actualités</a>
+      <a href="blog.html" onclick="closeMobileMenu()" data-i18n="nav.blog">Blog</a>
+      <a href="recrutement.html" onclick="closeMobileMenu()" data-i18n="nav.careers">Carrières</a>
+      <a href="contact.html" onclick="closeMobileMenu()" data-i18n="nav.contact">Contact</a>
+      <div class="nav-lang" style="margin-top:24px">
+        <button class="lang-btn" onclick="setLang('fr');closeMobileMenu()">FR</button>
+        <button class="lang-btn" onclick="setLang('en');closeMobileMenu()">EN</button>
+        <button class="lang-btn" onclick="setLang('pt');closeMobileMenu()">PT</button>
       </div>
-      <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span><span class="country-flag">🇬🇭</span></div>
-    </article>
-    <article class="filiale-card reveal reveal-delay-1" onclick="openFiliale('trade')">
-      <div class="filiale-num">02</div>
-      <div class="filiale-icon">📦</div>
-      <div class="filiale-name">TRADE</div>
-      <h3 class="filiale-full">BUAME Trade</h3>
-      <p class="filiale-desc">Import-export, distribution B2B, commerce général. Fournisseur exclusif des 5 autres filiales. Agréments douaniers CEDEAO. Accès marchés ZLECAF.</p>
-      <div class="filiale-tags">
-        <span class="filiale-tag">Import-Export</span><span class="filiale-tag">Distribution B2B</span><span class="filiale-tag">CEDEAO</span>
+    </div>
+    <nav id="mainNav">
+      <a class="nav-logo" href="index.html">
+        <img src="logo.png" alt="BUAME GROUP Logo" class="nav-logo-img" onerror="this.style.display='none'">
+        <span class="nav-logo-diamond">◆</span>
+        <span class="nav-logo-text">BUAME GROUP</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <a href="groupe.html" data-i18n="nav.group">Groupe</a>
+        <a href="gouvernance.html" data-i18n="nav.governance">Gouvernance</a>
+        <a href="direction.html" data-i18n="nav.direction">Direction</a>
+        <a href="filiales.html" class="active" data-i18n="nav.filiales">Filiales</a>
+        <a href="actualites.html" data-i18n="nav.news">Actualités</a>
+        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+        <a href="recrutement.html" data-i18n="nav.careers">Carrières</a>
       </div>
-      <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span><span class="country-flag">🇬🇭</span></div>
-    </article>
-    <article class="filiale-card reveal reveal-delay-2" onclick="openFiliale('logistics')">
-      <div class="filiale-num">03</div>
-      <div class="filiale-icon">🚛</div>
-      <div class="filiale-name">LOGISTICS</div>
-      <h3 class="filiale-full">BUAME Logistics</h3>
-      <p class="filiale-desc">Transport routier régional, transit douanier, entreposage et supply chain. Prestataire logistique exclusif du groupe. Agrément TRIE-CEDEAO. OEA en cible.</p>
-      <div class="filiale-tags">
-        <span class="filiale-tag">Transport</span><span class="filiale-tag">Transit</span><span class="filiale-tag">Entreposage</span>
+      <div style="display:flex;gap:14px;align-items:center">
+        <div class="nav-lang">
+          <button class="lang-btn active" onclick="setLang('fr')">FR</button>
+          <button class="lang-btn" onclick="setLang('en')">EN</button>
+          <button class="lang-btn" onclick="setLang('pt')">PT</button>
+        </div>
+        <a href="contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
+        <div class="nav-hamburger" id="hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span>
+        </div>
       </div>
-      <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span><span class="country-flag">🇬🇭</span></div>
-    </article>
-    <article class="filiale-card reveal" onclick="openFiliale('immobilier')">
-      <div class="filiale-num">04</div>
-      <div class="filiale-icon">🏢</div>
-      <div class="filiale-name">IMMOBILIER</div>
-      <h3 class="filiale-full">BUAME Immobilier</h3>
-      <p class="filiale-desc">Promotion immobilière résidentielle et commerciale. Gestion locative, vente bureaux et locaux commerciaux. Partenaire de BUAME Construction pour tous les chantiers.</p>
-      <div class="filiale-tags">
-        <span class="filiale-tag">Promotion</span><span class="filiale-tag">Gestion locative</span><span class="filiale-tag">Bureaux</span>
-      </div>
-      <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span></div>
-    </article>
-    <article class="filiale-card reveal reveal-delay-1" onclick="openFiliale('agro')">
-      <div class="filiale-num">05</div>
-      <div class="filiale-icon">🌿</div>
-      <div class="filiale-name">AGRO</div>
-      <h3 class="filiale-full">BUAME Agro</h3>
-      <p class="filiale-desc">Transformation agro-alimentaire, exportation cacao, anacarde et karité vers l'Europe et l'Asie. Certifications GlobalG.A.P., Bio en cible, Fair Trade.</p>
-      <div class="filiale-tags">
-        <span class="filiale-tag">Export Cacao</span><span class="filiale-tag">Anacarde</span>
-        <span class="filiale-tag">GlobalG.A.P.</span><span class="filiale-tag">Fair Trade</span>
-      </div>
-      <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span><span class="country-flag">🇬🇭</span></div>
-    </article>
-    <article class="filiale-card reveal reveal-delay-2" onclick="openFiliale('medias')">
-      <div class="filiale-num">06</div>
-      <div class="filiale-icon">📡</div>
-      <div class="filiale-name">MÉDIAS</div>
-      <h3 class="filiale-full">BUAME Médias</h3>
-      <p class="filiale-desc">Web TV africaine, podcast business, presse digitale et régie publicitaire panafricaine. Porte-parole de toutes les filiales. Licence audiovisuelle en cours.</p>
-      <div class="filiale-tags">
-        <span class="filiale-tag">Web TV</span><span class="filiale-tag">Podcast</span>
-        <span class="filiale-tag">Presse digitale</span><span class="filiale-tag">Régie Pub</span>
-      </div>
-      <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span><span class="country-flag">🇬🇭</span></div>
-    </article>
-  </div>
-</section>
+    </nav>
 
-<!-- SYNERGIES -->
-<section style="background:var(--navy);padding:120px 8%">
-  <div class="section-eyebrow" style="color:var(--gold)">Modèle Unique</div>
-  <h2 class="section-title" style="color:var(--white)">Synergies <em>inter-filiales</em></h2>
-  <p class="section-subtitle" style="color:rgba(255,255,255,0.5);margin-bottom:60px">Chaque filiale est à la fois cliente et fournisseur des autres — un écosystème intégré qui réduit les coûts de 15 à 20% et crée un avantage concurrentiel structurel.</p>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
-    <div class="reveal" style="padding:32px;background:rgba(200,168,75,0.05);border:1px solid rgba(200,168,75,0.12);border-radius:4px">
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
-        <span style="font-size:20px">🏗️</span>
-        <span style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold)">Construction → Immobilier</span>
+    <section class="page-header">
+      <div class="page-header-bg"
+        style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80')"></div>
+      <div class="page-header-overlay"></div>
+      <div class="page-header-content">
+        <div class="page-header-eyebrow" data-i18n="page.fil.eyebrow"></div>
+        <h1 class="page-header-title" data-i18n="page.fil.title"></h1>
+        <p class="page-header-subtitle" data-i18n="page.fil.sub"></p>
+        <div class="breadcrumbs">
+          <a href="index.html" data-i18n="breadcrumb.home">Accueil</a><span class="sep">◆</span>
+          <span class="current" data-i18n="breadcrumb.fil">Filiales</span>
+        </div>
       </div>
-      <div style="font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7">BUAME Construction réalise tous les chantiers immobiliers du groupe. Réduction des marges intermédiaires et garantie qualité.</div>
-    </div>
-    <div class="reveal reveal-delay-1" style="padding:32px;background:rgba(200,168,75,0.05);border:1px solid rgba(200,168,75,0.12);border-radius:4px">
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
-        <span style="font-size:20px">📦</span>
-        <span style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold)">Trade → Toutes filiales</span>
-      </div>
-      <div style="font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7">BUAME Trade est le fournisseur exclusif des 5 autres filiales — matériaux, équipements, intrants agro, matériel médias.</div>
-    </div>
-    <div class="reveal reveal-delay-2" style="padding:32px;background:rgba(200,168,75,0.05);border:1px solid rgba(200,168,75,0.12);border-radius:4px">
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
-        <span style="font-size:20px">🚛</span>
-        <span style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold)">Logistics → Toutes filiales</span>
-      </div>
-      <div style="font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7">BUAME Logistics transporte et livre pour toutes les filiales. Coûts logistiques maîtrisés, délais optimisés sur 4 pays.</div>
-    </div>
-    <div class="reveal reveal-delay-3" style="padding:32px;background:rgba(200,168,75,0.05);border:1px solid rgba(200,168,75,0.12);border-radius:4px">
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
-        <span style="font-size:20px">🌿</span>
-        <span style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold)">Agro → Trade (export)</span>
-      </div>
-      <div style="font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7">BUAME Trade assure la commercialisation internationale des produits agro — réseau d'acheteurs Europe, Asie et CEDEAO.</div>
-    </div>
-    <div class="reveal reveal-delay-4" style="padding:32px;background:rgba(200,168,75,0.05);border:1px solid rgba(200,168,75,0.12);border-radius:4px">
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
-        <span style="font-size:20px">📡</span>
-        <span style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold)">Médias → Communication</span>
-      </div>
-      <div style="font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7">BUAME Médias est le porte-parole et promoteur institutionnel de toutes les filiales. Communication digitale et régie publicité.</div>
-    </div>
-    <div class="reveal reveal-delay-5" style="padding:32px;background:rgba(200,168,75,0.08);border:1px solid rgba(200,168,75,0.2);border-radius:4px">
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px">
-        <span style="font-size:20px">💡</span>
-        <span style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold)">Résultat : -15 à -20% coûts</span>
-      </div>
-      <div style="font-size:14px;color:rgba(255,255,255,0.7);line-height:1.7">Un avantage concurrentiel inimitable. L'écosystème intégré BUAME GROUP est impossible à répliquer pour un acteur isolé.</div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<footer>
-  <div class="footer-main">
-    <div class="footer-brand">
-      <div class="footer-logo">◆ BUAME GROUP</div>
-      <div class="footer-tagline" data-i18n="footer.tagline">"L'Afrique par les Africains — construire, commercer, habiter, nourrir, transporter, informer."</div>
-      <div class="footer-desc">Conglomérat panafricain SAS basé à Lomé, Togo. 6 filiales, 4 pays, une vision. OHADA — Droit togolais.</div>
-      <div class="social-links">
-        <a class="social-link" href="#" aria-label="LinkedIn">in</a>
-        <a class="social-link" href="#" aria-label="Twitter/X">𝕏</a>
-        <a class="social-link" href="#" aria-label="Facebook">f</a>
-        <a class="social-link" href="#" aria-label="YouTube">▶</a>
-        <a class="social-link" href="#" aria-label="Instagram">◎</a>
+    <section class="filiales" style="padding:120px 8%">
+      <div class="filiales-grid">
+        <article class="filiale-card reveal" onclick="openFiliale('construction')">
+          <div class="filiale-num">01</div>
+          <div class="filiale-icon">🏗️</div>
+          <div class="filiale-name" data-i18n="filiale.construction.name">CONSTRUCTION</div>
+          <h3 class="filiale-full">BUAME Construction</h3>
+          <p class="filiale-desc" data-i18n="filiale.construction.desc">BTP, génie civil, infrastructures routières et
+            bâtiments. Location d'équipements BTP. Marchés publics et privés.</p>
+          <div class="filiale-tags"><span class="filiale-tag">BTP</span><span class="filiale-tag"
+              data-i18n="tag.marches">Marchés publics</span><span class="filiale-tag">ISO 9001</span><span
+              class="filiale-tag">📋 Location Engins</span></div>
+          <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span
+              class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span><span
+              class="country-flag">🇬🇭</span></div>
+        </article>
+        <article class="filiale-card reveal reveal-delay-1" onclick="openFiliale('trade')">
+          <div class="filiale-num">02</div>
+          <div class="filiale-icon">📦</div>
+          <div class="filiale-name" data-i18n="filiale.trade.name">MARKET</div>
+          <h3 class="filiale-full">BUAME Market</h3>
+          <p class="filiale-desc" data-i18n="filiale.trade.desc">Import-export, distribution B2B, commerce général.
+            Fournisseur exclusif des 5 autres filiales.</p>
+          <div class="filiale-tags"><span class="filiale-tag">Import-Export</span><span class="filiale-tag">Distribution
+              B2B</span><span class="filiale-tag">CEDEAO</span></div>
+          <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span
+              class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span><span
+              class="country-flag">🇬🇭</span></div>
+        </article>
+        <article class="filiale-card reveal reveal-delay-2" onclick="openFiliale('logistics')">
+          <div class="filiale-num">03</div>
+          <div class="filiale-icon">🚛</div>
+          <div class="filiale-name" data-i18n="filiale.logistics.name">LOGISTICS</div>
+          <h3 class="filiale-full">BUAME Logistics</h3>
+          <p class="filiale-desc" data-i18n="filiale.logistics.desc">Transport routier régional, transit douanier,
+            entreposage. Prestataire logistique exclusif du groupe.</p>
+          <div class="filiale-tags"><span class="filiale-tag" data-i18n="tag.transport">Transport</span><span
+              class="filiale-tag">Transit</span><span class="filiale-tag" data-i18n="tag.storage">Entreposage</span>
+          </div>
+          <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span
+              class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span><span
+              class="country-flag">🇬🇭</span></div>
+        </article>
+        <article class="filiale-card reveal" onclick="openFiliale('immobilier')">
+          <div class="filiale-num">04</div>
+          <div class="filiale-icon">🏢</div>
+          <div class="filiale-name" data-i18n="filiale.immobilier.name">IMMOBILIER</div>
+          <h3 class="filiale-full">BUAME Immobilier</h3>
+          <p class="filiale-desc" data-i18n="filiale.immobilier.desc">Promotion immobilière résidentielle et
+            commerciale. Gestion locative et vente de bureaux.</p>
+          <div class="filiale-tags"><span class="filiale-tag" data-i18n="tag.promotion">Promotion</span><span
+              class="filiale-tag" data-i18n="tag.locative">Gestion locative</span><span class="filiale-tag"
+              data-i18n="tag.bureaux">Bureaux</span></div>
+          <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span
+              class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span></div>
+        </article>
+        <article class="filiale-card reveal reveal-delay-1" onclick="openFiliale('agro')">
+          <div class="filiale-num">05</div>
+          <div class="filiale-icon">🌿</div>
+          <div class="filiale-name" data-i18n="filiale.agro.name">AGRO</div>
+          <h3 class="filiale-full">BUAME Agro</h3>
+          <p class="filiale-desc" data-i18n="filiale.agro.desc">Transformation agro-alimentaire, exportation cacao,
+            anacarde et karité. Certifications GlobalG.A.P.</p>
+          <div class="filiale-tags"><span class="filiale-tag" data-i18n="tag.cacao">Export Cacao</span><span
+              class="filiale-tag">GlobalG.A.P.</span><span class="filiale-tag">Fair Trade</span></div>
+          <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span
+              class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span><span
+              class="country-flag">🇬🇭</span></div>
+        </article>
+        <article class="filiale-card reveal reveal-delay-2" onclick="openFiliale('medias')">
+          <div class="filiale-num">06</div>
+          <div class="filiale-icon">📡</div>
+          <div class="filiale-name" data-i18n="filiale.medias.name">MÉDIAS</div>
+          <h3 class="filiale-full">BUAME Médias</h3>
+          <p class="filiale-desc" data-i18n="filiale.medias.desc">Web TV africaine, podcast business, presse digitale et
+            régie publicitaire panafricaine.</p>
+          <div class="filiale-tags"><span class="filiale-tag">Web TV</span><span class="filiale-tag">Podcast</span><span
+              class="filiale-tag" data-i18n="tag.regie">Régie Pub</span></div>
+          <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span
+              class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span><span
+              class="country-flag">🇬🇭</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section style="background:var(--navy);padding:120px 8%">
+      <div class="section-eyebrow" style="color:var(--gold)" data-i18n="filiales.synergies.eyebrow">Modèle Unique</div>
+      <h2 class="section-title" style="color:var(--white)" data-i18n="filiales.synergies.title">Synergies
+        <em>inter-filiales</em>
+      </h2>
+      <p class="section-subtitle" style="color:rgba(255,255,255,0.5);margin-bottom:60px"
+        data-i18n="filiales.synergies.sub">Chaque filiale est à la fois cliente et fournisseur des autres — un
+        écosystème intégré qui réduit les coûts de 15 à 20% et crée un avantage concurrentiel structurel.</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+        <div class="reveal"
+          style="padding:32px;background:rgba(200,168,75,0.05);border:1px solid rgba(200,168,75,0.12);border-radius:4px">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px"><span
+              style="font-size:20px">🏗️</span><span
+              style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold)">Construction
+              → Immobilier</span></div>
+          <div style="font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7">BUAME Construction réalise tous les
+            chantiers immobiliers du groupe. Réduction des marges intermédiaires et garantie qualité.</div>
+        </div>
+        <div class="reveal reveal-delay-1"
+          style="padding:32px;background:rgba(200,168,75,0.05);border:1px solid rgba(200,168,75,0.12);border-radius:4px">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px"><span
+              style="font-size:20px">📦</span><span
+              style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold)">Market
+              → Toutes filiales</span></div>
+          <div style="font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7">BUAME Market est le fournisseur
+            exclusif des 5 autres filiales — matériaux, équipements, intrants agro, matériel médias.</div>
+        </div>
+        <div class="reveal reveal-delay-2"
+          style="padding:32px;background:rgba(200,168,75,0.05);border:1px solid rgba(200,168,75,0.12);border-radius:4px">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px"><span
+              style="font-size:20px">🚛</span><span
+              style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold)">Logistics
+              → Toutes filiales</span></div>
+          <div style="font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7">BUAME Logistics transporte et livre
+            pour toutes les filiales. Coûts logistiques maîtrisés, délais optimisés sur 4 pays.</div>
+        </div>
+        <div class="reveal reveal-delay-3"
+          style="padding:32px;background:rgba(200,168,75,0.05);border:1px solid rgba(200,168,75,0.12);border-radius:4px">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px"><span
+              style="font-size:20px">🌿</span><span
+              style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold)">Agro
+              → Market (export)</span></div>
+          <div style="font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7">BUAME Agro assure la
+            commercialisation internationale des produits agro — réseau d'acheteurs Europe, Asie et CEDEAO.</div>
+        </div>
+        <div class="reveal reveal-delay-4"
+          style="padding:32px;background:rgba(200,168,75,0.05);border:1px solid rgba(200,168,75,0.12);border-radius:4px">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px"><span
+              style="font-size:20px">📡</span><span
+              style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold)">Médias
+              → Communication</span></div>
+          <div style="font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7">BUAME Médias est le porte-parole et
+            promoteur institutionnel de toutes les filiales.</div>
+        </div>
+        <div class="reveal reveal-delay-5"
+          style="padding:32px;background:rgba(200,168,75,0.08);border:1px solid rgba(200,168,75,0.2);border-radius:4px">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px"><span
+              style="font-size:20px">💡</span><span
+              style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold)">Résultat
+              : -15 à -20% coûts</span></div>
+          <div style="font-size:14px;color:rgba(255,255,255,0.7);line-height:1.7">Un avantage concurrentiel inimitable.
+            L'écossystème intégré BUAME GROUP est impossible à répliquer pour un acteur isolé.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="footer-logo"><img src="logo.png" alt="BUAME GROUP" class="footer-logo-img"
+              onerror="this.style.display='none'"><span>◆ BUAME GROUP</span></div>
+          <div class="footer-tagline" data-i18n="footer.tagline"></div>
+          <div class="footer-desc" data-i18n="footer.desc"></div>
+          <div class="social-links"><a class="social-link" href="#" aria-label="LinkedIn">in</a><a class="social-link"
+              href="#" aria-label="Twitter/X">𝕏</a><a class="social-link" href="#" aria-label="Facebook">f</a><a
+              class="social-link" href="#" aria-label="YouTube">▶</a><a class="social-link" href="#"
+              aria-label="Instagram">◎</a></div>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.col.filiales">Filiales</div>
+          <ul class="footer-links">
+            <li><a href="filiales.html">BUAME Construction</a></li>
+            <li><a href="filiales.html">BUAME Market</a></li>
+            <li><a href="filiales.html">BUAME Logistics</a></li>
+            <li><a href="filiales.html">BUAME Immobilier</a></li>
+            <li><a href="filiales.html">BUAME Agro</a></li>
+            <li><a href="filiales.html">BUAME Médias</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.col.groupe">Groupe</div>
+          <ul class="footer-links">
+            <li><a href="groupe.html" data-i18n="footer.link.about">À propos</a></li>
+            <li><a href="gouvernance.html" data-i18n="footer.link.gov">Gouvernance</a></li>
+            <li><a href="direction.html" data-i18n="footer.link.dir">Direction Exécutive</a></li>
+            <li><a href="actualites.html" data-i18n="footer.link.news">Actualités</a></li>
+            <li><a href="index.html#strategie" data-i18n="footer.link.strat">Stratégie Diamant</a></li>
+            <li><a href="blog.html" data-i18n="footer.link.blog">Blog Expert</a></li>
+            <li><a href="recrutement.html" data-i18n="footer.link.careers">Carrières</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.col.legal">Mentions Légales</div>
+          <ul class="footer-links">
+            <li><a href="#" data-i18n="footer.link.mentions">Mentions légales</a></li>
+            <li><a href="#" data-i18n="footer.link.privacy">Politique de confidentialité</a></li>
+            <li><a href="#" data-i18n="footer.link.cookies">Cookies</a></li>
+            <li><a href="#" data-i18n="footer.link.cgv">CGV / CGU</a></li>
+            <li><a href="#" data-i18n="footer.link.ohada">Droit OHADA</a></li>
+          </ul>
+          <div style="margin-top:24px;padding:20px;border:1px solid rgba(200,168,75,0.15);border-radius:4px">
+            <div class="footer-col-title" style="margin-bottom:10px" data-i18n="footer.newsletter">Newsletter</div>
+            <div style="display:flex;gap:8px"><input type="email" id="newsletterEmail"
+                data-i18n-placeholder="footer.newsletter.placeholder" placeholder="Email"
+                style="flex:1;padding:10px 14px;background:rgba(255,255,255,0.04);border:1px solid rgba(200,168,75,0.2);color:var(--white);font-size:13px;outline:none;border-radius:2px"><button
+                onclick="subscribeNewsletter()"
+                style="padding:10px 18px;background:var(--gold);color:var(--navy);border:none;cursor:pointer;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;border-radius:2px">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-legal" data-i18n="footer.copyright">© 2025 BUAME GROUP SAS — Lomé, Togo. Tous droits
+          réservés.</div>
+        <div class="footer-legal" data-i18n="footer.legal2">Droit OHADA — RCCM Togo — <a href="#">ISO en cours</a></div>
+      </div>
+    </footer>
+    <div class="modal-overlay" id="filialeModal">
+      <div class="modal"><button class="modal-close" onclick="closeModal()">×</button>
+        <div id="modalContent"></div>
       </div>
     </div>
-    <div><div class="footer-col-title">Filiales</div><ul class="footer-links"><li><a href="filiales.html">BUAME Construction</a></li><li><a href="filiales.html">BUAME Trade</a></li><li><a href="filiales.html">BUAME Logistics</a></li><li><a href="filiales.html">BUAME Immobilier</a></li><li><a href="filiales.html">BUAME Agro</a></li><li><a href="filiales.html">BUAME Médias</a></li></ul></div>
-    <div><div class="footer-col-title">Groupe</div><ul class="footer-links"><li><a href="groupe.html">À propos</a></li><li><a href="gouvernance.html">Gouvernance</a></li><li><a href="direction.html">Direction Exécutive</a></li><li><a href="actualites.html">Actualités</a></li><li><a href="blog.html">Blog Expert</a></li><li><a href="recrutement.html">Carrières</a></li></ul></div>
-    <div>
-      <div class="footer-col-title">Mentions Légales</div>
-      <ul class="footer-links"><li><a href="#">Mentions légales</a></li><li><a href="#">Politique de confidentialité</a></li><li><a href="#">Cookies</a></li><li><a href="#">CGV / CGU</a></li><li><a href="#">Droit OHADA</a></li></ul>
-      <div style="margin-top:24px;padding:20px;border:1px solid rgba(200,168,75,0.15);border-radius:4px">
-        <div style="font-family:'Syne',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Newsletter</div>
-        <div style="display:flex;gap:8px"><input type="email" placeholder="Email" id="newsletterEmail" style="flex:1;padding:10px 14px;background:rgba(255,255,255,0.04);border:1px solid rgba(200,168,75,0.2);color:var(--white);font-size:13px;outline:none;border-radius:2px"><button onclick="subscribeNewsletter()" style="padding:10px 18px;background:var(--gold);color:var(--navy);border:none;cursor:pointer;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;border-radius:2px">→</button></div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-legal">© 2025 BUAME GROUP SAS — Lomé, Togo. Tous droits réservés.</div>
-    <div class="footer-legal">Droit OHADA — RCCM Togo — <a href="#">ISO en cours</a></div>
-  </div>
-</footer>
-<div class="modal-overlay" id="filialeModal"><div class="modal"><button class="modal-close" onclick="closeModal()">×</button><div id="modalContent"></div></div></div>
-<div id="toast"></div>
-<script src="script.js"></script>
-</body>
+    <div id="toast"></div>
+    <script src="script.js"></script>
+  </body>
+
 </html>

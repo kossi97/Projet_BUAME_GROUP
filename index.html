@@ -1,657 +1,620 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BUAME GROUP — Conglomérat Panafricain | Construction · Trade · Logistics · Immobilier · Agro · Médias</title>
-<meta name="description" content="BUAME GROUP est un conglomérat panafricain SAS basé à Lomé, Togo, opérant dans 6 secteurs stratégiques en Afrique de l'Ouest : Construction, Trade, Logistics, Immobilier, Agro-Alimentaire et Médias.">
-<meta name="keywords" content="BUAME GROUP, conglomérat Afrique, holding panafricaine, BTP Togo, logistique Afrique, immobilier Lomé, agro-alimentaire CEDEAO, médias Afrique, OHADA">
-<meta property="og:title" content="BUAME GROUP — L'Empire Panafricain">
-<meta property="og:description" content="Conglomérat SAS basé à Lomé. 6 filiales. 4 pays. Vision 2045.">
-<meta property="og:type" content="website">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.buamegroup.com/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Corporation","name":"BUAME GROUP","legalName":"BUAME GROUP SAS","url":"https://www.buamegroup.com","description":"Conglomérat panafricain basé à Lomé, Togo, opérant dans 6 secteurs stratégiques en Afrique de l'Ouest","foundingDate":"2025","foundingLocation":{"@type":"Place","name":"Lomé, Togo"},"areaServed":["Togo","Bénin","Côte d'Ivoire","Ghana"],"contactPoint":{"@type":"ContactPoint","contactType":"customer service","email":"contact@buamegroup.com"}}</script>
-</head>
-<body>
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
 
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html" onclick="closeMobileMenu()" data-i18n="nav.home">Accueil</a>
-  <a href="groupe.html" onclick="closeMobileMenu()" data-i18n="nav.group">Groupe</a>
-  <a href="gouvernance.html" onclick="closeMobileMenu()" data-i18n="nav.governance">Gouvernance</a>
-  <a href="direction.html" onclick="closeMobileMenu()" data-i18n="nav.direction">Direction</a>
-  <a href="filiales.html" onclick="closeMobileMenu()" data-i18n="nav.filiales">Filiales</a>
-  <a href="actualites.html" onclick="closeMobileMenu()" data-i18n="nav.news">Actualités</a>
-  <a href="blog.html" onclick="closeMobileMenu()" data-i18n="nav.blog">Blog</a>
-  <a href="recrutement.html" onclick="closeMobileMenu()" data-i18n="nav.careers">Carrières</a>
-  <a href="contact.html" onclick="closeMobileMenu()" data-i18n="nav.contact">Contact</a>
-  <div class="nav-lang" style="margin-top:24px">
-    <button class="lang-btn" onclick="setLang('fr');closeMobileMenu()">FR</button>
-    <button class="lang-btn" onclick="setLang('en');closeMobileMenu()">EN</button>
-    <button class="lang-btn" onclick="setLang('pt');closeMobileMenu()">PT</button>
-  </div>
-</div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUAME GROUP — Conglomérat Panafricain | Construction · Trade · Logistics · Immobilier · Agro · Médias</title>
+    <meta name="description"
+      content="BUAME GROUP est un conglomérat panafricain SAS basé à Lomé, Togo, opérant dans 6 secteurs stratégiques en Afrique de l'Ouest.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.buamegroup.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<nav id="mainNav">
-  <a class="nav-logo" href="index.html"><span class="nav-logo-diamond">◆</span> BUAME GROUP</a>
-  <div class="nav-links">
-    <a href="index.html" class="active" data-i18n="nav.home">Accueil</a>
-    <a href="groupe.html" data-i18n="nav.group">Groupe</a>
-    <a href="gouvernance.html" data-i18n="nav.governance">Gouvernance</a>
-    <a href="direction.html" data-i18n="nav.direction">Direction</a>
-    <a href="filiales.html" data-i18n="nav.filiales">Filiales</a>
-    <a href="actualites.html" data-i18n="nav.news">Actualités</a>
-    <a href="blog.html" data-i18n="nav.blog">Blog</a>
-    <a href="recrutement.html" data-i18n="nav.careers">Carrières</a>
-  </div>
-  <div style="display:flex;gap:14px;align-items:center">
-    <div class="nav-lang">
-      <button class="lang-btn active" onclick="setLang('fr')">FR</button>
-      <button class="lang-btn" onclick="setLang('en')">EN</button>
-      <button class="lang-btn" onclick="setLang('pt')">PT</button>
-    </div>
-    <a href="contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
-    <div class="nav-hamburger" id="hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero" id="home" aria-label="Hero BUAME GROUP">
-  <div class="hero-bg"></div>
-  <div class="hero-grid" role="presentation"></div>
-  <div class="hero-left" style="padding-top:80px">
-    <div class="hero-eyebrow" data-i18n="hero.eyebrow">Conglomérat Panafricain — Lomé, Togo</div>
-    <h1 class="hero-title"><span>L'Afrique</span><strong>par les Africains</strong></h1>
-    <p class="hero-subtitle" data-i18n="hero.subtitle">Bâtir, Commercer, Transporter, Habiter, Nourrir, Informer</p>
-    <p class="hero-desc" data-i18n="hero.desc">BUAME GROUP est un conglomérat SAS panafricain opérant dans 6 secteurs stratégiques à travers 4 pays d'Afrique de l'Ouest. Notre vision : devenir l'un des 10 premiers groupes africains à l'horizon 2045.</p>
-    <div class="hero-actions">
-      <a href="filiales.html" class="btn btn-primary" data-i18n="hero.cta1">Découvrir nos filiales</a>
-      <a href="groupe.html" class="btn btn-outline" data-i18n="hero.cta2">Notre vision</a>
-    </div>
-  </div>
-  <div class="hero-right" aria-hidden="true">
-    <div class="hero-diamond-wrap">
-      <div class="diamond-pulse"></div>
-      <div class="diamond-pulse diamond-pulse-2"></div>
-      <div class="hero-diamond">
-        <svg viewBox="0 0 380 380" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="dg1" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#C8A84B" stop-opacity="0.9"/>
-              <stop offset="100%" stop-color="#E8C96A" stop-opacity="0.5"/>
-            </linearGradient>
-            <linearGradient id="dg2" x1="100%" y1="0%" x2="0%" y2="100%">
-              <stop offset="0%" stop-color="#C8A84B" stop-opacity="0.3"/>
-              <stop offset="100%" stop-color="#C8A84B" stop-opacity="0.05"/>
-            </linearGradient>
-          </defs>
-          <polygon points="190,30 340,140 340,240 190,350 40,240 40,140" fill="url(#dg2)" stroke="url(#dg1)" stroke-width="1.5"/>
-          <polygon points="190,60 310,150 310,230 190,320 70,230 70,150" fill="none" stroke="rgba(200,168,75,0.2)" stroke-width="1"/>
-          <polygon points="190,90 280,155 280,225 190,290 100,225 100,155" fill="none" stroke="rgba(200,168,75,0.1)" stroke-width="0.5"/>
-          <text x="190" y="175" text-anchor="middle" fill="#C8A84B" font-family="'Cormorant Garamond',serif" font-size="18" font-weight="300" letter-spacing="6">BUAME</text>
-          <text x="190" y="200" text-anchor="middle" fill="rgba(200,168,75,0.6)" font-family="'Syne',sans-serif" font-size="10" letter-spacing="5">GROUP</text>
-          <text x="190" y="225" text-anchor="middle" fill="rgba(200,168,75,0.4)" font-family="'DM Sans',sans-serif" font-size="9" letter-spacing="3">◆ SAS ◆</text>
-          <line x1="190" y1="30" x2="190" y2="350" stroke="rgba(200,168,75,0.08)" stroke-width="0.5"/>
-          <line x1="40" y1="190" x2="340" y2="190" stroke="rgba(200,168,75,0.08)" stroke-width="0.5"/>
-          <text x="190" y="16" text-anchor="middle" fill="rgba(200,168,75,0.5)" font-family="'Syne',sans-serif" font-size="8" letter-spacing="2">CONSTRUCTION</text>
-          <text x="352" y="150" fill="rgba(200,168,75,0.5)" font-family="'Syne',sans-serif" font-size="8" letter-spacing="2">TRADE</text>
-          <text x="352" y="235" fill="rgba(200,168,75,0.5)" font-family="'Syne',sans-serif" font-size="8" letter-spacing="2">LOGISTICS</text>
-          <text x="190" y="368" text-anchor="middle" fill="rgba(200,168,75,0.5)" font-family="'Syne',sans-serif" font-size="8" letter-spacing="2">IMMOBILIER</text>
-          <text x="6" y="235" fill="rgba(200,168,75,0.5)" font-family="'Syne',sans-serif" font-size="8" letter-spacing="1">AGRO</text>
-          <text x="6" y="150" fill="rgba(200,168,75,0.5)" font-family="'Syne',sans-serif" font-size="8" letter-spacing="1">MÉDIAS</text>
-        </svg>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" onclick="closeMobileMenu()" data-i18n="nav.home">Accueil</a>
+      <a href="groupe.html" onclick="closeMobileMenu()" data-i18n="nav.group">Groupe</a>
+      <a href="gouvernance.html" onclick="closeMobileMenu()" data-i18n="nav.governance">Gouvernance</a>
+      <a href="direction.html" onclick="closeMobileMenu()" data-i18n="nav.direction">Direction</a>
+      <a href="filiales.html" onclick="closeMobileMenu()" data-i18n="nav.filiales">Filiales</a>
+      <a href="actualites.html" onclick="closeMobileMenu()" data-i18n="nav.news">Actualités</a>
+      <a href="blog.html" onclick="closeMobileMenu()" data-i18n="nav.blog">Blog</a>
+      <a href="recrutement.html" onclick="closeMobileMenu()" data-i18n="nav.careers">Carrières</a>
+      <a href="contact.html" onclick="closeMobileMenu()" data-i18n="nav.contact">Contact</a>
+      <div class="nav-lang" style="margin-top:24px">
+        <button class="lang-btn" onclick="setLang('fr');closeMobileMenu()">FR</button>
+        <button class="lang-btn" onclick="setLang('en');closeMobileMenu()">EN</button>
+        <button class="lang-btn" onclick="setLang('pt');closeMobileMenu()">PT</button>
       </div>
     </div>
-  </div>
-  <div class="hero-stats" role="region" aria-label="Chiffres clés">
-    <div class="hero-stat reveal">
-      <div class="stat-number" data-count="6">0</div>
-      <div class="stat-label" data-i18n="stats.filiales">Filiales Actives</div>
-    </div>
-    <div class="hero-stat reveal reveal-delay-1">
-      <div class="stat-number" data-count="4">0</div>
-      <div class="stat-label" data-i18n="stats.countries">Pays d'Opération</div>
-    </div>
-    <div class="hero-stat reveal reveal-delay-2">
-      <div class="stat-number" style="font-size:32px">100<span style="font-size:18px">Mds</span></div>
-      <div class="stat-label" data-i18n="stats.vision">Vision CA 2045 (FCFA)</div>
-    </div>
-    <div class="hero-stat reveal reveal-delay-3">
-      <div class="stat-number" data-count="20">0</div>
-      <div class="stat-label" data-i18n="stats.years">Ans de Vision</div>
-    </div>
-  </div>
-</section>
-
-<!-- TICKER -->
-<div class="ticker" aria-hidden="true">
-  <div class="ticker-inner">
-    <span class="ticker-item">BUAME CONSTRUCTION <span class="ticker-sep">—</span></span>
-    <span class="ticker-item">BUAME TRADE <span class="ticker-sep">—</span></span>
-    <span class="ticker-item">BUAME LOGISTICS <span class="ticker-sep">—</span></span>
-    <span class="ticker-item">BUAME IMMOBILIER <span class="ticker-sep">—</span></span>
-    <span class="ticker-item">BUAME AGRO-ALIMENTAIRE <span class="ticker-sep">—</span></span>
-    <span class="ticker-item">BUAME MÉDIAS <span class="ticker-sep">—</span></span>
-    <span class="ticker-item">LOMÉ · COTONOU · ABIDJAN · ACCRA <span class="ticker-sep">—</span></span>
-    <span class="ticker-item">STRATÉGIE DIAMANT BLEU™ <span class="ticker-sep">—</span></span>
-    <span class="ticker-item">VISION 2045 <span class="ticker-sep">—</span></span>
-    <span class="ticker-item">BUAME CONSTRUCTION <span class="ticker-sep">—</span></span>
-    <span class="ticker-item">BUAME TRADE <span class="ticker-sep">—</span></span>
-    <span class="ticker-item">BUAME LOGISTICS <span class="ticker-sep">—</span></span>
-    <span class="ticker-item">BUAME IMMOBILIER <span class="ticker-sep">—</span></span>
-    <span class="ticker-item">BUAME AGRO-ALIMENTAIRE <span class="ticker-sep">—</span></span>
-    <span class="ticker-item">BUAME MÉDIAS <span class="ticker-sep">—</span></span>
-    <span class="ticker-item">LOMÉ · COTONOU · ABIDJAN · ACCRA <span class="ticker-sep">—</span></span>
-    <span class="ticker-item">STRATÉGIE DIAMANT BLEU™ <span class="ticker-sep">—</span></span>
-    <span class="ticker-item">VISION 2045 <span class="ticker-sep">—</span></span>
-  </div>
-</div>
-
-<!-- ABOUT -->
-<section class="about" id="about" aria-labelledby="about-title">
-  <div class="section-eyebrow" data-i18n="about.eyebrow">Le Groupe</div>
-  <h2 class="section-title" id="about-title">Un empire africain <em>en construction</em></h2>
-  <p class="section-subtitle" data-i18n="about.subtitle">Fondé à Lomé avec une vision panafricaine, BUAME GROUP réunit six forces complémentaires pour transformer l'Afrique de l'Ouest.</p>
-  <div class="about-grid">
-    <div>
-      <div class="about-numbers">
-        <div class="about-number-card reveal">
-          <div class="about-num">SAS</div>
-          <div class="about-num-label">Forme Juridique Holding</div>
+    <nav id="mainNav">
+      <a class="nav-logo" href="index.html">
+        <img src="logo.png" alt="BUAME GROUP" data-i18n-alt="logo.alt" class="nav-logo-img"
+          onerror="this.style.display='none'">
+        <span class="nav-logo-diamond">◆</span>
+        <span class="nav-logo-text">BUAME GROUP</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active" data-i18n="nav.home">Accueil</a>
+        <a href="groupe.html" data-i18n="nav.group">Groupe</a>
+        <a href="gouvernance.html" data-i18n="nav.governance">Gouvernance</a>
+        <a href="direction.html" data-i18n="nav.direction">Direction</a>
+        <a href="filiales.html" data-i18n="nav.filiales">Filiales</a>
+        <a href="actualites.html" data-i18n="nav.news">Actualités</a>
+        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+        <a href="recrutement.html" data-i18n="nav.careers">Carrières</a>
+      </div>
+      <div style="display:flex;gap:14px;align-items:center">
+        <div class="nav-lang">
+          <button class="lang-btn active" onclick="setLang('fr')">FR</button>
+          <button class="lang-btn" onclick="setLang('en')">EN</button>
+          <button class="lang-btn" onclick="setLang('pt')">PT</button>
         </div>
-        <div class="about-number-card reveal reveal-delay-1">
-          <div class="about-num">50M</div>
-          <div class="about-num-label">Capital Social FCFA</div>
-        </div>
-        <div class="about-number-card reveal reveal-delay-2">
-          <div class="about-num">480+</div>
-          <div class="about-num-label">Emplois prévus An 3</div>
-        </div>
-        <div class="about-number-card reveal reveal-delay-3">
-          <div class="about-num">2045</div>
-          <div class="about-num-label">Horizon Vision Groupe</div>
+        <a href="contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
+        <div class="nav-hamburger" id="hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span>
         </div>
       </div>
-      <div class="about-vision reveal">
-        <p>"L'Afrique a besoin d'acteurs africains qui pensent grand, agissent vite et construisent pour durer. BUAME GROUP est cette réponse."</p>
-        <cite>— Direction Générale, BUAME GROUP SAS</cite>
-      </div>
-    </div>
-    <div class="about-text reveal">
-      <p data-i18n="about.p1">BUAME GROUP est une holding panafricaine constituée sous forme de Société par Actions Simplifiée (SAS) de droit togolais, dont le siège est établi à Lomé. Le groupe opère à travers 6 filiales SASU au Togo et des SARL dans les pays d'expansion, conformément au droit OHADA.</p>
-      <p data-i18n="about.p2">Notre modèle est unique : chaque filiale est à la fois cliente et fournisseur des autres, créant un écosystème intégré réduisant les coûts de 15 à 20% et construisant un avantage concurrentiel inimitable sur le marché ouest-africain.</p>
-      <p data-i18n="about.p3">Avec la Stratégie Diamant Bleu™, nous avons dessiné une roadmap claire sur 20 ans : ancrage local, synergies inter-filiales, certifications ISO, expansion géographique, impact RSE et digitalisation complète de nos opérations.</p>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:32px">
-        <div style="padding:20px;border:1px solid rgba(0,0,0,0.08)">
-          <div style="font-family:'Syne',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Mission</div>
-          <div style="font-size:13px;color:var(--text-mid);line-height:1.7" data-i18n="about.mission">Créer de la valeur durable en Afrique de l'Ouest par l'excellence opérationnelle et l'ancrage local.</div>
-        </div>
-        <div style="padding:20px;border:1px solid rgba(0,0,0,0.08)">
-          <div style="font-family:'Syne',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Vision</div>
-          <div style="font-size:13px;color:var(--text-mid);line-height:1.7" data-i18n="about.vision_text">Top 10 des groupes africains d'ici 2045, coté en bourse, 100 milliards FCFA de CA.</div>
-        </div>
-      </div>
-      <div class="about-signature reveal">
-        BUAME GROUP SAS
-        <span>Lomé, Togo — Fondé 2025 — OHADA</span>
-      </div>
-    </div>
-  </div>
-</section>
+    </nav>
 
-<!-- FILIALES -->
-<section class="filiales" id="filiales" aria-labelledby="filiales-title">
-  <div class="section-eyebrow" data-i18n="filiales.eyebrow">Nos Filiales</div>
-  <h2 class="section-title" id="filiales-title">Six forces, <em>un seul empire</em></h2>
-  <p class="section-subtitle" data-i18n="filiales.subtitle">Des secteurs stratégiques soigneusement sélectionnés pour leur complémentarité et leur potentiel de croissance en Afrique de l'Ouest.</p>
-  <div class="filiales-grid">
-    <article class="filiale-card reveal" onclick="openFiliale('construction')">
-      <div class="filiale-num">01</div>
-      <div class="filiale-icon">🏗️</div>
-      <div class="filiale-name">CONSTRUCTION</div>
-      <h3 class="filiale-full">BUAME Construction</h3>
-      <p class="filiale-desc">BTP, génie civil, infrastructures routières et bâtiments. Location d'équipements BTP. Marchés publics et privés. Certifications ISO 9001 & 14001 en cible.</p>
-      <div class="filiale-tags">
-        <span class="filiale-tag">BTP</span>
-        <span class="filiale-tag">Marchés publics</span>
-        <span class="filiale-tag">ISO 9001</span>
-        <span class="filiale-tag">📋 Location Engins</span>
-      </div>
-      <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span><span class="country-flag">🇬🇭</span></div>
-    </article>
-    <article class="filiale-card reveal reveal-delay-1" onclick="openFiliale('trade')">
-      <div class="filiale-num">02</div>
-      <div class="filiale-icon">📦</div>
-      <div class="filiale-name">TRADE</div>
-      <h3 class="filiale-full">BUAME Trade</h3>
-      <p class="filiale-desc">Import-export, distribution B2B, commerce général. Fournisseur exclusif des 5 autres filiales. Agréments douaniers CEDEAO.</p>
-      <div class="filiale-tags">
-        <span class="filiale-tag">Import-Export</span>
-        <span class="filiale-tag">Distribution B2B</span>
-        <span class="filiale-tag">CEDEAO</span>
-      </div>
-      <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span><span class="country-flag">🇬🇭</span></div>
-    </article>
-    <article class="filiale-card reveal reveal-delay-2" onclick="openFiliale('logistics')">
-      <div class="filiale-num">03</div>
-      <div class="filiale-icon">🚛</div>
-      <div class="filiale-name">LOGISTICS</div>
-      <h3 class="filiale-full">BUAME Logistics</h3>
-      <p class="filiale-desc">Transport routier régional, transit douanier, entreposage. Prestataire logistique exclusif du groupe. Agrément TRIE-CEDEAO.</p>
-      <div class="filiale-tags">
-        <span class="filiale-tag">Transport</span>
-        <span class="filiale-tag">Transit</span>
-        <span class="filiale-tag">Entreposage</span>
-      </div>
-      <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span><span class="country-flag">🇬🇭</span></div>
-    </article>
-    <article class="filiale-card reveal" onclick="openFiliale('immobilier')">
-      <div class="filiale-num">04</div>
-      <div class="filiale-icon">🏢</div>
-      <div class="filiale-name">IMMOBILIER</div>
-      <h3 class="filiale-full">BUAME Immobilier</h3>
-      <p class="filiale-desc">Promotion immobilière résidentielle et commerciale. Gestion locative, vente bureaux. Partenaire de BUAME Construction pour tous les chantiers.</p>
-      <div class="filiale-tags">
-        <span class="filiale-tag">Promotion</span>
-        <span class="filiale-tag">Gestion locative</span>
-        <span class="filiale-tag">Bureaux</span>
-      </div>
-      <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span></div>
-    </article>
-    <article class="filiale-card reveal reveal-delay-1" onclick="openFiliale('agro')">
-      <div class="filiale-num">05</div>
-      <div class="filiale-icon">🌿</div>
-      <div class="filiale-name">AGRO</div>
-      <h3 class="filiale-full">BUAME Agro</h3>
-      <p class="filiale-desc">Transformation agro-alimentaire, exportation cacao, anacarde et karité. Certifications GlobalG.A.P. Marchés Europe, Asie et CEDEAO.</p>
-      <div class="filiale-tags">
-        <span class="filiale-tag">Export Cacao</span>
-        <span class="filiale-tag">GlobalG.A.P.</span>
-        <span class="filiale-tag">Fair Trade</span>
-      </div>
-      <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span><span class="country-flag">🇬🇭</span></div>
-    </article>
-    <article class="filiale-card reveal reveal-delay-2" onclick="openFiliale('medias')">
-      <div class="filiale-num">06</div>
-      <div class="filiale-icon">📡</div>
-      <div class="filiale-name">MÉDIAS</div>
-      <h3 class="filiale-full">BUAME Médias</h3>
-      <p class="filiale-desc">Web TV africaine, podcast business, presse digitale et régie publicitaire. Porte-parole de toutes les filiales du groupe. Licence audiovisuelle en cours.</p>
-      <div class="filiale-tags">
-        <span class="filiale-tag">Web TV</span>
-        <span class="filiale-tag">Podcast</span>
-        <span class="filiale-tag">Régie Pub</span>
-      </div>
-      <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span><span class="country-flag">🇬🇭</span></div>
-    </article>
-  </div>
-</section>
-
-<!-- STRATÉGIE DIAMANT -->
-<section class="strategy" id="strategie" aria-labelledby="strat-title">
-  <div class="section-eyebrow" data-i18n="strat.eyebrow">Stratégie</div>
-  <h2 class="section-title" id="strat-title">Stratégie Diamant Bleu<em>™</em></h2>
-  <p class="section-subtitle">Une roadmap sur 20 ans articulée autour de 6 piliers stratégiques pour faire de BUAME GROUP un acteur de référence en Afrique.</p>
-  <div class="strategy-layout">
-    <div class="diamond-strategy reveal">
-      <svg viewBox="0 0 380 380" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="sg1" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#C8A84B" stop-opacity="0.6"/>
-            <stop offset="100%" stop-color="#E8C96A" stop-opacity="0.2"/>
-          </linearGradient>
-        </defs>
-        <polygon points="190,20 360,130 360,250 190,360 20,250 20,130" fill="rgba(200,168,75,0.04)" stroke="rgba(200,168,75,0.3)" stroke-width="1.5"/>
-        <polygon points="190,60 320,150 320,230 190,320 60,230 60,150" fill="none" stroke="rgba(200,168,75,0.15)" stroke-width="1"/>
-        <polygon points="190,100 280,165 280,215 190,280 100,215 100,165" fill="rgba(200,168,75,0.06)" stroke="rgba(200,168,75,0.25)" stroke-width="1"/>
-        <text x="190" y="188" text-anchor="middle" fill="#C8A84B" font-family="'Cormorant Garamond',serif" font-size="16" letter-spacing="3">DIAMANT</text>
-        <text x="190" y="208" text-anchor="middle" fill="rgba(200,168,75,0.7)" font-family="'Syne',sans-serif" font-size="9" letter-spacing="4">BLEU™</text>
-        <circle cx="190" cy="20" r="5" fill="#C8A84B" opacity="0.8"/>
-        <circle cx="360" cy="130" r="5" fill="#C8A84B" opacity="0.8"/>
-        <circle cx="360" cy="250" r="5" fill="#C8A84B" opacity="0.8"/>
-        <circle cx="190" cy="360" r="5" fill="#C8A84B" opacity="0.8"/>
-        <circle cx="20" cy="250" r="5" fill="#C8A84B" opacity="0.8"/>
-        <circle cx="20" cy="130" r="5" fill="#C8A84B" opacity="0.8"/>
-      </svg>
-    </div>
-    <div class="strategy-list reveal">
-      <div class="strategy-item">
-        <div class="strategy-facet">01</div>
-        <div>
-          <div class="strategy-item-title">Ancrage Local</div>
-          <div class="strategy-item-desc">Implantation profonde dans chaque marché. Ressources humaines locales, partenaires locaux, conformité réglementaire totale.</div>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-left" style="padding-top:80px">
+        <div class="hero-eyebrow" data-i18n="hero.eyebrow">Conglomérat Panafricain — Lomé, Togo</div>
+        <h1 class="hero-title">
+          <span data-i18n="hero.title.line1">L'Afrique</span>
+          <strong data-i18n="hero.title.line2">par les Africains</strong>
+        </h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Bâtir, Commercer, Transporter, Habiter, Nourrir, Informer</p>
+        <p class="hero-desc" data-i18n="hero.desc">BUAME GROUP est un conglomérat SAS panafricain opérant dans 6
+          secteurs stratégiques à travers 4 pays d'Afrique de l'Ouest. Notre vision : devenir l'un des 10 premiers
+          groupes africains à l'horizon 2045.</p>
+        <div class="hero-actions">
+          <a href="filiales.html" class="btn btn-primary" data-i18n="hero.cta1">Découvrir nos filiales</a>
+          <a href="groupe.html" class="btn btn-outline" data-i18n="hero.cta2">Notre vision</a>
         </div>
       </div>
-      <div class="strategy-item">
-        <div class="strategy-facet">02</div>
-        <div>
-          <div class="strategy-item-title">Synergies Inter-Filiales</div>
-          <div class="strategy-item-desc">Écosystème intégré où chaque filiale alimente les autres. Réduction des coûts de 15–20%, avantage concurrentiel structurel.</div>
-        </div>
-      </div>
-      <div class="strategy-item">
-        <div class="strategy-facet">03</div>
-        <div>
-          <div class="strategy-item-title">Certifications ISO</div>
-          <div class="strategy-item-desc">ISO 9001, ISO 14001, GlobalG.A.P., OEA douanier. Standards internationaux pour accéder aux marchés mondiaux.</div>
-        </div>
-      </div>
-      <div class="strategy-item">
-        <div class="strategy-facet">04</div>
-        <div>
-          <div class="strategy-item-title">Expansion Géographique</div>
-          <div class="strategy-item-desc">4 pays aujourd'hui → 15 pays à l'horizon 2040. Prochaine vague : Nigeria, Sénégal, Cameroun, Burkina, Mali.</div>
-        </div>
-      </div>
-      <div class="strategy-item">
-        <div class="strategy-facet">05</div>
-        <div>
-          <div class="strategy-item-title">Impact RSE</div>
-          <div class="strategy-item-desc">Emplois locaux, formation professionnelle, agriculture durable, réduction empreinte carbone. Reporting ESG annuel.</div>
-        </div>
-      </div>
-      <div class="strategy-item">
-        <div class="strategy-facet">06</div>
-        <div>
-          <div class="strategy-item-title">Digitalisation</div>
-          <div class="strategy-item-desc">ERP groupe, CRM filiales, e-commerce agro, plateformes digitales médias. Transformation numérique totale d'ici 2030.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PAYS -->
-<section class="pays" id="pays" aria-labelledby="pays-title">
-  <div class="section-eyebrow" data-i18n="pays.eyebrow">Présence Géographique</div>
-  <h2 class="section-title" id="pays-title">4 pays, <em>une vision</em></h2>
-  <p class="section-subtitle" data-i18n="pays.subtitle">Un ancrage stratégique dans les économies les plus dynamiques d'Afrique de l'Ouest, avec une expansion planifiée vers 15 pays d'ici 2040.</p>
-  <div class="pays-grid">
-    <div class="pays-card reveal">
-      <span class="pays-flag">🇹🇬</span>
-      <div class="pays-name">Togo</div>
-      <div class="pays-role">Siège Groupe — HQ</div>
-      <div class="pays-filiales">BUAME GROUP SAS<br>6 filiales SASU<br>Lomé — Port en Eaux Profondes</div>
-      <div class="pays-badge">Siège Social</div>
-    </div>
-    <div class="pays-card reveal reveal-delay-1">
-      <span class="pays-flag">🇧🇯</span>
-      <div class="pays-name">Bénin</div>
-      <div class="pays-role">Premier Pays d'Expansion</div>
-      <div class="pays-filiales">6 filiales SARL<br>Cotonou — Port autonome<br>ZLECAF — Zone franche</div>
-      <div class="pays-badge">Opérationnel An 1</div>
-    </div>
-    <div class="pays-card reveal reveal-delay-2">
-      <span class="pays-flag">🇨🇮</span>
-      <div class="pays-name">Côte d'Ivoire</div>
-      <div class="pays-role">Hub Économique Régional</div>
-      <div class="pays-filiales">6 filiales SARL<br>Abidjan — 1ère économie UEMOA<br>Centre d'Excellence</div>
-      <div class="pays-badge">An 2–3</div>
-    </div>
-    <div class="pays-card reveal reveal-delay-3">
-      <span class="pays-flag">🇬🇭</span>
-      <div class="pays-name">Ghana</div>
-      <div class="pays-role">Porte Anglophone</div>
-      <div class="pays-filiales">6 filiales Ltd<br>Accra — 2ème économie Golfe de Guinée<br>Accès marchés anglophones</div>
-      <div class="pays-badge">An 2–3</div>
-    </div>
-  </div>
-  <div style="text-align:center;margin-top:48px">
-    <div style="display:inline-flex;align-items:center;gap:16px;padding:20px 40px;border:1px solid rgba(200,168,75,0.2);color:rgba(255,255,255,0.5);font-size:14px;flex-wrap:wrap;justify-content:center">
-      <span style="color:var(--gold);font-family:'Syne',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase">PROCHAINE VAGUE :</span>
-      🇳🇬 Nigeria &nbsp; 🇸🇳 Sénégal &nbsp; 🇨🇲 Cameroun &nbsp; 🇧🇫 Burkina &nbsp; 🇲🇱 Mali &nbsp; — An 5–7
-    </div>
-  </div>
-</section>
-
-<!-- ACTUALITÉS APERÇU -->
-<section style="background:var(--navy);padding:120px 10%" aria-labelledby="news-title">
-  <div class="section-eyebrow" data-i18n="actualites.eyebrow">Actualités</div>
-  <h2 class="section-title" style="color:var(--white)" id="news-title">Dernières <em>nouvelles du groupe</em></h2>
-  <p class="section-subtitle" style="color:rgba(255,255,255,0.5);margin-bottom:60px" data-i18n="actualites.subtitle">Suivez l'actualité officielle du BUAME GROUP.</p>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:48px">
-    <div class="card reveal">
-      <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80" alt="Constitution BUAME" class="card-img"><div class="card-img-overlay"></div></div>
-      <div class="card-body">
-        <div class="card-meta">COMMUNIQUÉ · NOV 2025</div>
-        <div class="card-title">Constitution officielle de BUAME GROUP SAS</div>
-        <div class="card-text">La holding est officiellement constituée à Lomé avec un capital de 50 millions FCFA et le lancement des 6 filiales.</div>
-      </div>
-    </div>
-    <div class="card reveal reveal-delay-1">
-      <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80" alt="Partenariat" class="card-img"><div class="card-img-overlay"></div></div>
-      <div class="card-body">
-        <div class="card-meta">PARTENARIAT · OCT 2025</div>
-        <div class="card-title">Partenariat Banque Atlantique</div>
-        <div class="card-text">Accord de financement stratégique pour le développement des 6 filiales sur 4 pays d'Afrique de l'Ouest.</div>
-      </div>
-    </div>
-    <div class="card reveal reveal-delay-2">
-      <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80" alt="Agro Export" class="card-img"><div class="card-img-overlay"></div></div>
-      <div class="card-body">
-        <div class="card-meta">EXPORT · SEPT 2025</div>
-        <div class="card-title">Premier contrat d'export cacao</div>
-        <div class="card-text">BUAME Agro signe avec un acheteur européen pour l'exportation de cacao premium certifié.</div>
-      </div>
-    </div>
-  </div>
-  <div style="text-align:center">
-    <a href="actualites.html" class="btn btn-outline" style="color:var(--gold)">Toutes les actualités →</a>
-  </div>
-</section>
-
-<!-- BLOG APERÇU -->
-<section class="blog" id="blog" style="padding:120px 10%;background:var(--off-white)" aria-labelledby="blog-title">
-  <div class="section-eyebrow" data-i18n="blog.eyebrow">Blog Expert</div>
-  <h2 class="section-title" id="blog-title">Insights <em>Afrique Business</em></h2>
-  <p class="section-subtitle" data-i18n="blog.subtitle">Analyses, tendances et décryptages de l'économie ouest-africaine par les experts du BUAME GROUP.</p>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;margin-bottom:48px">
-    <article class="blog-card" data-cat="business" style="background:#fff;border:1px solid rgba(0,0,0,0.06);overflow:hidden;transition:all 0.4s" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 60px rgba(0,0,0,0.12)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-      <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=600&q=80" alt="ZLECAF"><div class="blog-card-img-overlay"></div><div class="blog-cat">Business</div></div>
-      <div class="blog-body">
-        <div class="blog-date">15 Novembre 2025</div>
-        <h3 class="blog-title" data-i18n="blog.post1.title">ZLECAF 2025 : Comment les groupes africains peuvent saisir l'opportunité du marché unifié</h3>
-        <div class="blog-meta"><span class="blog-author">Par la Direction Stratégie</span><a href="blog.html" class="blog-read" data-i18n="blog.read">Lire →</a></div>
-      </div>
-    </article>
-    <article class="blog-card" data-cat="btp" style="background:#fff;border:1px solid rgba(0,0,0,0.06);overflow:hidden;transition:all 0.4s" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 60px rgba(0,0,0,0.12)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-      <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="BTP"><div class="blog-card-img-overlay"></div><div class="blog-cat">BTP</div></div>
-      <div class="blog-body">
-        <div class="blog-date">3 Novembre 2025</div>
-        <h3 class="blog-title" data-i18n="blog.post2.title">Marchés publics en Afrique de l'Ouest : guide pour répondre aux appels d'offres BOAD & BAD</h3>
-        <div class="blog-meta"><span class="blog-author">Expertise BTP</span><a href="blog.html" class="blog-read" data-i18n="blog.read">Lire →</a></div>
-      </div>
-    </article>
-    <article class="blog-card" data-cat="agro" style="background:#fff;border:1px solid rgba(0,0,0,0.06);overflow:hidden;transition:all 0.4s" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 60px rgba(0,0,0,0.12)'" onmouseout="this.style.transform='';this.style.boxShadow=''">
-      <div class="blog-card-img"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80" alt="Agro"><div class="blog-card-img-overlay"></div><div class="blog-cat">Agro</div></div>
-      <div class="blog-body">
-        <div class="blog-date">28 Octobre 2025</div>
-        <h3 class="blog-title" data-i18n="blog.post3.title">Exportation de cacao vers l'Europe : certifications et stratégies de valorisation premium</h3>
-        <div class="blog-meta"><span class="blog-author">BUAME Agro</span><a href="blog.html" class="blog-read" data-i18n="blog.read">Lire →</a></div>
-      </div>
-    </article>
-  </div>
-  <div style="text-align:center"><a href="blog.html" class="btn btn-primary">Tous les articles →</a></div>
-</section>
-
-<!-- RECRUTEMENT APERÇU -->
-<section style="background:var(--navy);padding:120px 10%" aria-labelledby="recru-preview-title">
-  <div class="section-eyebrow" style="color:var(--gold)" data-i18n="recru.eyebrow">Carrières</div>
-  <h2 class="section-title" style="color:var(--white)" id="recru-preview-title">Rejoignez <em>l'empire</em></h2>
-  <p class="section-subtitle" style="color:rgba(255,255,255,0.5);margin-bottom:60px" data-i18n="recru.subtitle">BUAME GROUP recrute des talents ambitieux qui veulent construire l'Afrique de demain.</p>
-  <div class="recru-filter" style="margin-bottom:32px">
-    <button class="filter-btn active" onclick="filterJobs('all',this)" data-i18n="recru.all">Tous les postes</button>
-    <button class="filter-btn" onclick="filterJobs('construction',this)">Construction</button>
-    <button class="filter-btn" onclick="filterJobs('logistics',this)">Logistics</button>
-    <button class="filter-btn" onclick="filterJobs('trade',this)">Trade</button>
-    <button class="filter-btn" onclick="filterJobs('immobilier',this)">Immobilier</button>
-    <button class="filter-btn" onclick="filterJobs('agro',this)">Agro</button>
-    <button class="filter-btn" onclick="filterJobs('holding',this)">Holding</button>
-  </div>
-  <div class="jobs-grid" id="jobsGrid"></div>
-  <div style="text-align:center;margin-top:48px">
-    <a href="recrutement.html" class="btn btn-primary">Voir toutes les offres →</a>
-  </div>
-</section>
-
-<!-- CONTACT CTA -->
-<section class="contact" id="contact" aria-labelledby="contact-title">
-  <div class="section-eyebrow" data-i18n="contact.eyebrow">Nous Contacter</div>
-  <h2 class="section-title" id="contact-title">Parlons <em>business</em></h2>
-  <p class="section-subtitle" data-i18n="contact.subtitle">Partenariats, investissements, marchés publics, projets communs ou candidatures — notre équipe est à votre disposition.</p>
-  <div class="contact-layout">
-    <div class="contact-info reveal">
-      <div class="contact-info-item">
-        <div class="contact-info-label" data-i18n="contact.hq">Siège Social</div>
-        <div class="contact-info-value">Lomé, République du Togo<br><small>Zone d'Adidogomé — BUAME TOWER</small></div>
-      </div>
-      <div class="contact-info-item">
-        <div class="contact-info-label" data-i18n="contact.email_label">Email</div>
-        <div class="contact-info-value">contact@buamegroup.com<br><small>careers@buamegroup.com (Recrutements)</small></div>
-      </div>
-      <div class="contact-info-item">
-        <div class="contact-info-label" data-i18n="contact.phone">Téléphone</div>
-        <div class="contact-info-value">+228 XX XX XX XX<br><small>Lun – Ven, 8h – 18h GMT</small></div>
-      </div>
-      <div class="contact-info-item">
-        <div class="contact-info-label">Structure Juridique</div>
-        <div class="contact-info-value">SAS — Droit OHADA<br><small>RCCM Togo — NIF enregistré</small></div>
-      </div>
-      <div class="contact-offices">
-        <div class="contact-office"><div class="office-flag">🇹🇬</div><div class="office-city">Lomé, Togo</div><div class="office-address">Siège Groupe HQ<br>BUAME TOWER</div></div>
-        <div class="contact-office"><div class="office-flag">🇧🇯</div><div class="office-city">Cotonou, Bénin</div><div class="office-address">Bureau Régional<br>Zone Cadjehoun</div></div>
-        <div class="contact-office"><div class="office-flag">🇨🇮</div><div class="office-city">Abidjan, CI</div><div class="office-address">Bureau Régional<br>Plateau Business</div></div>
-        <div class="contact-office"><div class="office-flag">🇬🇭</div><div class="office-city">Accra, Ghana</div><div class="office-address">Regional Office<br>Airport City</div></div>
-      </div>
-    </div>
-    <div class="contact-form reveal reveal-delay-1">
-      <div class="seo-badge"><span>●</span> <span data-i18n="contact.form_badge">Formulaire sécurisé — Réponse sous 48h</span></div>
-      <form onsubmit="handleSubmit(event)" novalidate>
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label" for="f-nom" data-i18n="form.name">Nom complet *</label>
-            <input class="form-input" id="f-nom" type="text" placeholder="Jean Dupont" required>
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="f-email" data-i18n="form.email">Email *</label>
-            <input class="form-input" id="f-email" type="email" placeholder="email@exemple.com" required>
+      <div class="hero-right" aria-hidden="true">
+        <div class="hero-diamond-wrap">
+          <div class="diamond-pulse"></div>
+          <div class="diamond-pulse diamond-pulse-2"></div>
+          <div class="hero-diamond">
+            <svg viewBox="0 0 380 380" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="dg1" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#C8A84B" stop-opacity="0.9" />
+                  <stop offset="100%" stop-color="#E8C96A" stop-opacity="0.5" />
+                </linearGradient>
+                <linearGradient id="dg2" x1="100%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#C8A84B" stop-opacity="0.3" />
+                  <stop offset="100%" stop-color="#C8A84B" stop-opacity="0.05" />
+                </linearGradient>
+              </defs>
+              <polygon points="190,30 340,140 340,240 190,350 40,240 40,140" fill="url(#dg2)" stroke="url(#dg1)"
+                stroke-width="1.5" />
+              <polygon points="190,60 310,150 310,230 190,320 70,230 70,150" fill="none" stroke="rgba(200,168,75,0.2)"
+                stroke-width="1" />
+              <text x="190" y="175" text-anchor="middle" fill="#C8A84B" font-family="'Cormorant Garamond',serif"
+                font-size="18" font-weight="300" letter-spacing="6">BUAME</text>
+              <text x="190" y="200" text-anchor="middle" fill="rgba(200,168,75,0.6)" font-family="'Syne',sans-serif"
+                font-size="10" letter-spacing="5">GROUP</text>
+              <text x="190" y="225" text-anchor="middle" fill="rgba(200,168,75,0.4)" font-family="'DM Sans',sans-serif"
+                font-size="9" letter-spacing="3">◆ SAS ◆</text>
+              <text x="190" y="16" text-anchor="middle" fill="rgba(200,168,75,0.5)" font-family="'Syne',sans-serif"
+                font-size="8" letter-spacing="2">CONSTRUCTION</text>
+              <text x="352" y="150" fill="rgba(200,168,75,0.5)" font-family="'Syne',sans-serif" font-size="8"
+                letter-spacing="2">MARKET</text>
+              <text x="352" y="235" fill="rgba(200,168,75,0.5)" font-family="'Syne',sans-serif" font-size="8"
+                letter-spacing="2">LOGISTICS</text>
+              <text x="190" y="368" text-anchor="middle" fill="rgba(200,168,75,0.5)" font-family="'Syne',sans-serif"
+                font-size="8" letter-spacing="2">IMMOBILIER</text>
+              <text x="6" y="235" fill="rgba(200,168,75,0.5)" font-family="'Syne',sans-serif" font-size="8"
+                letter-spacing="1">AGRO</text>
+              <text x="6" y="150" fill="rgba(200,168,75,0.5)" font-family="'Syne',sans-serif" font-size="8"
+                letter-spacing="1">MÉDIAS</text>
+            </svg>
           </div>
         </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label" for="f-org" data-i18n="form.org">Organisation</label>
-            <input class="form-input" id="f-org" type="text" placeholder="Société / Institution">
-          </div>
-          <div class="form-group">
-            <label class="form-label" for="f-pays" data-i18n="form.country">Pays *</label>
-            <select class="form-select" id="f-pays" required>
-              <option value="">Sélectionner...</option>
-              <option>Togo</option><option>Bénin</option><option>Côte d'Ivoire</option>
-              <option>Ghana</option><option>Sénégal</option><option>Nigeria</option>
-              <option>France</option><option>Autre</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="f-sujet" data-i18n="form.subject">Objet de la demande *</label>
-          <select class="form-select" id="f-sujet" required>
-            <option value="">Sélectionner...</option>
-            <option>Partenariat commercial</option>
-            <option>Appel d'offres / Marché</option>
-            <option>Investissement / Financement</option>
-            <option>Candidature recrutement</option>
-            <option>Presse / Médias</option>
-            <option>Autre demande</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label class="form-label" for="f-msg" data-i18n="form.message">Message *</label>
-          <textarea class="form-textarea" id="f-msg" placeholder="Décrivez votre demande..." required></textarea>
-        </div>
-        <div class="form-group" style="display:flex;align-items:flex-start;gap:10px">
-          <input type="checkbox" id="f-rgpd" required style="accent-color:var(--gold);margin-top:3px">
-          <label for="f-rgpd" style="font-size:13px;color:rgba(255,255,255,0.4);line-height:1.6">J'accepte que mes données soient utilisées pour traiter ma demande.</label>
-        </div>
-        <button type="submit" class="form-submit" data-i18n="form.submit">Envoyer le message ◆</button>
-      </form>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-main">
-    <div class="footer-brand">
-      <div class="footer-logo">◆ BUAME GROUP</div>
-      <div class="footer-tagline" data-i18n="footer.tagline">"L'Afrique par les Africains — construire, commercer, habiter, nourrir, transporter, informer."</div>
-      <div class="footer-desc">Conglomérat panafricain SAS basé à Lomé, Togo. 6 filiales, 4 pays, une vision. OHADA — Droit togolais.</div>
-      <div class="social-links">
-        <a class="social-link" href="#" aria-label="LinkedIn">in</a>
-        <a class="social-link" href="#" aria-label="Twitter/X">𝕏</a>
-        <a class="social-link" href="#" aria-label="Facebook">f</a>
-        <a class="social-link" href="#" aria-label="YouTube">▶</a>
-        <a class="social-link" href="#" aria-label="Instagram">◎</a>
       </div>
-    </div>
-    <div>
-      <div class="footer-col-title">Filiales</div>
-      <ul class="footer-links">
-        <li><a href="filiales.html">BUAME Construction</a></li>
-        <li><a href="filiales.html">BUAME Trade</a></li>
-        <li><a href="filiales.html">BUAME Logistics</a></li>
-        <li><a href="filiales.html">BUAME Immobilier</a></li>
-        <li><a href="filiales.html">BUAME Agro</a></li>
-        <li><a href="filiales.html">BUAME Médias</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Groupe</div>
-      <ul class="footer-links">
-        <li><a href="groupe.html">À propos</a></li>
-        <li><a href="gouvernance.html">Gouvernance</a></li>
-        <li><a href="direction.html">Direction Exécutive</a></li>
-        <li><a href="actualites.html">Actualités</a></li>
-        <li><a href="index.html#strategie">Stratégie Diamant</a></li>
-        <li><a href="index.html#pays">Présence géographique</a></li>
-        <li><a href="blog.html">Blog Expert</a></li>
-        <li><a href="recrutement.html">Carrières</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Mentions Légales</div>
-      <ul class="footer-links">
-        <li><a href="#">Mentions légales</a></li>
-        <li><a href="#">Politique de confidentialité</a></li>
-        <li><a href="#">Cookies</a></li>
-        <li><a href="#">CGV / CGU</a></li>
-        <li><a href="#">Droit OHADA</a></li>
-      </ul>
-      <div style="margin-top:24px;padding:20px;border:1px solid rgba(200,168,75,0.15);border-radius:4px">
-        <div style="font-family:'Syne',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Newsletter</div>
-        <div style="display:flex;gap:8px">
-          <input type="email" placeholder="Email" id="newsletterEmail" style="flex:1;padding:10px 14px;background:rgba(255,255,255,0.04);border:1px solid rgba(200,168,75,0.2);color:var(--white);font-size:13px;outline:none;border-radius:2px">
-          <button onclick="subscribeNewsletter()" style="padding:10px 18px;background:var(--gold);color:var(--navy);border:none;cursor:pointer;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;border-radius:2px">→</button>
+      <div class="hero-stats">
+        <div class="hero-stat reveal">
+          <div class="stat-number" data-count="6">0</div>
+          <div class="stat-label" data-i18n="stats.filiales">Filiales Actives</div>
+        </div>
+        <div class="hero-stat reveal reveal-delay-1">
+          <div class="stat-number" data-count="4">0</div>
+          <div class="stat-label" data-i18n="stats.countries">Pays d'Opération</div>
+        </div>
+        <div class="hero-stat reveal reveal-delay-2">
+          <div class="stat-number" style="font-size:32px">100<span style="font-size:18px"
+              data-i18n="stats.billions">Mds</span></div>
+          <div class="stat-label" data-i18n="stats.vision">Vision CA 2045 (FCFA)</div>
+        </div>
+        <div class="hero-stat reveal reveal-delay-3">
+          <div class="stat-number" data-count="20">0</div>
+          <div class="stat-label" data-i18n="stats.years">Ans de Vision</div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-legal">© 2025 BUAME GROUP SAS — Lomé, Togo. Tous droits réservés.</div>
-    <div class="footer-legal">Droit OHADA — RCCM Togo — <a href="#">ISO en cours</a></div>
-  </div>
-</footer>
+    </section>
 
-<div class="modal-overlay" id="filialeModal">
-  <div class="modal">
-    <button class="modal-close" onclick="closeModal()">×</button>
-    <div id="modalContent"></div>
-  </div>
-</div>
-<div id="toast"></div>
-<script src="script.js"></script>
-</body>
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-inner">
+        <span class="ticker-item">BUAME CONSTRUCTION <span class="ticker-sep">—</span></span>
+        <span class="ticker-item">BUAME MARKET <span class="ticker-sep">—</span></span>
+        <span class="ticker-item">BUAME LOGISTICS <span class="ticker-sep">—</span></span>
+        <span class="ticker-item">BUAME IMMOBILIER <span class="ticker-sep">—</span></span>
+        <span class="ticker-item">BUAME AGRO <span class="ticker-sep">—</span></span>
+        <span class="ticker-item">BUAME MÉDIAS <span class="ticker-sep">—</span></span>
+        <span class="ticker-item">LOMÉ · COTONOU · ABIDJAN · ACCRA <span class="ticker-sep">—</span></span>
+        <span class="ticker-item">STRATÉGIE DIAMANT BLEU™ <span class="ticker-sep">—</span></span>
+        <span class="ticker-item">VISION 2045 <span class="ticker-sep">—</span></span>
+        <span class="ticker-item">BUAME CONSTRUCTION <span class="ticker-sep">—</span></span>
+        <span class="ticker-item">BUAME MARKET <span class="ticker-sep">—</span></span>
+        <span class="ticker-item">BUAME LOGISTICS <span class="ticker-sep">—</span></span>
+        <span class="ticker-item">BUAME IMMOBILIER <span class="ticker-sep">—</span></span>
+        <span class="ticker-item">BUAME AGRO <span class="ticker-sep">—</span></span>
+        <span class="ticker-item">BUAME MÉDIAS <span class="ticker-sep">—</span></span>
+        <span class="ticker-item">LOMÉ · COTONOU · ABIDJAN · ACCRA <span class="ticker-sep">—</span></span>
+        <span class="ticker-item">STRATÉGIE DIAMANT BLEU™ <span class="ticker-sep">—</span></span>
+        <span class="ticker-item">VISION 2045 <span class="ticker-sep">—</span></span>
+      </div>
+    </div>
+
+    <!-- GROUPE -->
+    <section class="about" id="about">
+      <div class="section-eyebrow" data-i18n="about.eyebrow">Le Groupe</div>
+      <h2 class="section-title" data-i18n="about.title">Un empire africain <em>en construction</em></h2>
+      <p class="section-subtitle" data-i18n="about.subtitle">Fondé à Lomé avec une vision panafricaine, BUAME GROUP
+        réunit six forces complémentaires pour transformer l'Afrique de l'Ouest.</p>
+      <div class="about-grid">
+        <div>
+          <div class="about-numbers">
+            <div class="about-number-card reveal">
+              <div class="about-num" data-i18n="about.num.sas">SAS</div>
+              <div class="about-num-label" data-i18n="about.card.legal">Forme Juridique Holding</div>
+            </div>
+            <div class="about-number-card reveal reveal-delay-1">
+              <div class="about-num" data-i18n="about.num.capital">50M</div>
+              <div class="about-num-label" data-i18n="about.card.capital">Capital Social FCFA</div>
+            </div>
+            <div class="about-number-card reveal reveal-delay-2">
+              <div class="about-num" data-i18n="about.num.jobs">480+</div>
+              <div class="about-num-label" data-i18n="about.card.jobs">Emplois prévus An 3</div>
+            </div>
+            <div class="about-number-card reveal reveal-delay-3">
+              <div class="about-num" data-i18n="about.num.horizon">2045</div>
+              <div class="about-num-label" data-i18n="about.card.horizon">Horizon Vision Groupe</div>
+            </div>
+          </div>
+          <div class="about-vision reveal">
+            <p data-i18n="about.quote">"L'Afrique a besoin d'acteurs africains qui pensent grand, agissent vite et
+              construisent pour durer. BUAME GROUP est cette réponse."</p>
+            <cite data-i18n="about.cite">— Direction Générale, BUAME GROUP SAS</cite>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p data-i18n="about.p1">BUAME GROUP est une holding panafricaine constituée sous forme de Société par Actions
+            Simplifiée (SAS) de droit togolais, dont le siège est établi à Lomé. Le groupe opère à travers 6 filiales
+            SASU au Togo et des SARL dans les pays d'expansion, conformément au droit OHADA.</p>
+          <p data-i18n="about.p2">Notre modèle est unique : chaque filiale est à la fois cliente et fournisseur des
+            autres, créant un écosystème intégré réduisant les coûts de 15 à 20%.</p>
+          <div style="margin-top:32px"><a href="groupe.html" class="btn btn-primary" data-i18n="about.cta">En savoir
+              plus sur le groupe →</a></div>
+          <div class="about-signature"><span data-i18n="about.signature">BUAME GROUP SAS</span><span
+              data-i18n="about.signature2">Lomé, Togo — Fondé 2025 — OHADA</span></div>
+        </div>
+      </div>
+      <!-- PHOTO : Équipe dirigeante africaine -->
+      <div style="margin-top:60px; border-radius:8px; overflow:hidden; position:relative; height:400px;">
+        <img src="developpement_africain.jpg" alt="Équipe dirigeante BUAME GROUP" data-i18n-alt="img.team"
+          style="width:100%; height:100%; object-fit:cover; filter:brightness(0.7);">
+        <div
+          style="position:absolute; bottom:0; left:0; right:0; padding:40px; background:linear-gradient(transparent, rgba(10,18,42,0.95));">
+          <p
+            style="color:var(--gold); font-family:'Syne',sans-serif; font-size:12px; letter-spacing:3px; text-transform:uppercase; margin-bottom:12px;">
+            Notre Force</p>
+          <h3 style="color:var(--white); font-family:'Cormorant Garamond',serif; font-size:32px; font-weight:300;"
+            data-i18n="img.overlay.team.title">Des
+            talents africains au service de l'Afrique</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILIALES -->
+    <section class="filiales" id="filiales">
+      <div class="section-eyebrow" data-i18n="filiales.eyebrow">Nos Filiales</div>
+      <h2 class="section-title" data-i18n="filiales.title">Six forces, <em>un seul empire</em></h2>
+      <p class="section-subtitle" data-i18n="filiales.subtitle">Des secteurs stratégiques soigneusement sélectionnés
+        pour leur complémentarité et leur potentiel de croissance en Afrique de l'Ouest.</p>
+      <div class="filiales-grid">
+        <article class="filiale-card reveal" onclick="openFiliale('construction')">
+          <div class="filiale-image"
+            style="width:100%; height:180px; overflow:hidden; border-radius:4px 4px 0 0; margin-bottom:20px;">
+            <img
+              src="https://kimi-web-img.moonshot.cn/img/www.ccb-boulder.org/8b2bc0226a66f11d6b9b2016f87d0133d9aaf7f0.jpg"
+              alt="BUAME Construction" data-i18n-alt="img.construction"
+              style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease;">
+          </div>
+          <div class="filiale-num">01</div>
+          <div class="filiale-icon">🏗️</div>
+          <div class="filiale-name" data-i18n="filiale.construction.name">CONSTRUCTION</div>
+          <h3 class="filiale-full" data-i18n="filiale.construction.full">BUAME Construction</h3>
+          <p class="filiale-desc" data-i18n="filiale.construction.desc">BTP, génie civil, infrastructures routières et
+            bâtiments. Location d'équipements BTP. Marchés publics et privés.</p>
+          <div class="filiale-tags"><span class="filiale-tag" data-i18n="tag.btp">BTP</span><span class="filiale-tag"
+              data-i18n="tag.marches">Marchés publics</span><span class="filiale-tag" data-i18n="tag.iso9001">ISO
+              9001</span></div>
+          <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span
+              class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span><span
+              class="country-flag">🇬🇭</span></div>
+        </article>
+        <article class="filiale-card reveal reveal-delay-1" onclick="openFiliale('trade')">
+          <div class="filiale-image"
+            style="width:100%; height:180px; overflow:hidden; border-radius:4px 4px 0 0; margin-bottom:20px;">
+            <img src="market.jpg" alt="BUAME Trade" data-i18n-alt="img.trade"
+              style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease;">
+          </div>
+          <div class="filiale-num">02</div>
+          <div class="filiale-icon">📦</div>
+          <div class="filiale-name" data-i18n="filiale.trade.name">MARKET</div>
+          <h3 class="filiale-full" data-i18n="filiale.trade.full">BUAME Market</h3>
+          <p class="filiale-desc" data-i18n="filiale.trade.desc">Import-export, distribution B2B, commerce général.
+            Fournisseur exclusif des 5 autres filiales.</p>
+          <div class="filiale-tags"><span class="filiale-tag" data-i18n="tag.importexport">Import-Export</span><span
+              class="filiale-tag">Distribution
+              B2B</span><span class="filiale-tag" data-i18n="tag.cedeao">CEDEAO</span></div>
+          <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span
+              class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span><span
+              class="country-flag">🇬🇭</span></div>
+        </article>
+        <article class="filiale-card reveal reveal-delay-2" onclick="openFiliale('logistics')">
+          <div class="filiale-image"
+            style="width:100%; height:180px; overflow:hidden; border-radius:4px 4px 0 0; margin-bottom:20px;">
+            <img
+              src="https://kimi-web-img.moonshot.cn/img/bigboxcontainers.co.za/47f51560cd4622e92d0295aa013b1aa81c1bfdbd.jpg"
+              alt="BUAME Logistics" data-i18n-alt="img.logistics"
+              style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease;">
+          </div>
+          <div class="filiale-num">03</div>
+          <div class="filiale-icon">🚛</div>
+          <div class="filiale-name" data-i18n="filiale.logistics.name">LOGISTICS</div>
+          <h3 class="filiale-full" data-i18n="filiale.logistics.full">BUAME Logistics</h3>
+          <p class="filiale-desc" data-i18n="filiale.logistics.desc">Transport routier régional, transit douanier,
+            entreposage. Prestataire logistique exclusif du groupe.</p>
+          <div class="filiale-tags"><span class="filiale-tag" data-i18n="tag.transport">Transport</span><span
+              class="filiale-tag">Transit</span><span class="filiale-tag" data-i18n="tag.storage">Entreposage</span>
+          </div>
+          <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span
+              class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span><span
+              class="country-flag">🇬🇭</span></div>
+        </article>
+        <article class="filiale-card reveal" onclick="openFiliale('immobilier')">
+          <div class="filiale-image"
+            style="width:100%; height:180px; overflow:hidden; border-radius:4px 4px 0 0; margin-bottom:20px;">
+            <img src="estate.jpg" alt="BUAME Immobilier" data-i18n-alt="img.immobilier"
+              style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease;">
+          </div>
+          <div class="filiale-num">04</div>
+          <div class="filiale-icon">🏢</div>
+          <div class="filiale-name" data-i18n="filiale.immobilier.name">IMMOBILIER</div>
+          <h3 class="filiale-full" data-i18n="filiale.immobilier.full">BUAME Immobilier</h3>
+          <p class="filiale-desc" data-i18n="filiale.immobilier.desc">Promotion immobilière résidentielle et
+            commerciale. Gestion locative et vente de bureaux.</p>
+          <div class="filiale-tags"><span class="filiale-tag" data-i18n="tag.promotion">Promotion</span><span
+              class="filiale-tag" data-i18n="tag.locative">Gestion locative</span><span class="filiale-tag"
+              data-i18n="tag.bureaux">Bureaux</span></div>
+          <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span
+              class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span></div>
+        </article>
+        <article class="filiale-card reveal reveal-delay-1" onclick="openFiliale('agro')">
+          <div class="filiale-image"
+            style="width:100%; height:180px; overflow:hidden; border-radius:4px 4px 0 0; margin-bottom:20px;">
+            <img
+              src="https://kimi-web-img.moonshot.cn/img/cdn.wikifarmer.com/62f0999cbe7ab35b2bfdf6498e06b7e6178d40b6.jpg"
+              alt="BUAME Agro" data-i18n-alt="img.agro"
+              style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease;">
+          </div>
+          <div class="filiale-num">05</div>
+          <div class="filiale-icon">🌿</div>
+          <div class="filiale-name" data-i18n="filiale.agro.name">AGRO</div>
+          <h3 class="filiale-full" data-i18n="filiale.agro.full">BUAME Agro</h3>
+          <p class="filiale-desc" data-i18n="filiale.agro.desc">Transformation agro-alimentaire, exportation cacao,
+            anacarde et karité. Certifications GlobalG.A.P.</p>
+          <div class="filiale-tags"><span class="filiale-tag" data-i18n="tag.cacao">Export Cacao</span><span
+              class="filiale-tag">GlobalG.A.P.</span><span class="filiale-tag" data-i18n="tag.fairtrade">Fair
+              Trade</span></div>
+          <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span
+              class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span><span
+              class="country-flag">🇬🇭</span></div>
+        </article>
+        <article class="filiale-card reveal reveal-delay-2" onclick="openFiliale('medias')">
+          <div class="filiale-image"
+            style="width:100%; height:180px; overflow:hidden; border-radius:4px 4px 0 0; margin-bottom:20px;">
+            <img
+              src="https://kimi-web-img.moonshot.cn/img/institute.aljazeera.net/ee55e6b157af8f9501c03a9dcd8a56148eb38deb.jpeg"
+              alt="BUAME Médias" data-i18n-alt="img.medias"
+              style="width:100%; height:100%; object-fit:cover; transition:transform 0.5s ease;">
+          </div>
+          <div class="filiale-num">06</div>
+          <div class="filiale-icon">📡</div>
+          <div class="filiale-name" data-i18n="filiale.medias.name">MÉDIAS</div>
+          <h3 class="filiale-full" data-i18n="filiale.medias.full">BUAME Médias</h3>
+          <p class="filiale-desc" data-i18n="filiale.medias.desc">Web TV africaine, podcast business, presse digitale et
+            régie publicitaire panafricaine.</p>
+          <div class="filiale-tags"><span class="filiale-tag" data-i18n="tag.webtv">Web TV</span><span
+              class="filiale-tag" data-i18n="tag.podcast">Podcast</span><span class="filiale-tag"
+              data-i18n="tag.regie">Régie Pub</span></div>
+          <div class="filiale-countries"><span class="country-flag">🇹🇬</span><span
+              class="country-flag">🇧🇯</span><span class="country-flag">🇨🇮</span><span
+              class="country-flag">🇬🇭</span></div>
+        </article>
+      </div>
+      <div style="text-align:center;margin-top:48px"><a href="filiales.html" class="btn btn-primary"
+          data-i18n="filiales.cta">Voir toutes les filiales →</a></div>
+    </section>
+
+    <!-- STRATÉGIE -->
+    <section class="strategy" id="strategie">
+      <div class="section-eyebrow" data-i18n="strat.eyebrow">Stratégie</div>
+      <h2 class="section-title" data-i18n="strat.title">Stratégie Diamant Bleu<em>™</em></h2>
+      <p class="section-subtitle" data-i18n="strat.subtitle">Une roadmap sur 20 ans articulée autour de 6 piliers
+        stratégiques pour faire de BUAME GROUP un acteur de référence en Afrique.</p>
+      <div class="strategy-layout">
+        <div class="diamond-strategy reveal">
+          <svg viewBox="0 0 380 380" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="190,20 360,130 360,250 190,360 20,250 20,130" fill="rgba(200,168,75,0.04)"
+              stroke="rgba(200,168,75,0.3)" stroke-width="1.5" />
+            <polygon points="190,60 320,150 320,230 190,320 60,230 60,150" fill="none" stroke="rgba(200,168,75,0.15)"
+              stroke-width="1" />
+            <polygon points="190,100 280,165 280,215 190,280 100,215 100,165" fill="rgba(200,168,75,0.06)"
+              stroke="rgba(200,168,75,0.25)" stroke-width="1" />
+            <text x="190" y="188" text-anchor="middle" fill="#C8A84B" font-family="'Cormorant Garamond',serif"
+              font-size="16" letter-spacing="3">DIAMANT</text>
+            <text x="190" y="208" text-anchor="middle" fill="rgba(200,168,75,0.7)" font-family="'Syne',sans-serif"
+              font-size="9" letter-spacing="4">BLEU™</text>
+            <circle cx="190" cy="20" r="5" fill="#C8A84B" opacity="0.8" />
+            <circle cx="360" cy="130" r="5" fill="#C8A84B" opacity="0.8" />
+            <circle cx="360" cy="250" r="5" fill="#C8A84B" opacity="0.8" />
+            <circle cx="190" cy="360" r="5" fill="#C8A84B" opacity="0.8" />
+            <circle cx="20" cy="250" r="5" fill="#C8A84B" opacity="0.8" />
+            <circle cx="20" cy="130" r="5" fill="#C8A84B" opacity="0.8" />
+          </svg>
+        </div>
+        <div class="strategy-list reveal">
+          <div class="strategy-item">
+            <div class="strategy-facet">01</div>
+            <div>
+              <div class="strategy-item-title" data-i18n="strat.p1.title">Ancrage Local</div>
+              <div class="strategy-item-desc" data-i18n="strat.p1.desc">Implantation profonde dans chaque marché.
+                Ressources humaines locales, partenaires locaux, conformité réglementaire totale.</div>
+            </div>
+          </div>
+          <div class="strategy-item">
+            <div class="strategy-facet">02</div>
+            <div>
+              <div class="strategy-item-title" data-i18n="strat.p2.title">Synergies Inter-Filiales</div>
+              <div class="strategy-item-desc" data-i18n="strat.p2.desc">Écosystème intégré où chaque filiale alimente
+                les autres. Réduction des coûts de 15–20%, avantage concurrentiel structurel.</div>
+            </div>
+          </div>
+          <div class="strategy-item">
+            <div class="strategy-facet">03</div>
+            <div>
+              <div class="strategy-item-title" data-i18n="strat.p3.title">Certifications ISO</div>
+              <div class="strategy-item-desc" data-i18n="strat.p3.desc">ISO 9001, ISO 14001, GlobalG.A.P., OEA douanier.
+                Standards internationaux pour accéder aux marchés mondiaux.</div>
+            </div>
+          </div>
+          <div class="strategy-item">
+            <div class="strategy-facet">04</div>
+            <div>
+              <div class="strategy-item-title" data-i18n="strat.p4.title">Expansion Géographique</div>
+              <div class="strategy-item-desc" data-i18n="strat.p4.desc">4 pays aujourd'hui → 15 pays à l'horizon 2040.
+                Prochaine vague : Nigeria, Sénégal, Cameroun, Burkina, Mali.</div>
+            </div>
+          </div>
+          <div class="strategy-item">
+            <div class="strategy-facet">05</div>
+            <div>
+              <div class="strategy-item-title" data-i18n="strat.p5.title">Impact RSE</div>
+              <div class="strategy-item-desc" data-i18n="strat.p5.desc">Emplois locaux, formation professionnelle,
+                agriculture durable, réduction empreinte carbone. Reporting ESG annuel.</div>
+            </div>
+          </div>
+          <div class="strategy-item">
+            <div class="strategy-facet">06</div>
+            <div>
+              <div class="strategy-item-title" data-i18n="strat.p6.title">Digitalisation</div>
+              <div class="strategy-item-desc" data-i18n="strat.p6.desc">ERP groupe, CRM filiales, e-commerce agro,
+                plateformes digitales médias. Transformation numérique totale d'ici 2030.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- PHOTO : Panorama Lomé Togo -->
+      <div style="margin-top:60px; border-radius:8px; overflow:hidden; position:relative; height:350px;">
+        <img src="Coeur_battant.jpg" style="width:100%; height:100%; object-fit:cover; filter:brightness(0.6);">
+        <div
+          style="position:absolute; bottom:0; left:0; right:0; padding:40px; background:linear-gradient(transparent, rgba(10,18,42,0.95));">
+          <p
+            style="color:var(--gold); font-family:'Syne',sans-serif; font-size:12px; letter-spacing:3px; text-transform:uppercase; margin-bottom:12px;">
+            Lomé, Togo</p>
+          <h3 style="color:var(--white); font-family:'Cormorant Garamond',serif; font-size:28px; font-weight:300;"
+            data-i18n="img.overlay.lome.title">Le
+            cœur battant de notre empire panafricain</h3>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:48px"><a href="groupe.html" class="btn btn-outline"
+          data-i18n="strat.cta">Lire notre vision complète →</a></div>
+    </section>
+
+    <!-- PAYS -->
+    <section class="pays" id="pays">
+      <div class="section-eyebrow" data-i18n="pays.eyebrow">Présence Géographique</div>
+      <h2 class="section-title" data-i18n="pays.title">4 pays, <em>une vision</em></h2>
+      <p class="section-subtitle" data-i18n="pays.subtitle">Un ancrage stratégique dans les économies les plus
+        dynamiques d'Afrique de l'Ouest, avec une expansion planifiée vers 15 pays d'ici 2040.</p>
+      <div class="pays-grid">
+        <div class="pays-card reveal">
+          <div style="width:100%; height:120px; overflow:hidden; border-radius:4px; margin-bottom:16px;">
+            <img src="Lome_independance.png" alt="Lomé, Togo" data-i18n-alt="img.lome2"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <span class="pays-flag">🇹🇬</span>
+          <div class="pays-name" data-i18n="pays.togo.name">Togo</div>
+          <div class="pays-role" data-i18n="pays.togo.role">Siège Groupe — HQ</div>
+          <div class="pays-filiales" data-i18n="pays.togo.detail">BUAME GROUP SAS<br>6 filiales SASU<br>Lomé — Port en
+            Eaux Profondes</div>
+          <div class="pays-badge" data-i18n="pays.togo.badge">Siège Social</div>
+        </div>
+        <div class="pays-card reveal reveal-delay-1">
+          <div style="width:100%; height:120px; overflow:hidden; border-radius:4px; margin-bottom:16px;">
+            <img src="benin_developpement.jpg" alt="Cotonou, Bénin" data-i18n-alt="img.cotonou"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <span class="pays-flag">🇧🇯</span>
+          <div class="pays-name" data-i18n="pays.benin.name">Bénin</div>
+          <div class="pays-role" data-i18n="pays.benin.role">Premier Pays d'Expansion</div>
+          <div class="pays-filiales" data-i18n="pays.benin.detail">6 filiales SARL<br>Cotonou — Port autonome<br>ZLECAF
+            — Zone franche</div>
+          <div class="pays-badge" data-i18n="pays.benin.badge">Opérationnel An 1</div>
+        </div>
+        <div class="pays-card reveal reveal-delay-2">
+          <div style="width:100%; height:120px; overflow:hidden; border-radius:4px; margin-bottom:16px;">
+            <img src="abidjan_ivoirienne.jpg" alt="Abidjan, Côte d'Ivoire" data-i18n-alt="img.abidjan"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <span class="pays-flag">🇨🇮</span>
+          <div class="pays-name" data-i18n="pays.ci.name">Côte d'Ivoire</div>
+          <div class="pays-role" data-i18n="pays.ci.role">Hub Économique Régional</div>
+          <div class="pays-filiales" data-i18n="pays.ci.detail">6 filiales SARL<br>Abidjan — 1ère économie
+            UEMOA<br>Centre d'Excellence</div>
+          <div class="pays-badge" data-i18n="pays.badge.an23">An 2–3</div>
+        </div>
+        <div class="pays-card reveal reveal-delay-3">
+          <div style="width:100%; height:120px; overflow:hidden; border-radius:4px; margin-bottom:16px;">
+            <img src="Accra_Ghana.jpg" alt="Accra, Ghana" data-i18n-alt="img.accra"
+              style="width:100%; height:100%; object-fit:cover;">
+          </div>
+          <span class="pays-flag">🇬🇭</span>
+          <div class="pays-name" data-i18n="pays.ghana.name">Ghana</div>
+          <div class="pays-role" data-i18n="pays.ghana.role">Porte Anglophone</div>
+          <div class="pays-filiales" data-i18n="pays.ghana.detail">6 filiales Ltd<br>Accra — 2ème économie Golfe de
+            Guinée<br>Accès marchés anglophones</div>
+          <div class="pays-badge" data-i18n="pays.badge.an23">An 2–3</div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:48px">
+        <div
+          style="display:inline-flex;align-items:center;gap:16px;padding:20px 40px;border:1px solid rgba(200,168,75,0.2);color:rgba(255,255,255,0.5);font-size:14px;flex-wrap:wrap;justify-content:center">
+          <span
+            style="color:var(--gold);font-family:'Syne',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase"
+            data-i18n="pays.next">PROCHAINE VAGUE :</span>
+          🇳🇬 Nigeria &nbsp;🇸🇳 Sénégal &nbsp;🇨🇲 Cameroun &nbsp;🇧🇫 Burkina &nbsp;🇲🇱 Mali — An 5–7
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section style="background:var(--navy);padding:100px 8%;text-align:center">
+      <div class="section-eyebrow" style="color:var(--gold)" data-i18n="cta.eyebrow">Rejoignez l'aventure</div>
+      <h2 class="section-title" style="color:var(--white)" data-i18n="cta.title">Partenaires, Investisseurs,
+        <em>Talents</em>
+      </h2>
+      <p class="section-subtitle"
+        style="color:rgba(255,255,255,0.5);margin-bottom:48px;max-width:600px;margin-left:auto;margin-right:auto"
+        data-i18n="cta.subtitle">Que vous souhaitiez investir, vous associer ou rejoindre notre équipe, BUAME GROUP vous
+        attend.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+        <a href="contact.html" class="btn btn-primary" data-i18n="cta.btn1">Nous contacter →</a>
+        <a href="recrutement.html" class="btn btn-outline" style="color:var(--gold)" data-i18n="cta.btn2">Voir les
+          offres d'emploi →</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="footer-logo"><img src="logo.png" alt="BUAME GROUP" data-i18n-alt="logo.alt"
+              class="footer-logo-img" onerror="this.style.display='none'"><span>◆ BUAME GROUP</span></div>
+          <div class="footer-tagline" data-i18n="footer.tagline">"L'Afrique par les Africains — construire, commercer,
+            habiter, nourrir, transporter, informer."</div>
+          <div class="footer-desc" data-i18n="footer.desc">Conglomérat panafricain SAS basé à Lomé, Togo. 6 filiales, 4
+            pays, une vision. OHADA — Droit togolais.</div>
+          <div class="social-links"><a class="social-link" href="#" aria-label="LinkedIn"
+              data-i18n-aria="social.linkedin">in</a><a class="social-link" href="#" aria-label="Twitter/X"
+              data-i18n-aria="social.twitter">𝕏</a><a class="social-link" href="#" aria-label="Facebook"
+              data-i18n-aria="social.facebook">f</a><a class="social-link" href="#" aria-label="YouTube"
+              data-i18n-aria="social.youtube">▶</a><a class="social-link" href="#" aria-label="Instagram"
+              data-i18n-aria="social.instagram">◎</a></div>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.col.filiales">Filiales</div>
+          <ul class="footer-links">
+            <li><a href="filiales.html">BUAME Construction</a></li>
+            <li><a href="filiales.html">BUAME Market</a></li>
+            <li><a href="filiales.html">BUAME Logistics</a></li>
+            <li><a href="filiales.html">BUAME Immobilier</a></li>
+            <li><a href="filiales.html">BUAME Agro</a></li>
+            <li><a href="filiales.html">BUAME Médias</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.col.groupe">Groupe</div>
+          <ul class="footer-links">
+            <li><a href="groupe.html" data-i18n="footer.link.about">À propos</a></li>
+            <li><a href="gouvernance.html" data-i18n="footer.link.gov">Gouvernance</a></li>
+            <li><a href="direction.html" data-i18n="footer.link.dir">Direction Exécutive</a></li>
+            <li><a href="actualites.html" data-i18n="footer.link.news">Actualités</a></li>
+            <li><a href="index.html#strategie" data-i18n="footer.link.strat">Stratégie Diamant</a></li>
+            <li><a href="blog.html" data-i18n="footer.link.blog">Blog Expert</a></li>
+            <li><a href="recrutement.html" data-i18n="footer.link.careers">Carrières</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.col.legal">Mentions Légales</div>
+          <ul class="footer-links">
+            <li><a href="#" data-i18n="footer.link.mentions">Mentions légales</a></li>
+            <li><a href="#" data-i18n="footer.link.privacy">Politique de confidentialité</a></li>
+            <li><a href="#" data-i18n="footer.link.cookies">Cookies</a></li>
+            <li><a href="#" data-i18n="footer.link.cgv">CGV / CGU</a></li>
+            <li><a href="#" data-i18n="footer.link.ohada">Droit OHADA</a></li>
+          </ul>
+          <div style="margin-top:24px;padding:20px;border:1px solid rgba(200,168,75,0.15);border-radius:4px">
+            <div class="footer-col-title" style="margin-bottom:10px" data-i18n="footer.newsletter">Newsletter</div>
+            <div style="display:flex;gap:8px"><input type="email" id="newsletterEmail"
+                data-i18n-placeholder="footer.newsletter.placeholder" placeholder="Email"
+                style="flex:1;padding:10px 14px;background:rgba(255,255,255,0.04);border:1px solid rgba(200,168,75,0.2);color:var(--white);font-size:13px;outline:none;border-radius:2px"><button
+                onclick="subscribeNewsletter()" data-i18n="footer.newsletter.btn"
+                style="padding:10px 18px;background:var(--gold);color:var(--navy);border:none;cursor:pointer;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;border-radius:2px">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-legal" data-i18n="footer.copyright">© 2025 BUAME GROUP SAS — Lomé, Togo. Tous droits
+          réservés.</div>
+        <div class="footer-legal" data-i18n="footer.legal2">Droit OHADA — RCCM Togo — <a href="#">ISO en cours</a></div>
+      </div>
+    </footer>
+    <div class="modal-overlay" id="filialeModal">
+      <div class="modal"><button class="modal-close" onclick="closeModal()">×</button>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+    <div id="toast"></div>
+    <script src="script.js"></script>
+  </body>
+
 </html>

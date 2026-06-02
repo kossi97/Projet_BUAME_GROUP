@@ -1,227 +1,300 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BUAME GROUP — Actualités | Communiqués Officiels, Partenariats & Événements</title>
-<meta name="description" content="Suivez l'actualité officielle de BUAME GROUP : inaugurations, partenariats, nominations, contrats et événements marquants en Afrique de l'Ouest.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.buamegroup.com/actualites.html">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html" onclick="closeMobileMenu()" data-i18n="nav.home">Accueil</a>
-  <a href="groupe.html" onclick="closeMobileMenu()" data-i18n="nav.group">Groupe</a>
-  <a href="gouvernance.html" onclick="closeMobileMenu()" data-i18n="nav.governance">Gouvernance</a>
-  <a href="direction.html" onclick="closeMobileMenu()" data-i18n="nav.direction">Direction</a>
-  <a href="filiales.html" onclick="closeMobileMenu()" data-i18n="nav.filiales">Filiales</a>
-  <a href="actualites.html" onclick="closeMobileMenu()" data-i18n="nav.news">Actualités</a>
-  <a href="blog.html" onclick="closeMobileMenu()" data-i18n="nav.blog">Blog</a>
-  <a href="recrutement.html" onclick="closeMobileMenu()" data-i18n="nav.careers">Carrières</a>
-  <a href="contact.html" onclick="closeMobileMenu()" data-i18n="nav.contact">Contact</a>
-  <div class="nav-lang" style="margin-top:24px">
-    <button class="lang-btn" onclick="setLang('fr');closeMobileMenu()">FR</button>
-    <button class="lang-btn" onclick="setLang('en');closeMobileMenu()">EN</button>
-    <button class="lang-btn" onclick="setLang('pt');closeMobileMenu()">PT</button>
-  </div>
-</div>
-<nav id="mainNav">
-  <a class="nav-logo" href="index.html"><span class="nav-logo-diamond">◆</span> BUAME GROUP</a>
-  <div class="nav-links">
-    <a href="index.html" data-i18n="nav.home">Accueil</a>
-    <a href="groupe.html" data-i18n="nav.group">Groupe</a>
-    <a href="gouvernance.html" data-i18n="nav.governance">Gouvernance</a>
-    <a href="direction.html" data-i18n="nav.direction">Direction</a>
-    <a href="filiales.html" data-i18n="nav.filiales">Filiales</a>
-    <a href="actualites.html" class="active" data-i18n="nav.news">Actualités</a>
-    <a href="blog.html" data-i18n="nav.blog">Blog</a>
-    <a href="recrutement.html" data-i18n="nav.careers">Carrières</a>
-  </div>
-  <div style="display:flex;gap:14px;align-items:center">
-    <div class="nav-lang">
-      <button class="lang-btn active" onclick="setLang('fr')">FR</button>
-      <button class="lang-btn" onclick="setLang('en')">EN</button>
-      <button class="lang-btn" onclick="setLang('pt')">PT</button>
-    </div>
-    <a href="contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
-    <div class="nav-hamburger" id="hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></div>
-  </div>
-</nav>
 
-<section class="page-header">
-  <div class="page-header-bg" style="background-image:url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1920&q=80')"></div>
-  <div class="page-header-overlay"></div>
-  <div class="page-header-content">
-    <div class="page-header-eyebrow" data-i18n="actualites.eyebrow">Actualités</div>
-    <h1 class="page-header-title">Dernières <em>nouvelles du groupe</em></h1>
-    <p class="page-header-subtitle" data-i18n="actualites.subtitle">Suivez l'actualité officielle du BUAME GROUP : inaugurations, partenariats, nominations, contrats et événements marquants.</p>
-    <div class="breadcrumbs">
-      <a href="index.html">Accueil</a><span class="sep">◆</span><span class="current">Actualités</span>
-    </div>
-  </div>
-</section>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUAME GROUP — Actualités | Communiqués Officiels & Événements</title>
+    <meta name="description"
+      content="Suivez l'actualité officielle de BUAME GROUP : inaugurations, partenariats, nominations, contrats et événements marquants en Afrique de l'Ouest.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.buamegroup.com/actualites.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<!-- NEWS FEATURED -->
-<section style="background:var(--navy);padding:120px 8%">
-  <div class="news-featured">
-    <div class="news-main reveal">
-      <div class="news-main-img">
-        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80" alt="BUAME GROUP constitution">
-        <div class="news-main-img-overlay"></div>
-        <div class="news-main-badge">COMMUNIQUÉ OFFICIEL</div>
-        <div class="news-main-date">Novembre 2025</div>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" onclick="closeMobileMenu()" data-i18n="nav.home">Accueil</a>
+      <a href="groupe.html" onclick="closeMobileMenu()" data-i18n="nav.group">Groupe</a>
+      <a href="gouvernance.html" onclick="closeMobileMenu()" data-i18n="nav.governance">Gouvernance</a>
+      <a href="direction.html" onclick="closeMobileMenu()" data-i18n="nav.direction">Direction</a>
+      <a href="filiales.html" onclick="closeMobileMenu()" data-i18n="nav.filiales">Filiales</a>
+      <a href="actualites.html" onclick="closeMobileMenu()" data-i18n="nav.news">Actualités</a>
+      <a href="blog.html" onclick="closeMobileMenu()" data-i18n="nav.blog">Blog</a>
+      <a href="recrutement.html" onclick="closeMobileMenu()" data-i18n="nav.careers">Carrières</a>
+      <a href="contact.html" onclick="closeMobileMenu()" data-i18n="nav.contact">Contact</a>
+      <div class="nav-lang" style="margin-top:24px">
+        <button class="lang-btn" onclick="setLang('fr');closeMobileMenu()">FR</button>
+        <button class="lang-btn" onclick="setLang('en');closeMobileMenu()">EN</button>
+        <button class="lang-btn" onclick="setLang('pt');closeMobileMenu()">PT</button>
       </div>
-      <div class="news-main-body">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:500;color:var(--white);margin-bottom:16px;line-height:1.3">BUAME GROUP officialise sa constitution et lance ses opérations en Afrique de l'Ouest</div>
-        <p style="font-size:15px;color:rgba(255,255,255,0.5);line-height:1.7;margin-bottom:24px">La holding SAS BUAME GROUP est officiellement constituée à Lomé, Togo. Le groupe annonce le déploiement simultané de ses 6 filiales SASU et l'ouverture imminente de ses représentations au Bénin, en Côte d'Ivoire et au Ghana.</p>
-        <div style="display:flex;justify-content:space-between;align-items:center">
-          <span style="font-size:13px;color:rgba(255,255,255,0.3)">Direction de la Communication</span>
-          <a href="#" style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(200,168,75,0.3)">Lire →</a>
+    </div>
+    <nav id="mainNav">
+      <a class="nav-logo" href="index.html">
+        <img src="logo.png" alt="BUAME GROUP Logo" class="nav-logo-img" onerror="this.style.display='none'">
+        <span class="nav-logo-diamond">◆</span>
+        <span class="nav-logo-text">BUAME GROUP</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <a href="groupe.html" data-i18n="nav.group">Groupe</a>
+        <a href="gouvernance.html" data-i18n="nav.governance">Gouvernance</a>
+        <a href="direction.html" data-i18n="nav.direction">Direction</a>
+        <a href="filiales.html" data-i18n="nav.filiales">Filiales</a>
+        <a href="actualites.html" class="active" data-i18n="nav.news">Actualités</a>
+        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+        <a href="recrutement.html" data-i18n="nav.careers">Carrières</a>
+      </div>
+      <div style="display:flex;gap:14px;align-items:center">
+        <div class="nav-lang">
+          <button class="lang-btn active" onclick="setLang('fr')">FR</button>
+          <button class="lang-btn" onclick="setLang('en')">EN</button>
+          <button class="lang-btn" onclick="setLang('pt')">PT</button>
+        </div>
+        <a href="contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
+        <div class="nav-hamburger" id="hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span>
         </div>
       </div>
-    </div>
-    <div class="news-list">
-      <div class="news-item reveal reveal-delay-1">
-        <div class="news-item-icon">🤝</div>
+    </nav>
+    <section class="page-header">
+      <div class="page-header-bg"
+        style="background-image:url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1920&q=80')"></div>
+      <div class="page-header-overlay"></div>
+      <div class="page-header-content">
+        <div class="page-header-eyebrow" data-i18n="page.news.eyebrow"></div>
+        <h1 class="page-header-title" data-i18n="page.news.title"></h1>
+        <p class="page-header-subtitle" data-i18n="page.news.sub"></p>
+        <div class="breadcrumbs">
+          <a href="index.html" data-i18n="breadcrumb.home">Accueil</a><span class="sep">◆</span>
+          <span class="current" data-i18n="breadcrumb.news">Actualités</span>
+        </div>
+      </div>
+    </section>
+
+    <section style="background:var(--navy);padding:120px 8%">
+      <div class="news-featured">
+        <div class="news-main reveal">
+          <div class="news-main-img">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80"
+              alt="BUAME GROUP constitution">
+            <div class="news-main-img-overlay"></div>
+            <div class="news-main-badge" data-i18n="news.featured.badge">COMMUNIQUÉ OFFICIEL</div>
+            <div class="news-main-date">Novembre 2025</div>
+          </div>
+          <div class="news-main-body">
+            <div
+              style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:500;color:var(--white);margin-bottom:16px;line-height:1.3"
+              data-i18n="news.featured.title">BUAME GROUP officialise sa constitution et lance ses opérations en Afrique
+              de l'Ouest</div>
+            <p style="font-size:15px;color:rgba(255,255,255,0.5);line-height:1.7;margin-bottom:24px"
+              data-i18n="news.featured.desc">La holding SAS BUAME GROUP est officiellement constituée à Lomé, Togo. Le
+              groupe annonce le déploiement simultané de ses 6 filiales SASU.</p>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <span style="font-size:13px;color:rgba(255,255,255,0.3)" data-i18n="news.featured.author">Direction de la
+                Communication</span>
+              <a href="#"
+                style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(200,168,75,0.3)"
+                data-i18n="news.read">Lire →</a>
+            </div>
+          </div>
+        </div>
+        <div class="news-list">
+          <div class="news-item reveal reveal-delay-1">
+            <div class="news-item-icon">🤝</div>
+            <div>
+              <div class="news-item-meta"><span data-i18n="news.n1.cat">Partenariat</span> · <span
+                  data-i18n="news.n1.date">Oct 2025</span></div>
+              <div class="news-item-title" data-i18n="news.n1.title">Accord de partenariat stratégique avec la Banque
+                Atlantique</div><a href="#" class="news-item-link" data-i18n="news.read">Lire →</a>
+            </div>
+          </div>
+          <div class="news-item reveal reveal-delay-2">
+            <div class="news-item-icon">🏆</div>
+            <div>
+              <div class="news-item-meta"><span data-i18n="news.n2.cat">Contrat</span> · <span
+                  data-i18n="news.n2.date">Sept 2025</span></div>
+              <div class="news-item-title" data-i18n="news.n2.title">BUAME Construction remporte son premier appel
+                d'offres public au Togo</div><a href="#" class="news-item-link" data-i18n="news.read">Lire →</a>
+            </div>
+          </div>
+          <div class="news-item reveal reveal-delay-3">
+            <div class="news-item-icon">🌿</div>
+            <div>
+              <div class="news-item-meta"><span data-i18n="news.n3.cat">Export</span> · <span
+                  data-i18n="news.n3.date">Sept 2025</span></div>
+              <div class="news-item-title" data-i18n="news.n3.title">BUAME Agro signe un premier contrat d'exportation
+                de cacao</div><a href="#" class="news-item-link" data-i18n="news.read">Lire →</a>
+            </div>
+          </div>
+          <div class="news-item reveal reveal-delay-4">
+            <div class="news-item-icon">📡</div>
+            <div>
+              <div class="news-item-meta"><span data-i18n="news.n4.cat">Lancement</span> · <span
+                  data-i18n="news.n4.date">Août 2025</span></div>
+              <div class="news-item-title" data-i18n="news.n4.title">BUAME Médias lance son portail digital et son
+                émission "Business Africa"</div><a href="#" class="news-item-link" data-i18n="news.read">Lire →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news-agenda reveal">
+        <div class="news-agenda-title" data-i18n="news.agenda.title">📅 Agenda BUAME GROUP 2025–2026</div>
+        <div class="news-agenda-grid">
+          <div class="news-agenda-item">
+            <div class="news-agenda-date" data-i18n="news.a1.date">DÉC 2025</div>
+            <div class="news-agenda-text" data-i18n="news.a1.text">Assemblée Générale Constitutive du groupe</div>
+          </div>
+          <div class="news-agenda-item">
+            <div class="news-agenda-date" data-i18n="news.a2.date">JANV 2026</div>
+            <div class="news-agenda-text" data-i18n="news.a2.text">Ouverture officielle bureaux Cotonou & Accra</div>
+          </div>
+          <div class="news-agenda-item">
+            <div class="news-agenda-date" data-i18n="news.a3.date">MARS 2026</div>
+            <div class="news-agenda-text" data-i18n="news.a3.text">BUAME AFRICA SUMMIT #1 — Lomé, Togo</div>
+          </div>
+          <div class="news-agenda-item">
+            <div class="news-agenda-date" data-i18n="news.a4.date">JUIN 2026</div>
+            <div class="news-agenda-text" data-i18n="news.a4.text">Ouverture bureaux Abidjan — Hub CI opérationnel</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background:var(--off-white);padding:120px 8%">
+      <div class="section-eyebrow" data-i18n="news.archives.eyebrow">Archives</div>
+      <h2 class="section-title" data-i18n="news.archives.title">Toutes nos <em>publications</em></h2>
+      <p class="section-subtitle" style="margin-bottom:60px" data-i18n="news.archives.sub">Retrouvez l'ensemble des
+        communiqués de presse, dossiers de presse et publications institutionnelles du BUAME GROUP.</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+        <div class="card reveal">
+          <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80"
+              alt="Constitution" class="card-img">
+            <div class="card-img-overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">COMMUNIQUÉ · NOV 2025</div>
+            <div class="card-title">Constitution officielle de BUAME GROUP SAS</div>
+            <div class="card-text">La holding est officiellement constituée à Lomé avec un capital de 50 millions FCFA.
+              Lancement des 6 filiales.</div>
+          </div>
+        </div>
+        <div class="card reveal reveal-delay-1">
+          <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80"
+              alt="Partenariat" class="card-img">
+            <div class="card-img-overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">PARTENARIAT · OCT 2025</div>
+            <div class="card-title">Partenariat Banque Atlantique</div>
+            <div class="card-text">Accord de financement stratégique pour le développement des 6 filiales sur 4 pays
+              d'Afrique de l'Ouest.</div>
+          </div>
+        </div>
+        <div class="card reveal reveal-delay-2">
+          <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80"
+              alt="Export Agro" class="card-img">
+            <div class="card-img-overlay"></div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">EXPORT · SEPT 2025</div>
+            <div class="card-title">Premier contrat d'export cacao</div>
+            <div class="card-text">BUAME Agro signe avec un acheteur européen pour l'exportation de cacao premium
+              certifié GlobalG.A.P.</div>
+          </div>
+        </div>
+      </div>
+      <div
+        style="margin-top:60px;background:var(--navy);padding:40px 48px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;border:1px solid rgba(200,168,75,0.15)"
+        class="reveal">
         <div>
-          <div class="news-item-meta">Partenariat · Oct 2025</div>
-          <div class="news-item-title">Accord de partenariat stratégique avec la Banque Atlantique pour le financement des filiales</div>
-          <a href="#" class="news-item-link">Lire →</a>
+          <div
+            style="font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:8px"
+            data-i18n="news.press.eyebrow">Contact Presse & Médias</div>
+          <div style="font-size:18px;color:var(--white)" data-i18n="news.press.email">presse@buame-group.com</div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.4);margin-top:4px" data-i18n="news.press.sub">Direction de
+            la Communication — BUAME GROUP · Réponse sous 24h</div>
         </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap"><a href="mailto:presse@buamegroup.com" class="btn btn-primary"
+            style="font-size:11px" data-i18n="news.press.btn1">Écrire à la presse →</a><a href="#"
+            class="btn btn-outline" style="font-size:11px;color:var(--gold)" data-i18n="news.press.btn2">Télécharger le
+            dossier de presse</a></div>
       </div>
-      <div class="news-item reveal reveal-delay-2">
-        <div class="news-item-icon">🏆</div>
-        <div>
-          <div class="news-item-meta">Contrat · Sept 2025</div>
-          <div class="news-item-title">BUAME Construction remporte son premier appel d'offres public au Togo</div>
-          <a href="#" class="news-item-link">Lire →</a>
-        </div>
-      </div>
-      <div class="news-item reveal reveal-delay-3">
-        <div class="news-item-icon">🌿</div>
-        <div>
-          <div class="news-item-meta">Export · Sept 2025</div>
-          <div class="news-item-title">BUAME Agro signe un premier contrat d'exportation de cacao vers un acheteur européen</div>
-          <a href="#" class="news-item-link">Lire →</a>
-        </div>
-      </div>
-      <div class="news-item reveal reveal-delay-4">
-        <div class="news-item-icon">📡</div>
-        <div>
-          <div class="news-item-meta">Lancement · Août 2025</div>
-          <div class="news-item-title">BUAME Médias lance son portail digital et son émission hebdomadaire "Business Africa"</div>
-          <a href="#" class="news-item-link">Lire →</a>
-        </div>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- AGENDA -->
-  <div class="news-agenda reveal">
-    <div class="news-agenda-title">📅 Agenda BUAME GROUP 2025–2026</div>
-    <div class="news-agenda-grid">
-      <div class="news-agenda-item">
-        <div class="news-agenda-date">DÉC 2025</div>
-        <div class="news-agenda-text">Assemblée Générale Constitutive du groupe</div>
+    <footer>
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="footer-logo"><img src="logo.png" alt="BUAME GROUP" class="footer-logo-img"
+              onerror="this.style.display='none'"><span>◆ BUAME GROUP</span></div>
+          <div class="footer-tagline" data-i18n="footer.tagline"></div>
+          <div class="footer-desc" data-i18n="footer.desc"></div>
+          <div class="social-links"><a class="social-link" href="#" aria-label="LinkedIn">in</a><a class="social-link"
+              href="#" aria-label="Twitter/X">𝕏</a><a class="social-link" href="#" aria-label="Facebook">f</a><a
+              class="social-link" href="#" aria-label="YouTube">▶</a><a class="social-link" href="#"
+              aria-label="Instagram">◎</a></div>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.col.filiales">Filiales</div>
+          <ul class="footer-links">
+            <li><a href="filiales.html">BUAME Construction</a></li>
+            <li><a href="filiales.html">BUAME Market</a></li>
+            <li><a href="filiales.html">BUAME Logistics</a></li>
+            <li><a href="filiales.html">BUAME Immobilier</a></li>
+            <li><a href="filiales.html">BUAME Agro</a></li>
+            <li><a href="filiales.html">BUAME Médias</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.col.groupe">Groupe</div>
+          <ul class="footer-links">
+            <li><a href="groupe.html" data-i18n="footer.link.about">À propos</a></li>
+            <li><a href="gouvernance.html" data-i18n="footer.link.gov">Gouvernance</a></li>
+            <li><a href="direction.html" data-i18n="footer.link.dir">Direction Exécutive</a></li>
+            <li><a href="actualites.html" data-i18n="footer.link.news">Actualités</a></li>
+            <li><a href="index.html#strategie" data-i18n="footer.link.strat">Stratégie Diamant</a></li>
+            <li><a href="blog.html" data-i18n="footer.link.blog">Blog Expert</a></li>
+            <li><a href="recrutement.html" data-i18n="footer.link.careers">Carrières</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.col.legal">Mentions Légales</div>
+          <ul class="footer-links">
+            <li><a href="#" data-i18n="footer.link.mentions">Mentions légales</a></li>
+            <li><a href="#" data-i18n="footer.link.privacy">Politique de confidentialité</a></li>
+            <li><a href="#" data-i18n="footer.link.cookies">Cookies</a></li>
+            <li><a href="#" data-i18n="footer.link.cgv">CGV / CGU</a></li>
+            <li><a href="#" data-i18n="footer.link.ohada">Droit OHADA</a></li>
+          </ul>
+          <div style="margin-top:24px;padding:20px;border:1px solid rgba(200,168,75,0.15);border-radius:4px">
+            <div class="footer-col-title" style="margin-bottom:10px" data-i18n="footer.newsletter">Newsletter</div>
+            <div style="display:flex;gap:8px"><input type="email" id="newsletterEmail"
+                data-i18n-placeholder="footer.newsletter.placeholder" placeholder="Email"
+                style="flex:1;padding:10px 14px;background:rgba(255,255,255,0.04);border:1px solid rgba(200,168,75,0.2);color:var(--white);font-size:13px;outline:none;border-radius:2px"><button
+                onclick="subscribeNewsletter()"
+                style="padding:10px 18px;background:var(--gold);color:var(--navy);border:none;cursor:pointer;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;border-radius:2px">→</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="news-agenda-item">
-        <div class="news-agenda-date">JANV 2026</div>
-        <div class="news-agenda-text">Ouverture officielle bureaux Cotonou & Accra</div>
+      <div class="footer-bottom">
+        <div class="footer-legal" data-i18n="footer.copyright">© 2025 BUAME GROUP SAS — Lomé, Togo. Tous droits
+          réservés.</div>
+        <div class="footer-legal" data-i18n="footer.legal2">Droit OHADA — RCCM Togo — <a href="#">ISO en cours</a></div>
       </div>
-      <div class="news-agenda-item">
-        <div class="news-agenda-date">MARS 2026</div>
-        <div class="news-agenda-text">BUAME AFRICA SUMMIT #1 — Lomé, Togo</div>
-      </div>
-      <div class="news-agenda-item">
-        <div class="news-agenda-date">JUIN 2026</div>
-        <div class="news-agenda-text">Ouverture bureaux Abidjan — Hub CI opérationnel</div>
+    </footer>
+    <div class="modal-overlay" id="filialeModal">
+      <div class="modal"><button class="modal-close" onclick="closeModal()">×</button>
+        <div id="modalContent"></div>
       </div>
     </div>
-  </div>
-</section>
+    <div id="toast"></div>
+    <script src="script.js"></script>
+  </body>
 
-<!-- ARCHIVES -->
-<section style="background:var(--off-white);padding:120px 8%">
-  <div class="section-eyebrow">Archives</div>
-  <h2 class="section-title">Toutes nos <em>publications</em></h2>
-  <p class="section-subtitle" style="margin-bottom:60px">Retrouvez l'ensemble des communiqués de presse, dossiers de presse et publications institutionnelles du BUAME GROUP.</p>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
-    <div class="card reveal">
-      <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Constitution" class="card-img"><div class="card-img-overlay"></div></div>
-      <div class="card-body">
-        <div class="card-meta">COMMUNIQUÉ · NOV 2025</div>
-        <div class="card-title">Constitution officielle de BUAME GROUP SAS</div>
-        <div class="card-text">La holding est officiellement constituée à Lomé avec un capital de 50 millions FCFA. Lancement des 6 filiales simultanément.</div>
-      </div>
-    </div>
-    <div class="card reveal reveal-delay-1">
-      <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80" alt="Partenariat" class="card-img"><div class="card-img-overlay"></div></div>
-      <div class="card-body">
-        <div class="card-meta">PARTENARIAT · OCT 2025</div>
-        <div class="card-title">Partenariat Banque Atlantique</div>
-        <div class="card-text">Accord de financement stratégique pour le développement des 6 filiales sur 4 pays d'Afrique de l'Ouest.</div>
-      </div>
-    </div>
-    <div class="card reveal reveal-delay-2">
-      <div class="card-img-wrap"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80" alt="Export Agro" class="card-img"><div class="card-img-overlay"></div></div>
-      <div class="card-body">
-        <div class="card-meta">EXPORT · SEPT 2025</div>
-        <div class="card-title">Premier contrat d'export cacao</div>
-        <div class="card-text">BUAME Agro signe avec un acheteur européen pour l'exportation de cacao premium certifié GlobalG.A.P.</div>
-      </div>
-    </div>
-  </div>
-  <!-- Presse contact -->
-  <div style="margin-top:60px;background:var(--navy);padding:40px 48px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;border:1px solid rgba(200,168,75,0.15)" class="reveal">
-    <div>
-      <div style="font-family:'Syne',sans-serif;font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Contact Presse & Médias</div>
-      <div style="font-size:18px;color:var(--white)">presse@buamegroup.com</div>
-      <div style="font-size:13px;color:rgba(255,255,255,0.4);margin-top:4px">Direction de la Communication — BUAME GROUP · Réponse sous 24h</div>
-    </div>
-    <div style="display:flex;gap:12px;flex-wrap:wrap">
-      <a href="mailto:presse@buamegroup.com" class="btn btn-primary" style="font-size:11px">Écrire à la presse →</a>
-      <a href="#" class="btn btn-outline" style="font-size:11px;color:var(--gold)">Télécharger le dossier de presse</a>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-main">
-    <div class="footer-brand">
-      <div class="footer-logo">◆ BUAME GROUP</div>
-      <div class="footer-tagline" data-i18n="footer.tagline">"L'Afrique par les Africains — construire, commercer, habiter, nourrir, transporter, informer."</div>
-      <div class="footer-desc">Conglomérat panafricain SAS basé à Lomé, Togo. 6 filiales, 4 pays, une vision. OHADA — Droit togolais.</div>
-      <div class="social-links">
-        <a class="social-link" href="#" aria-label="LinkedIn">in</a>
-        <a class="social-link" href="#" aria-label="Twitter/X">𝕏</a>
-        <a class="social-link" href="#" aria-label="Facebook">f</a>
-        <a class="social-link" href="#" aria-label="YouTube">▶</a>
-        <a class="social-link" href="#" aria-label="Instagram">◎</a>
-      </div>
-    </div>
-    <div><div class="footer-col-title">Filiales</div><ul class="footer-links"><li><a href="filiales.html">BUAME Construction</a></li><li><a href="filiales.html">BUAME Trade</a></li><li><a href="filiales.html">BUAME Logistics</a></li><li><a href="filiales.html">BUAME Immobilier</a></li><li><a href="filiales.html">BUAME Agro</a></li><li><a href="filiales.html">BUAME Médias</a></li></ul></div>
-    <div><div class="footer-col-title">Groupe</div><ul class="footer-links"><li><a href="groupe.html">À propos</a></li><li><a href="gouvernance.html">Gouvernance</a></li><li><a href="direction.html">Direction Exécutive</a></li><li><a href="actualites.html">Actualités</a></li><li><a href="blog.html">Blog Expert</a></li><li><a href="recrutement.html">Carrières</a></li></ul></div>
-    <div>
-      <div class="footer-col-title">Mentions Légales</div>
-      <ul class="footer-links"><li><a href="#">Mentions légales</a></li><li><a href="#">Politique de confidentialité</a></li><li><a href="#">Cookies</a></li><li><a href="#">CGV / CGU</a></li><li><a href="#">Droit OHADA</a></li></ul>
-      <div style="margin-top:24px;padding:20px;border:1px solid rgba(200,168,75,0.15);border-radius:4px">
-        <div style="font-family:'Syne',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Newsletter</div>
-        <div style="display:flex;gap:8px"><input type="email" placeholder="Email" id="newsletterEmail" style="flex:1;padding:10px 14px;background:rgba(255,255,255,0.04);border:1px solid rgba(200,168,75,0.2);color:var(--white);font-size:13px;outline:none;border-radius:2px"><button onclick="subscribeNewsletter()" style="padding:10px 18px;background:var(--gold);color:var(--navy);border:none;cursor:pointer;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;border-radius:2px">→</button></div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-legal">© 2025 BUAME GROUP SAS — Lomé, Togo. Tous droits réservés.</div>
-    <div class="footer-legal">Droit OHADA — RCCM Togo — <a href="#">ISO en cours</a></div>
-  </div>
-</footer>
-<div class="modal-overlay" id="filialeModal"><div class="modal"><button class="modal-close" onclick="closeModal()">×</button><div id="modalContent"></div></div></div>
-<div id="toast"></div>
-<script src="script.js"></script>
-</body>
 </html>

@@ -1063,7 +1063,7 @@ footer {
 .footer-brand { }
 .footer-logo {
   font-family: 'Syne', sans-serif;
-  font-size: 22px; font-weight: 800; letter-spacing: 3px; color: var(--gold);
+  font-size: 14px; font-weight: 800; letter-spacing: 3px; color: var(--gold);
   display: flex; align-items: center; gap: 10px; margin-bottom: 20px;
 }
 .footer-tagline {
@@ -1170,4 +1170,53 @@ footer {
   .news-agenda-grid { grid-template-columns: 1fr; }
   .page-header { min-height: 40vh; }
   .page-header-title { font-size: 36px; }
+}
+
+/* ── LOGO NAV ─────────────────────────────── */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+.nav-logo-img {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  filter: brightness(1);
+  transition: opacity 0.3s;
+}
+.nav-logo-img:hover { opacity: 0.85; }
+.nav-logo-diamond {
+  color: var(--gold);
+  font-size: 20px;
+}
+.nav-logo-text {
+  font-family: 'Syne', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+/* FOOTER LOGO avec image */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.footer-logo-img {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(1.1);
+}
+
+/* scrolled nav */
+#mainNav.scrolled {
+  background: rgba(10, 14, 35, 0.97);
+  box-shadow: 0 2px 30px rgba(0,0,0,0.3);
 }

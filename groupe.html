@@ -1,259 +1,379 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BUAME GROUP — Le Groupe | Vision, Mission & Histoire</title>
-<meta name="description" content="Découvrez BUAME GROUP : holding panafricaine SAS basée à Lomé, Togo. Vision 2045, 6 filiales, 4 pays, droit OHADA. Capital 50M FCFA.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.buamegroup.com/groupe.html">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html" onclick="closeMobileMenu()" data-i18n="nav.home">Accueil</a>
-  <a href="groupe.html" onclick="closeMobileMenu()" data-i18n="nav.group">Groupe</a>
-  <a href="gouvernance.html" onclick="closeMobileMenu()" data-i18n="nav.governance">Gouvernance</a>
-  <a href="direction.html" onclick="closeMobileMenu()" data-i18n="nav.direction">Direction</a>
-  <a href="filiales.html" onclick="closeMobileMenu()" data-i18n="nav.filiales">Filiales</a>
-  <a href="actualites.html" onclick="closeMobileMenu()" data-i18n="nav.news">Actualités</a>
-  <a href="blog.html" onclick="closeMobileMenu()" data-i18n="nav.blog">Blog</a>
-  <a href="recrutement.html" onclick="closeMobileMenu()" data-i18n="nav.careers">Carrières</a>
-  <a href="contact.html" onclick="closeMobileMenu()" data-i18n="nav.contact">Contact</a>
-  <div class="nav-lang" style="margin-top:24px">
-    <button class="lang-btn" onclick="setLang('fr');closeMobileMenu()">FR</button>
-    <button class="lang-btn" onclick="setLang('en');closeMobileMenu()">EN</button>
-    <button class="lang-btn" onclick="setLang('pt');closeMobileMenu()">PT</button>
-  </div>
-</div>
-<nav id="mainNav">
-  <a class="nav-logo" href="index.html"><span class="nav-logo-diamond">◆</span> BUAME GROUP</a>
-  <div class="nav-links">
-    <a href="index.html" data-i18n="nav.home">Accueil</a>
-    <a href="groupe.html" class="active" data-i18n="nav.group">Groupe</a>
-    <a href="gouvernance.html" data-i18n="nav.governance">Gouvernance</a>
-    <a href="direction.html" data-i18n="nav.direction">Direction</a>
-    <a href="filiales.html" data-i18n="nav.filiales">Filiales</a>
-    <a href="actualites.html" data-i18n="nav.news">Actualités</a>
-    <a href="blog.html" data-i18n="nav.blog">Blog</a>
-    <a href="recrutement.html" data-i18n="nav.careers">Carrières</a>
-  </div>
-  <div style="display:flex;gap:14px;align-items:center">
-    <div class="nav-lang">
-      <button class="lang-btn active" onclick="setLang('fr')">FR</button>
-      <button class="lang-btn" onclick="setLang('en')">EN</button>
-      <button class="lang-btn" onclick="setLang('pt')">PT</button>
-    </div>
-    <a href="contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
-    <div class="nav-hamburger" id="hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></div>
-  </div>
-</nav>
 
-<section class="page-header" aria-label="En-tête Groupe">
-  <div class="page-header-bg" style="background-image:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80')"></div>
-  <div class="page-header-overlay"></div>
-  <div class="page-header-content">
-    <div class="page-header-eyebrow" data-i18n="about.eyebrow">Le Groupe</div>
-    <h1 class="page-header-title">Un empire africain <em>en construction</em></h1>
-    <p class="page-header-subtitle" data-i18n="about.subtitle">Fondé à Lomé avec une vision panafricaine, BUAME GROUP réunit six forces complémentaires pour transformer l'Afrique de l'Ouest.</p>
-    <div class="breadcrumbs">
-      <a href="index.html">Accueil</a><span class="sep">◆</span><span class="current">Groupe</span>
-    </div>
-  </div>
-</section>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUAME GROUP — Le Groupe | Vision, Mission & Histoire</title>
+    <meta name="description"
+      content="Découvrez BUAME GROUP : holding panafricaine SAS basée à Lomé, Togo. Vision 2045, 6 filiales, 4 pays, droit OHADA. Capital 50M FCFA.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.buamegroup.com/groupe.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<!-- CHIFFRES CLÉS -->
-<section style="background:var(--navy);padding:80px 8%">
-  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px">
-    <div style="background:var(--navy-light);padding:44px 32px;text-align:center;border:1px solid rgba(200,168,75,0.1)" class="reveal">
-      <div style="font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:600;color:var(--gold);line-height:1">SAS</div>
-      <div style="font-family:'Syne',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:10px">Forme Juridique</div>
-    </div>
-    <div style="background:var(--navy-light);padding:44px 32px;text-align:center;border:1px solid rgba(200,168,75,0.1)" class="reveal reveal-delay-1">
-      <div style="font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:600;color:var(--gold);line-height:1">50M</div>
-      <div style="font-family:'Syne',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:10px">Capital Social FCFA</div>
-    </div>
-    <div style="background:var(--navy-light);padding:44px 32px;text-align:center;border:1px solid rgba(200,168,75,0.1)" class="reveal reveal-delay-2">
-      <div style="font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:600;color:var(--gold);line-height:1">480+</div>
-      <div style="font-family:'Syne',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:10px">Emplois prévus An 3</div>
-    </div>
-    <div style="background:rgba(200,168,75,0.08);padding:44px 32px;text-align:center;border:1px solid rgba(200,168,75,0.25)" class="reveal reveal-delay-3">
-      <div style="font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:600;color:var(--gold);line-height:1">2045</div>
-      <div style="font-family:'Syne',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:10px">Horizon Vision</div>
-    </div>
-  </div>
-</section>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
 
-<!-- À PROPOS -->
-<section class="about" style="padding:120px 8%">
-  <div class="about-grid">
-    <div>
-      <div class="section-eyebrow" data-i18n="about.eyebrow">Le Groupe</div>
-      <h2 class="section-title">Une holding panafricaine <em>ancrée à Lomé</em></h2>
-      <div class="about-vision reveal" style="margin-bottom:32px">
-        <p>"L'Afrique a besoin d'acteurs africains qui pensent grand, agissent vite et construisent pour durer. BUAME GROUP est cette réponse."</p>
-        <cite>— Direction Générale, BUAME GROUP SAS</cite>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" onclick="closeMobileMenu()" data-i18n="nav.home">Accueil</a>
+      <a href="groupe.html" onclick="closeMobileMenu()" data-i18n="nav.group">Groupe</a>
+      <a href="gouvernance.html" onclick="closeMobileMenu()" data-i18n="nav.governance">Gouvernance</a>
+      <a href="direction.html" onclick="closeMobileMenu()" data-i18n="nav.direction">Direction</a>
+      <a href="filiales.html" onclick="closeMobileMenu()" data-i18n="nav.filiales">Filiales</a>
+      <a href="actualites.html" onclick="closeMobileMenu()" data-i18n="nav.news">Actualités</a>
+      <a href="blog.html" onclick="closeMobileMenu()" data-i18n="nav.blog">Blog</a>
+      <a href="recrutement.html" onclick="closeMobileMenu()" data-i18n="nav.careers">Carrières</a>
+      <a href="contact.html" onclick="closeMobileMenu()" data-i18n="nav.contact">Contact</a>
+      <div class="nav-lang" style="margin-top:24px">
+        <button class="lang-btn" onclick="setLang('fr');closeMobileMenu()">FR</button>
+        <button class="lang-btn" onclick="setLang('en');closeMobileMenu()">EN</button>
+        <button class="lang-btn" onclick="setLang('pt');closeMobileMenu()">PT</button>
       </div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
-        <div style="padding:20px;border:1px solid rgba(0,0,0,0.08)">
-          <div style="font-family:'Syne',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Mission</div>
-          <div style="font-size:13px;color:var(--text-mid);line-height:1.7" data-i18n="about.mission">Créer de la valeur durable en Afrique de l'Ouest par l'excellence opérationnelle et l'ancrage local.</div>
+    </div>
+
+    <nav id="mainNav">
+      <a class="nav-logo" href="index.html">
+        <img src="logo.png" alt="BUAME GROUP Logo" class="nav-logo-img" onerror="this.style.display='none'">
+        <span class="nav-logo-diamond">◆</span>
+        <span class="nav-logo-text">BUAME GROUP</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <a href="groupe.html" class="active" data-i18n="nav.group">Groupe</a>
+        <a href="gouvernance.html" data-i18n="nav.governance">Gouvernance</a>
+        <a href="direction.html" data-i18n="nav.direction">Direction</a>
+        <a href="filiales.html" data-i18n="nav.filiales">Filiales</a>
+        <a href="actualites.html" data-i18n="nav.news">Actualités</a>
+        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+        <a href="recrutement.html" data-i18n="nav.careers">Carrières</a>
+      </div>
+      <div style="display:flex;gap:14px;align-items:center">
+        <div class="nav-lang">
+          <button class="lang-btn active" onclick="setLang('fr')">FR</button>
+          <button class="lang-btn" onclick="setLang('en')">EN</button>
+          <button class="lang-btn" onclick="setLang('pt')">PT</button>
         </div>
-        <div style="padding:20px;border:1px solid rgba(0,0,0,0.08)">
-          <div style="font-family:'Syne',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Vision</div>
-          <div style="font-size:13px;color:var(--text-mid);line-height:1.7" data-i18n="about.vision_text">Top 10 des groupes africains d'ici 2045, coté en bourse, 100 milliards FCFA de CA.</div>
-        </div>
-        <div style="padding:20px;border:1px solid rgba(0,0,0,0.08)">
-          <div style="font-family:'Syne',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Valeurs</div>
-          <div style="font-size:13px;color:var(--text-mid);line-height:1.7">Excellence, Intégrité, Panafricanisme, Innovation, Responsabilité.</div>
-        </div>
-        <div style="padding:20px;border:1px solid rgba(0,0,0,0.08)">
-          <div style="font-family:'Syne',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Droit</div>
-          <div style="font-size:13px;color:var(--text-mid);line-height:1.7">OHADA — Actes Uniformes. Conformité totale, audit indépendant.</div>
+        <a href="contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
+        <div class="nav-hamburger" id="hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span>
         </div>
       </div>
-    </div>
-    <div class="about-text reveal">
-      <p data-i18n="about.p1">BUAME GROUP est une holding panafricaine constituée sous forme de Société par Actions Simplifiée (SAS) de droit togolais, dont le siège est établi à Lomé. Le groupe opère à travers 6 filiales SASU au Togo et des SARL dans les pays d'expansion, conformément au droit OHADA.</p>
-      <p data-i18n="about.p2">Notre modèle est unique : chaque filiale est à la fois cliente et fournisseur des autres, créant un écosystème intégré réduisant les coûts de 15 à 20% et construisant un avantage concurrentiel inimitable sur le marché ouest-africain.</p>
-      <p data-i18n="about.p3">Avec la Stratégie Diamant Bleu™, nous avons dessiné une roadmap claire sur 20 ans : ancrage local, synergies inter-filiales, certifications ISO, expansion géographique, impact RSE et digitalisation complète de nos opérations.</p>
-      <div class="about-signature">BUAME GROUP SAS<span>Lomé, Togo — Fondé 2025 — OHADA</span></div>
-    </div>
-  </div>
-</section>
+    </nav>
 
-<!-- TIMELINE -->
-<section style="background:var(--navy);padding:120px 8%">
-  <div class="section-eyebrow" style="color:var(--gold)">Histoire & Roadmap</div>
-  <h2 class="section-title" style="color:var(--white)">La trajectoire <em>BUAME GROUP</em></h2>
-  <p class="section-subtitle" style="color:rgba(255,255,255,0.5);margin-bottom:64px">De la création à la vision 2045 — une roadmap ambitieuse et structurée.</p>
-  <div style="position:relative;padding-left:40px;border-left:2px solid rgba(200,168,75,0.3)">
-    <div style="display:grid;gap:40px">
-      <div class="reveal" style="position:relative">
-        <div style="position:absolute;left:-49px;top:4px;width:16px;height:16px;background:var(--gold);border-radius:50%"></div>
-        <div style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">2025 — Fondation</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--white);margin-bottom:8px">Constitution de BUAME GROUP SAS</div>
-        <div style="font-size:14px;color:rgba(255,255,255,0.5);line-height:1.7">Création de la holding et des 6 filiales SASU à Lomé. Capital initial 50M FCFA. Premier recrutement de l'équipe de direction.</div>
-      </div>
-      <div class="reveal" style="position:relative">
-        <div style="position:absolute;left:-49px;top:4px;width:16px;height:16px;background:var(--gold);border-radius:50%;opacity:0.7"></div>
-        <div style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">2026 — Expansion An 1</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--white);margin-bottom:8px">Ouverture bureaux Bénin & Ghana</div>
-        <div style="font-size:14px;color:rgba(255,255,255,0.5);line-height:1.7">Déploiement des filiales SARL à Cotonou et Accra. BUAME AFRICA SUMMIT #1 à Lomé. Premier appel d'offres public remporté.</div>
-      </div>
-      <div class="reveal" style="position:relative">
-        <div style="position:absolute;left:-49px;top:4px;width:16px;height:16px;background:rgba(200,168,75,0.4);border-radius:50%"></div>
-        <div style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(200,168,75,0.7);margin-bottom:8px">2027-2028 — Consolidation</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:rgba(255,255,255,0.7);margin-bottom:8px">Hub Côte d'Ivoire + Certifications ISO</div>
-        <div style="font-size:14px;color:rgba(255,255,255,0.4);line-height:1.7">Ouverture Abidjan, 1ère économie UEMOA. Obtention certifications ISO 9001, GlobalG.A.P. CA cible : 1,2 milliard FCFA.</div>
-      </div>
-      <div class="reveal" style="position:relative">
-        <div style="position:absolute;left:-49px;top:4px;width:16px;height:16px;background:rgba(200,168,75,0.2);border-radius:50%"></div>
-        <div style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(200,168,75,0.5);margin-bottom:8px">2030 — Digitalisation</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:rgba(255,255,255,0.6);margin-bottom:8px">Transformation numérique complète</div>
-        <div style="font-size:14px;color:rgba(255,255,255,0.35);line-height:1.7">ERP groupe, CRM filiales, e-commerce agro, plateformes digitales médias. Entrée dans 3 nouveaux pays (Nigeria, Sénégal, Cameroun).</div>
-      </div>
-      <div class="reveal" style="position:relative">
-        <div style="position:absolute;left:-49px;top:4px;width:16px;height:16px;background:rgba(200,168,75,0.15);border-radius:50%"></div>
-        <div style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(200,168,75,0.4);margin-bottom:8px">2045 — Vision Horizon</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:rgba(255,255,255,0.5);margin-bottom:8px">Top 10 groupes africains — Introduction en bourse</div>
-        <div style="font-size:14px;color:rgba(255,255,255,0.3);line-height:1.7">15 pays, 100 milliards FCFA de CA, 5 000+ emplois. Premier conglomérat africain coté issu d'Afrique de l'Ouest francophone.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- STRUCTURE JURIDIQUE -->
-<section style="background:var(--off-white);padding:120px 8%">
-  <div class="section-eyebrow">Structure Juridique</div>
-  <h2 class="section-title">Architecture <em>du groupe</em></h2>
-  <p class="section-subtitle" style="margin-bottom:60px">BUAME GROUP SAS chapeaute 6 filiales SASU au Togo et des SARL dans chaque pays d'expansion, en conformité totale avec le droit OHADA.</p>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
-    <div class="reveal" style="background:var(--navy);padding:40px;border-top:3px solid var(--gold)">
-      <div style="font-size:32px;margin-bottom:16px">🏛️</div>
-      <div style="font-family:'Syne',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px">BUAME GROUP SAS</div>
-      <div style="font-size:14px;color:rgba(255,255,255,0.6);line-height:1.7">Holding tête de groupe. Société par Actions Simplifiée de droit togolais. Capital 50M FCFA. Siège : Lomé, Zone Adidogomé — BUAME TOWER.</div>
-    </div>
-    <div class="reveal reveal-delay-1" style="background:var(--navy);padding:40px;border-top:3px solid #4A90C4">
-      <div style="font-size:32px;margin-bottom:16px">🏢</div>
-      <div style="font-family:'Syne',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#4A90C4;margin-bottom:12px">6 Filiales SASU — Togo</div>
-      <div style="font-size:14px;color:rgba(255,255,255,0.6);line-height:1.7">Construction, Trade, Logistics, Immobilier, Agro, Médias. Chacune constituée en SASU à Lomé, associé unique : BUAME GROUP SAS.</div>
-    </div>
-    <div class="reveal reveal-delay-2" style="background:var(--navy);padding:40px;border-top:3px solid #3F8C5A">
-      <div style="font-size:32px;margin-bottom:16px">🌍</div>
-      <div style="font-family:'Syne',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#3F8C5A;margin-bottom:12px">SARL / Ltd — Expansion</div>
-      <div style="font-size:14px;color:rgba(255,255,255,0.6);line-height:1.7">Bénin, Côte d'Ivoire, Ghana : SARL locales dans chaque secteur. Conformité OHADA et droit local. Country Manager dédié par pays.</div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-main">
-    <div class="footer-brand">
-      <div class="footer-logo">◆ BUAME GROUP</div>
-      <div class="footer-tagline" data-i18n="footer.tagline">"L'Afrique par les Africains — construire, commercer, habiter, nourrir, transporter, informer."</div>
-      <div class="footer-desc">Conglomérat panafricain SAS basé à Lomé, Togo. 6 filiales, 4 pays, une vision. OHADA — Droit togolais.</div>
-      <div class="social-links">
-        <a class="social-link" href="#" aria-label="LinkedIn">in</a>
-        <a class="social-link" href="#" aria-label="Twitter/X">𝕏</a>
-        <a class="social-link" href="#" aria-label="Facebook">f</a>
-        <a class="social-link" href="#" aria-label="YouTube">▶</a>
-        <a class="social-link" href="#" aria-label="Instagram">◎</a>
-      </div>
-    </div>
-    <div>
-      <div class="footer-col-title">Filiales</div>
-      <ul class="footer-links">
-        <li><a href="filiales.html">BUAME Construction</a></li>
-        <li><a href="filiales.html">BUAME Trade</a></li>
-        <li><a href="filiales.html">BUAME Logistics</a></li>
-        <li><a href="filiales.html">BUAME Immobilier</a></li>
-        <li><a href="filiales.html">BUAME Agro</a></li>
-        <li><a href="filiales.html">BUAME Médias</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Groupe</div>
-      <ul class="footer-links">
-        <li><a href="groupe.html">À propos</a></li>
-        <li><a href="gouvernance.html">Gouvernance</a></li>
-        <li><a href="direction.html">Direction Exécutive</a></li>
-        <li><a href="actualites.html">Actualités</a></li>
-        <li><a href="index.html#strategie">Stratégie Diamant</a></li>
-        <li><a href="index.html#pays">Présence géographique</a></li>
-        <li><a href="blog.html">Blog Expert</a></li>
-        <li><a href="recrutement.html">Carrières</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer-col-title">Mentions Légales</div>
-      <ul class="footer-links">
-        <li><a href="#">Mentions légales</a></li>
-        <li><a href="#">Politique de confidentialité</a></li>
-        <li><a href="#">Cookies</a></li>
-        <li><a href="#">CGV / CGU</a></li>
-        <li><a href="#">Droit OHADA</a></li>
-      </ul>
-      <div style="margin-top:24px;padding:20px;border:1px solid rgba(200,168,75,0.15);border-radius:4px">
-        <div style="font-family:'Syne',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Newsletter</div>
-        <div style="display:flex;gap:8px">
-          <input type="email" placeholder="Email" id="newsletterEmail" style="flex:1;padding:10px 14px;background:rgba(255,255,255,0.04);border:1px solid rgba(200,168,75,0.2);color:var(--white);font-size:13px;outline:none;border-radius:2px">
-          <button onclick="subscribeNewsletter()" style="padding:10px 18px;background:var(--gold);color:var(--navy);border:none;cursor:pointer;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;border-radius:2px">→</button>
+    <section class="page-header">
+      <div class="page-header-bg" style="background-image:url('togo_head.jpg')"></div>
+      <div class="page-header-overlay"></div>
+      <div class="page-header-content">
+        <div class="page-header-eyebrow" data-i18n="page.group.eyebrow">Le Groupe</div>
+        <h1 class="page-header-title" data-i18n="page.group.title">Un empire africain <em>en construction</em></h1>
+        <p class="page-header-subtitle" data-i18n="page.group.sub">Fondé à Lomé avec une vision panafricaine, BUAME
+          GROUP réunit six forces complémentaires pour transformer l'Afrique de l'Ouest.</p>
+        <div class="breadcrumbs">
+          <a href="index.html" data-i18n="breadcrumb.home">Accueil</a><span class="sep">◆</span>
+          <span class="current" data-i18n="breadcrumb.group">Groupe</span>
         </div>
       </div>
+    </section>
+
+    <!-- CHIFFRES CLÉS -->
+    <section style="background:var(--navy);padding:80px 8%">
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px">
+        <div
+          style="background:var(--navy-light);padding:44px 32px;text-align:center;border:1px solid rgba(200,168,75,0.1)"
+          class="reveal">
+          <div
+            style="font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:600;color:var(--gold);line-height:1">
+            SAS</div>
+          <div
+            style="font-family:'Syne',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:10px"
+            data-i18n="about.card.legal">Forme Juridique</div>
+        </div>
+        <div
+          style="background:var(--navy-light);padding:44px 32px;text-align:center;border:1px solid rgba(200,168,75,0.1)"
+          class="reveal reveal-delay-1">
+          <div
+            style="font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:600;color:var(--gold);line-height:1">
+            50M</div>
+          <div
+            style="font-family:'Syne',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:10px"
+            data-i18n="about.card.capital">Capital Social FCFA</div>
+        </div>
+        <div
+          style="background:var(--navy-light);padding:44px 32px;text-align:center;border:1px solid rgba(200,168,75,0.1)"
+          class="reveal reveal-delay-2">
+          <div
+            style="font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:600;color:var(--gold);line-height:1">
+            480+</div>
+          <div
+            style="font-family:'Syne',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:10px"
+            data-i18n="about.card.jobs">Emplois prévus An 3</div>
+        </div>
+        <div
+          style="background:rgba(200,168,75,0.08);padding:44px 32px;text-align:center;border:1px solid rgba(200,168,75,0.25)"
+          class="reveal reveal-delay-3">
+          <div
+            style="font-family:'Cormorant Garamond',serif;font-size:56px;font-weight:600;color:var(--gold);line-height:1">
+            2045</div>
+          <div
+            style="font-family:'Syne',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-top:10px"
+            data-i18n="about.card.horizon">Horizon Vision</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section class="about" style="padding:120px 8%">
+      <div class="about-grid">
+        <div>
+          <div class="section-eyebrow" data-i18n="about.eyebrow">Le Groupe</div>
+          <h2 class="section-title" data-i18n="groupe.holding.title">Une holding panafricaine <em>ancrée à Lomé</em>
+          </h2>
+          <div class="about-vision reveal" style="margin-bottom:32px">
+            <p data-i18n="about.quote">"L'Afrique a besoin d'acteurs africains qui pensent grand, agissent vite et
+              construisent pour durer. BUAME GROUP est cette réponse."</p>
+            <cite data-i18n="about.cite">— Direction Générale, BUAME GROUP SAS</cite>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+            <div style="padding:20px;border:1px solid rgba(0,0,0,0.08)">
+              <div
+                style="font-family:'Syne',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px"
+                data-i18n="groupe.mission.label">Mission</div>
+              <div style="font-size:13px;color:var(--text-mid);line-height:1.7" data-i18n="about.mission">Créer de la
+                valeur durable en Afrique de l'Ouest par l'excellence opérationnelle et l'ancrage local.</div>
+            </div>
+            <div style="padding:20px;border:1px solid rgba(0,0,0,0.08)">
+              <div
+                style="font-family:'Syne',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px"
+                data-i18n="groupe.vision.label">Vision</div>
+              <div style="font-size:13px;color:var(--text-mid);line-height:1.7" data-i18n="about.vision_text">Top 10 des
+                groupes africains d'ici 2045, coté en bourse, 100 milliards FCFA de CA.</div>
+            </div>
+            <div style="padding:20px;border:1px solid rgba(0,0,0,0.08)">
+              <div
+                style="font-family:'Syne',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px"
+                data-i18n="groupe.values.label">Valeurs</div>
+              <div style="font-size:13px;color:var(--text-mid);line-height:1.7" data-i18n="groupe.values.text">
+                Excellence, Intégrité, Panafricanisme, Innovation, Responsabilité.</div>
+            </div>
+            <div style="padding:20px;border:1px solid rgba(0,0,0,0.08)">
+              <div
+                style="font-family:'Syne',sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px"
+                data-i18n="groupe.law.label">Droit</div>
+              <div style="font-size:13px;color:var(--text-mid);line-height:1.7" data-i18n="groupe.law.text">OHADA —
+                Actes Uniformes. Conformité totale, audit indépendant.</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p data-i18n="about.p1">BUAME GROUP est une holding panafricaine constituée sous forme de Société par Actions
+            Simplifiée (SAS) de droit togolais, dont le siège est établi à Lomé.</p>
+          <p data-i18n="about.p2">Notre modèle est unique : chaque filiale est à la fois cliente et fournisseur des
+            autres, créant un écosystème intégré réduisant les coûts de 15 à 20%.</p>
+          <p data-i18n="about.p3">Avec la Stratégie Diamant Bleu™, nous avons dessiné une roadmap claire sur 20 ans.</p>
+          <div class="about-signature">BUAME GROUP SAS<span>Lomé, Togo — Fondé 2025 — OHADA</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section style="background:var(--navy);padding:120px 8%">
+      <div class="section-eyebrow" style="color:var(--gold)" data-i18n="groupe.timeline.eyebrow">Histoire & Roadmap
+      </div>
+      <h2 class="section-title" style="color:var(--white)" data-i18n="groupe.timeline.title">La trajectoire <em>BUAME
+          GROUP</em></h2>
+      <p class="section-subtitle" style="color:rgba(255,255,255,0.5);margin-bottom:64px"
+        data-i18n="groupe.timeline.sub">De la création à la vision 2045 — une roadmap ambitieuse et structurée.</p>
+      <div style="position:relative;padding-left:40px;border-left:2px solid rgba(200,168,75,0.3)">
+        <div style="display:grid;gap:40px">
+          <div class="reveal" style="position:relative">
+            <div
+              style="position:absolute;left:-49px;top:4px;width:16px;height:16px;background:var(--gold);border-radius:50%">
+            </div>
+            <div
+              style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:8px"
+              data-i18n="groupe.t1.date">2025 — Fondation</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--white);margin-bottom:8px"
+              data-i18n="groupe.t1.title">Constitution de BUAME GROUP SAS</div>
+            <div style="font-size:14px;color:rgba(255,255,255,0.5);line-height:1.7" data-i18n="groupe.t1.desc">Création
+              de la holding et des 6 filiales SASU à Lomé. Capital initial 50M FCFA. Premier recrutement de l'équipe de
+              direction.</div>
+          </div>
+          <div class="reveal" style="position:relative">
+            <div
+              style="position:absolute;left:-49px;top:4px;width:16px;height:16px;background:var(--gold);border-radius:50%;opacity:0.7">
+            </div>
+            <div
+              style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:8px"
+              data-i18n="groupe.t2.date">2026 — Expansion An 1</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--white);margin-bottom:8px"
+              data-i18n="groupe.t2.title">Ouverture bureaux Bénin & Ghana</div>
+            <div style="font-size:14px;color:rgba(255,255,255,0.5);line-height:1.7" data-i18n="groupe.t2.desc">
+              Déploiement des filiales SARL à Cotonou et Accra. BUAME AFRICA SUMMIT #1 à Lomé. Premier appel d'offres
+              public remporté.</div>
+          </div>
+          <div class="reveal" style="position:relative">
+            <div
+              style="position:absolute;left:-49px;top:4px;width:16px;height:16px;background:rgba(200,168,75,0.4);border-radius:50%">
+            </div>
+            <div
+              style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(200,168,75,0.7);margin-bottom:8px"
+              data-i18n="groupe.t3.date">2027–2028 — Consolidation</div>
+            <div
+              style="font-family:'Cormorant Garamond',serif;font-size:24px;color:rgba(255,255,255,0.7);margin-bottom:8px"
+              data-i18n="groupe.t3.title">Hub Côte d'Ivoire + Certifications ISO</div>
+            <div style="font-size:14px;color:rgba(255,255,255,0.4);line-height:1.7" data-i18n="groupe.t3.desc">Ouverture
+              Abidjan, 1ère économie UEMOA. Obtention certifications ISO 9001, GlobalG.A.P. CA cible : 1,2 milliard
+              FCFA.</div>
+          </div>
+          <div class="reveal" style="position:relative">
+            <div
+              style="position:absolute;left:-49px;top:4px;width:16px;height:16px;background:rgba(200,168,75,0.2);border-radius:50%">
+            </div>
+            <div
+              style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(200,168,75,0.5);margin-bottom:8px"
+              data-i18n="groupe.t4.date">2030 — Digitalisation</div>
+            <div
+              style="font-family:'Cormorant Garamond',serif;font-size:24px;color:rgba(255,255,255,0.6);margin-bottom:8px"
+              data-i18n="groupe.t4.title">Transformation numérique complète</div>
+            <div style="font-size:14px;color:rgba(255,255,255,0.35);line-height:1.7" data-i18n="groupe.t4.desc">ERP
+              groupe, CRM filiales, e-commerce agro. Entrée dans 3 nouveaux pays (Nigeria, Sénégal, Cameroun).</div>
+          </div>
+          <div class="reveal" style="position:relative">
+            <div
+              style="position:absolute;left:-49px;top:4px;width:16px;height:16px;background:rgba(200,168,75,0.15);border-radius:50%">
+            </div>
+            <div
+              style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:rgba(200,168,75,0.4);margin-bottom:8px"
+              data-i18n="groupe.t5.date">2045 — Vision Horizon</div>
+            <div
+              style="font-family:'Cormorant Garamond',serif;font-size:24px;color:rgba(255,255,255,0.5);margin-bottom:8px"
+              data-i18n="groupe.t5.title">Top 10 groupes africains — Introduction en bourse</div>
+            <div style="font-size:14px;color:rgba(255,255,255,0.3);line-height:1.7" data-i18n="groupe.t5.desc">15 pays,
+              100 milliards FCFA de CA, 5 000+ emplois. Premier conglomérat africain coté issu d'Afrique de l'Ouest
+              francophone.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STRUCTURE JURIDIQUE -->
+    <section style="background:var(--off-white);padding:120px 8%">
+      <div class="section-eyebrow" data-i18n="groupe.struct.eyebrow">Structure Juridique</div>
+      <h2 class="section-title" data-i18n="groupe.struct.title">Architecture <em>du groupe</em></h2>
+      <p class="section-subtitle" style="margin-bottom:60px" data-i18n="groupe.struct.sub">BUAME GROUP SAS chapeaute 6
+        filiales SASU au Togo et des SARL dans chaque pays d'expansion, en conformité totale avec le droit OHADA.</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+        <div class="reveal" style="background:var(--navy);padding:40px;border-top:3px solid var(--gold)">
+          <div style="font-size:32px;margin-bottom:16px">🏛️</div>
+          <div
+            style="font-family:'Syne',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px">
+            BUAME GROUP SAS</div>
+          <div style="font-size:14px;color:rgba(255,255,255,0.6);line-height:1.7" data-i18n="groupe.struct.card1">
+            Holding tête de groupe. SAS de droit togolais. Capital 50M FCFA. Siège : Lomé, Zone Adidogomé — BUAME TOWER.
+          </div>
+        </div>
+        <div class="reveal reveal-delay-1" style="background:var(--navy);padding:40px;border-top:3px solid #4A90C4">
+          <div style="font-size:32px;margin-bottom:16px">🏢</div>
+          <div
+            style="font-family:'Syne',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#4A90C4;margin-bottom:12px"
+            data-i18n="groupe.struct.card2.title">6 Filiales SASU — Togo</div>
+          <div style="font-size:14px;color:rgba(255,255,255,0.6);line-height:1.7" data-i18n="groupe.struct.card2">
+            Construction, Market, Logistics, Immobilier, Agro, Médias. Chacune constituée en SASU à Lomé, associé unique
+            : BUAME GROUP SAS.</div>
+        </div>
+        <div class="reveal reveal-delay-2" style="background:var(--navy);padding:40px;border-top:3px solid #3F8C5A">
+          <div style="font-size:32px;margin-bottom:16px">🌍</div>
+          <div
+            style="font-family:'Syne',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#3F8C5A;margin-bottom:12px"
+            data-i18n="groupe.struct.card3.title">SARL / Ltd — Expansion</div>
+          <div style="font-size:14px;color:rgba(255,255,255,0.6);line-height:1.7" data-i18n="groupe.struct.card3">Bénin,
+            Côte d'Ivoire, Ghana : SARL locales dans chaque secteur. Conformité OHADA et droit local. Country Manager
+            dédié par pays.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="logo.png" alt="BUAME GROUP" class="footer-logo-img" onerror="this.style.display='none'">
+            <span>◆ BUAME GROUP</span>
+          </div>
+          <div class="footer-tagline" data-i18n="footer.tagline">"L'Afrique par les Africains — construire, commercer,
+            habiter, nourrir, transporter, informer."</div>
+          <div class="footer-desc" data-i18n="footer.desc">Conglomérat panafricain SAS basé à Lomé, Togo. 6 filiales, 4
+            pays, une vision. OHADA — Droit togolais.</div>
+          <div class="social-links">
+            <a class="social-link" href="#" aria-label="LinkedIn">in</a>
+            <a class="social-link" href="#" aria-label="Twitter/X">𝕏</a>
+            <a class="social-link" href="#" aria-label="Facebook">f</a>
+            <a class="social-link" href="#" aria-label="YouTube">▶</a>
+            <a class="social-link" href="#" aria-label="Instagram">◎</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.col.filiales">Filiales</div>
+          <ul class="footer-links">
+            <li><a href="filiales.html">BUAME Construction</a></li>
+            <li><a href="filiales.html">BUAME Market</a></li>
+            <li><a href="filiales.html">BUAME Logistics</a></li>
+            <li><a href="filiales.html">BUAME Immobilier</a></li>
+            <li><a href="filiales.html">BUAME Agro</a></li>
+            <li><a href="filiales.html">BUAME Médias</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.col.groupe">Groupe</div>
+          <ul class="footer-links">
+            <li><a href="groupe.html" data-i18n="footer.link.about">À propos</a></li>
+            <li><a href="gouvernance.html" data-i18n="footer.link.gov">Gouvernance</a></li>
+            <li><a href="direction.html" data-i18n="footer.link.dir">Direction Exécutive</a></li>
+            <li><a href="actualites.html" data-i18n="footer.link.news">Actualités</a></li>
+            <li><a href="index.html#strategie" data-i18n="footer.link.strat">Stratégie Diamant</a></li>
+            <li><a href="blog.html" data-i18n="footer.link.blog">Blog Expert</a></li>
+            <li><a href="recrutement.html" data-i18n="footer.link.careers">Carrières</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.col.legal">Mentions Légales</div>
+          <ul class="footer-links">
+            <li><a href="#" data-i18n="footer.link.mentions">Mentions légales</a></li>
+            <li><a href="#" data-i18n="footer.link.privacy">Politique de confidentialité</a></li>
+            <li><a href="#" data-i18n="footer.link.cookies">Cookies</a></li>
+            <li><a href="#" data-i18n="footer.link.cgv">CGV / CGU</a></li>
+            <li><a href="#" data-i18n="footer.link.ohada">Droit OHADA</a></li>
+          </ul>
+          <div style="margin-top:24px;padding:20px;border:1px solid rgba(200,168,75,0.15);border-radius:4px">
+            <div class="footer-col-title" style="margin-bottom:10px" data-i18n="footer.newsletter">Newsletter</div>
+            <div style="display:flex;gap:8px">
+              <input type="email" id="newsletterEmail" data-i18n-placeholder="footer.newsletter.placeholder"
+                placeholder="Email"
+                style="flex:1;padding:10px 14px;background:rgba(255,255,255,0.04);border:1px solid rgba(200,168,75,0.2);color:var(--white);font-size:13px;outline:none;border-radius:2px">
+              <button onclick="subscribeNewsletter()"
+                style="padding:10px 18px;background:var(--gold);color:var(--navy);border:none;cursor:pointer;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;border-radius:2px">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-legal" data-i18n="footer.copyright">© 2025 BUAME GROUP SAS — Lomé, Togo. Tous droits
+          réservés.</div>
+        <div class="footer-legal" data-i18n="footer.legal2">Droit OHADA — RCCM Togo — <a href="#">ISO en cours</a></div>
+      </div>
+    </footer>
+    <div class="modal-overlay" id="filialeModal">
+      <div class="modal"><button class="modal-close" onclick="closeModal()">×</button>
+        <div id="modalContent"></div>
+      </div>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-legal">© 2025 BUAME GROUP SAS — Lomé, Togo. Tous droits réservés.</div>
-    <div class="footer-legal">Droit OHADA — RCCM Togo — <a href="#">ISO en cours</a></div>
-  </div>
-</footer>
-<div class="modal-overlay" id="filialeModal"><div class="modal"><button class="modal-close" onclick="closeModal()">×</button><div id="modalContent"></div></div></div>
-<div id="toast"></div>
-<script src="script.js"></script>
-</body>
+    <div id="toast"></div>
+    <script src="script.js"></script>
+  </body>
+
 </html>

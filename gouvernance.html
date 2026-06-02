@@ -1,195 +1,330 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BUAME GROUP — Gouvernance | Assemblée Générale, Conseil d'Administration & Éthique</title>
-<meta name="description" content="Gouvernance de BUAME GROUP : Assemblée Générale, Conseil d'Administration, Direction Générale. Standards OHADA, transparence et anti-corruption.">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.buamegroup.com/gouvernance.html">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="index.html" onclick="closeMobileMenu()" data-i18n="nav.home">Accueil</a>
-  <a href="groupe.html" onclick="closeMobileMenu()" data-i18n="nav.group">Groupe</a>
-  <a href="gouvernance.html" onclick="closeMobileMenu()" data-i18n="nav.governance">Gouvernance</a>
-  <a href="direction.html" onclick="closeMobileMenu()" data-i18n="nav.direction">Direction</a>
-  <a href="filiales.html" onclick="closeMobileMenu()" data-i18n="nav.filiales">Filiales</a>
-  <a href="actualites.html" onclick="closeMobileMenu()" data-i18n="nav.news">Actualités</a>
-  <a href="blog.html" onclick="closeMobileMenu()" data-i18n="nav.blog">Blog</a>
-  <a href="recrutement.html" onclick="closeMobileMenu()" data-i18n="nav.careers">Carrières</a>
-  <a href="contact.html" onclick="closeMobileMenu()" data-i18n="nav.contact">Contact</a>
-  <div class="nav-lang" style="margin-top:24px">
-    <button class="lang-btn" onclick="setLang('fr');closeMobileMenu()">FR</button>
-    <button class="lang-btn" onclick="setLang('en');closeMobileMenu()">EN</button>
-    <button class="lang-btn" onclick="setLang('pt');closeMobileMenu()">PT</button>
-  </div>
-</div>
-<nav id="mainNav">
-  <a class="nav-logo" href="index.html"><span class="nav-logo-diamond">◆</span> BUAME GROUP</a>
-  <div class="nav-links">
-    <a href="index.html" data-i18n="nav.home">Accueil</a>
-    <a href="groupe.html" data-i18n="nav.group">Groupe</a>
-    <a href="gouvernance.html" class="active" data-i18n="nav.governance">Gouvernance</a>
-    <a href="direction.html" data-i18n="nav.direction">Direction</a>
-    <a href="filiales.html" data-i18n="nav.filiales">Filiales</a>
-    <a href="actualites.html" data-i18n="nav.news">Actualités</a>
-    <a href="blog.html" data-i18n="nav.blog">Blog</a>
-    <a href="recrutement.html" data-i18n="nav.careers">Carrières</a>
-  </div>
-  <div style="display:flex;gap:14px;align-items:center">
-    <div class="nav-lang">
-      <button class="lang-btn active" onclick="setLang('fr')">FR</button>
-      <button class="lang-btn" onclick="setLang('en')">EN</button>
-      <button class="lang-btn" onclick="setLang('pt')">PT</button>
-    </div>
-    <a href="contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
-    <div class="nav-hamburger" id="hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span></div>
-  </div>
-</nav>
 
-<section class="page-header">
-  <div class="page-header-bg" style="background-image:url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&q=80')"></div>
-  <div class="page-header-overlay"></div>
-  <div class="page-header-content">
-    <div class="page-header-eyebrow" data-i18n="governance.eyebrow">Gouvernance</div>
-    <h1 class="page-header-title">Une gouvernance <em>de référence</em></h1>
-    <p class="page-header-subtitle" data-i18n="governance.subtitle">BUAME GROUP applique les standards de gouvernance des grands groupes internationaux, conformément au droit OHADA et aux meilleures pratiques africaines.</p>
-    <div class="breadcrumbs">
-      <a href="index.html">Accueil</a><span class="sep">◆</span><span class="current">Gouvernance</span>
-    </div>
-  </div>
-</section>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUAME GROUP — Gouvernance | AG, Conseil d'Administration & Éthique</title>
+    <meta name="description"
+      content="Gouvernance de BUAME GROUP : Assemblée Générale, Conseil d'Administration, Direction Générale. Standards OHADA, transparence et anti-corruption.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.buamegroup.com/gouvernance.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-<!-- ORGANES DE GOUVERNANCE -->
-<section style="background:var(--navy);padding:120px 8%">
-  <div class="section-eyebrow" style="color:var(--gold)" data-i18n="governance.eyebrow">Gouvernance</div>
-  <h2 class="section-title" style="color:var(--white)">Une gouvernance <em>de référence</em></h2>
-  <p class="section-subtitle" style="color:rgba(255,255,255,0.5);margin-bottom:64px" data-i18n="governance.subtitle">BUAME GROUP applique les standards de gouvernance des grands groupes internationaux, conformément au droit OHADA et aux meilleures pratiques africaines.</p>
-  <div class="governance-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:2px">
-    <div style="background:var(--navy-light);padding:44px 36px;border:1px solid rgba(200,168,75,0.1);position:relative;overflow:hidden" class="reveal">
-      <div style="position:absolute;top:20px;right:24px;font-family:'Cormorant Garamond',serif;font-size:64px;font-weight:300;color:rgba(200,168,75,0.07);line-height:1">AG</div>
-      <div style="font-size:32px;margin-bottom:20px">🏛️</div>
-      <div style="font-family:'Syne',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px">Assemblée Générale</div>
-      <p style="font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7;margin-bottom:20px">Organe souverain de la SAS BUAME GROUP. Décisions ordinaires et extraordinaires. Réunion annuelle obligatoire dans les 6 mois de clôture.</p>
-      <div style="display:flex;flex-direction:column;gap:8px">
-        <div style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.25)">▸ Approbation des comptes annuels</div>
-        <div style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.25)">▸ Nomination des dirigeants</div>
-        <div style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.25)">▸ Modification des statuts</div>
-        <div style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.25)">▸ Augmentation de capital</div>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" onclick="closeMobileMenu()" data-i18n="nav.home">Accueil</a>
+      <a href="groupe.html" onclick="closeMobileMenu()" data-i18n="nav.group">Groupe</a>
+      <a href="gouvernance.html" onclick="closeMobileMenu()" data-i18n="nav.governance">Gouvernance</a>
+      <a href="direction.html" onclick="closeMobileMenu()" data-i18n="nav.direction">Direction</a>
+      <a href="filiales.html" onclick="closeMobileMenu()" data-i18n="nav.filiales">Filiales</a>
+      <a href="actualites.html" onclick="closeMobileMenu()" data-i18n="nav.news">Actualités</a>
+      <a href="blog.html" onclick="closeMobileMenu()" data-i18n="nav.blog">Blog</a>
+      <a href="recrutement.html" onclick="closeMobileMenu()" data-i18n="nav.careers">Carrières</a>
+      <a href="contact.html" onclick="closeMobileMenu()" data-i18n="nav.contact">Contact</a>
+      <div class="nav-lang" style="margin-top:24px">
+        <button class="lang-btn" onclick="setLang('fr');closeMobileMenu()">FR</button>
+        <button class="lang-btn" onclick="setLang('en');closeMobileMenu()">EN</button>
+        <button class="lang-btn" onclick="setLang('pt');closeMobileMenu()">PT</button>
       </div>
     </div>
-    <div style="background:rgba(200,168,75,0.06);padding:44px 36px;border:1px solid rgba(200,168,75,0.2);position:relative;overflow:hidden" class="reveal reveal-delay-1">
-      <div style="position:absolute;top:20px;right:24px;font-family:'Cormorant Garamond',serif;font-size:64px;font-weight:300;color:rgba(200,168,75,0.1);line-height:1">CA</div>
-      <div style="font-size:32px;margin-bottom:20px">⚖️</div>
-      <div style="font-family:'Syne',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px">Conseil d'Administration</div>
-      <p style="font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7;margin-bottom:20px">Président + 4 Administrateurs indépendants minimum. Réunions trimestrielles avec PV formalisés. Comités spécialisés dédiés.</p>
-      <div style="display:flex;flex-direction:column;gap:8px">
-        <div style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.4)">▸ Comité Audit & Risques</div>
-        <div style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.4)">▸ Comité Rémunérations & Nominations</div>
-        <div style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.4)">▸ Comité Stratégie & Investissements</div>
-        <div style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.4)">▸ Comité RSE & Développement Durable</div>
+    <nav id="mainNav">
+      <a class="nav-logo" href="index.html">
+        <img src="logo.png" alt="BUAME GROUP Logo" class="nav-logo-img" onerror="this.style.display='none'">
+        <span class="nav-logo-diamond">◆</span>
+        <span class="nav-logo-text">BUAME GROUP</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" data-i18n="nav.home">Accueil</a>
+        <a href="groupe.html" data-i18n="nav.group">Groupe</a>
+        <a href="gouvernance.html" class="active" data-i18n="nav.governance">Gouvernance</a>
+        <a href="direction.html" data-i18n="nav.direction">Direction</a>
+        <a href="filiales.html" data-i18n="nav.filiales">Filiales</a>
+        <a href="actualites.html" data-i18n="nav.news">Actualités</a>
+        <a href="blog.html" data-i18n="nav.blog">Blog</a>
+        <a href="recrutement.html" data-i18n="nav.careers">Carrières</a>
       </div>
-    </div>
-    <div style="background:var(--navy-light);padding:44px 36px;border:1px solid rgba(200,168,75,0.1);position:relative;overflow:hidden" class="reveal reveal-delay-2">
-      <div style="position:absolute;top:20px;right:24px;font-family:'Cormorant Garamond',serif;font-size:64px;font-weight:300;color:rgba(200,168,75,0.07);line-height:1">DG</div>
-      <div style="font-size:32px;margin-bottom:20px">🎯</div>
-      <div style="font-family:'Syne',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px">Direction Générale</div>
-      <p style="font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7;margin-bottom:20px">CEO + 3 DG Adjoints (Finance, Opérations, Stratégie). Représentation légale, exécution de la stratégie groupe, supervision des 6 filiales.</p>
-      <div style="display:flex;flex-direction:column;gap:8px">
-        <div style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.25)">▸ CEO — Directeur Général Groupe</div>
-        <div style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.25)">▸ CFO — Finances Consolidées</div>
-        <div style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.25)">▸ COO — Opérations & Filiales</div>
-        <div style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.25)">▸ CSO — Stratégie & Expansion</div>
+      <div style="display:flex;gap:14px;align-items:center">
+        <div class="nav-lang">
+          <button class="lang-btn active" onclick="setLang('fr')">FR</button>
+          <button class="lang-btn" onclick="setLang('en')">EN</button>
+          <button class="lang-btn" onclick="setLang('pt')">PT</button>
+        </div>
+        <a href="contact.html" class="nav-cta" data-i18n="nav.contact">Contact</a>
+        <div class="nav-hamburger" id="hamburger" onclick="toggleMobileMenu()"><span></span><span></span><span></span>
+        </div>
       </div>
-    </div>
-  </div>
-  <!-- PRINCIPES -->
-  <div class="governance-principles" style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:2px">
-    <div style="background:rgba(200,168,75,0.04);padding:32px;border:1px solid rgba(200,168,75,0.08);text-align:center" class="reveal">
-      <div style="font-size:28px;margin-bottom:12px">📋</div>
-      <div style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Transparence</div>
-      <div style="font-size:13px;color:rgba(255,255,255,0.4);line-height:1.6">Reporting mensuel consolidé à tous les organes</div>
-    </div>
-    <div style="background:rgba(200,168,75,0.04);padding:32px;border:1px solid rgba(200,168,75,0.08);text-align:center" class="reveal reveal-delay-1">
-      <div style="font-size:28px;margin-bottom:12px">🔒</div>
-      <div style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Conformité OHADA</div>
-      <div style="font-size:13px;color:rgba(255,255,255,0.4);line-height:1.6">Respect total des Actes Uniformes OHADA</div>
-    </div>
-    <div style="background:rgba(200,168,75,0.04);padding:32px;border:1px solid rgba(200,168,75,0.08);text-align:center" class="reveal reveal-delay-2">
-      <div style="font-size:28px;margin-bottom:12px">🔍</div>
-      <div style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Audit Externe</div>
-      <div style="font-size:13px;color:rgba(255,255,255,0.4);line-height:1.6">Cabinet d'audit indépendant — niveau Big 4 recommandé</div>
-    </div>
-    <div style="background:rgba(200,168,75,0.04);padding:32px;border:1px solid rgba(200,168,75,0.08);text-align:center" class="reveal reveal-delay-3">
-      <div style="font-size:28px;margin-bottom:12px">⚡</div>
-      <div style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px">Anti-Corruption</div>
-      <div style="font-size:13px;color:rgba(255,255,255,0.4);line-height:1.6">Code éthique groupe — Politique tolérance zéro</div>
-    </div>
-  </div>
-</section>
+    </nav>
 
-<!-- POLITIQUE RSE -->
-<section style="background:var(--off-white);padding:120px 8%">
-  <div class="section-eyebrow">RSE & Développement Durable</div>
-  <h2 class="section-title">L'entreprise <em>responsable</em></h2>
-  <p class="section-subtitle" style="margin-bottom:60px">BUAME GROUP intègre les objectifs de développement durable de l'ONU dans chaque décision stratégique.</p>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
-    <div class="reveal" style="padding:36px;background:#fff;border:1px solid rgba(0,0,0,0.06);border-top:3px solid #22c55e">
-      <div style="font-size:36px;margin-bottom:16px">🌱</div>
-      <div style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#22c55e;margin-bottom:12px">Environnement</div>
-      <div style="font-size:14px;color:var(--text-mid);line-height:1.7">Certification ISO 14001 en cible pour BUAME Construction. Agriculture durable et éco-certifiée pour BUAME Agro. Réduction empreinte carbone mesurée annuellement.</div>
-    </div>
-    <div class="reveal reveal-delay-1" style="padding:36px;background:#fff;border:1px solid rgba(0,0,0,0.06);border-top:3px solid #4A90C4">
-      <div style="font-size:36px;margin-bottom:16px">👥</div>
-      <div style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#4A90C4;margin-bottom:12px">Social</div>
-      <div style="font-size:14px;color:var(--text-mid);line-height:1.7">480+ emplois directs prévus An 3. Formation continue 20h/an financée. Assurance santé famille pour tous les CDI. Parité et inclusion active.</div>
-    </div>
-    <div class="reveal reveal-delay-2" style="padding:36px;background:#fff;border:1px solid rgba(0,0,0,0.06);border-top:3px solid var(--gold)">
-      <div style="font-size:36px;margin-bottom:16px">🏆</div>
-      <div style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:12px">Gouvernance</div>
-      <div style="font-size:14px;color:var(--text-mid);line-height:1.7">Transparence totale, anti-corruption, conformité OHADA. Reporting ESG annuel publié. Comité RSE dédié au Conseil d'Administration.</div>
-    </div>
-  </div>
-</section>
+    <section class="page-header">
+      <div class="page-header-bg"
+        style="background-image:url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&q=80')"></div>
+      <div class="page-header-overlay"></div>
+      <div class="page-header-content">
+        <div class="page-header-eyebrow" data-i18n="page.gov.eyebrow">Gouvernance</div>
+        <h1 class="page-header-title" data-i18n="page.gov.title">Une gouvernance <em>de référence</em></h1>
+        <p class="page-header-subtitle" data-i18n="page.gov.sub">BUAME GROUP applique les standards de gouvernance des
+          grands groupes internationaux, conformément au droit OHADA.</p>
+        <div class="breadcrumbs">
+          <a href="index.html" data-i18n="breadcrumb.home">Accueil</a><span class="sep">◆</span>
+          <span class="current" data-i18n="breadcrumb.gov">Gouvernance</span>
+        </div>
+      </div>
+    </section>
 
-<footer>
-  <div class="footer-main">
-    <div class="footer-brand">
-      <div class="footer-logo">◆ BUAME GROUP</div>
-      <div class="footer-tagline" data-i18n="footer.tagline">"L'Afrique par les Africains — construire, commercer, habiter, nourrir, transporter, informer."</div>
-      <div class="footer-desc">Conglomérat panafricain SAS basé à Lomé, Togo. 6 filiales, 4 pays, une vision. OHADA — Droit togolais.</div>
-      <div class="social-links">
-        <a class="social-link" href="#" aria-label="LinkedIn">in</a>
-        <a class="social-link" href="#" aria-label="Twitter/X">𝕏</a>
-        <a class="social-link" href="#" aria-label="Facebook">f</a>
-        <a class="social-link" href="#" aria-label="YouTube">▶</a>
-        <a class="social-link" href="#" aria-label="Instagram">◎</a>
+    <!-- ORGANES -->
+    <section style="background:var(--navy);padding:120px 8%">
+      <div class="section-eyebrow" style="color:var(--gold)" data-i18n="gov.section.eyebrow">Gouvernance</div>
+      <h2 class="section-title" style="color:var(--white)" data-i18n="gov.section.title">Une gouvernance <em>de
+          référence</em></h2>
+      <p class="section-subtitle" style="color:rgba(255,255,255,0.5);margin-bottom:64px" data-i18n="page.gov.sub">BUAME
+        GROUP applique les standards de gouvernance des grands groupes internationaux.</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-bottom:2px">
+        <div
+          style="background:var(--navy-light);padding:44px 36px;border:1px solid rgba(200,168,75,0.1);position:relative;overflow:hidden"
+          class="reveal">
+          <div
+            style="position:absolute;top:20px;right:24px;font-family:'Cormorant Garamond',serif;font-size:64px;font-weight:300;color:rgba(200,168,75,0.07)">
+            AG</div>
+          <div style="font-size:32px;margin-bottom:20px">🏛️</div>
+          <div
+            style="font-family:'Syne',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px"
+            data-i18n="gov.ag.title">Assemblée Générale</div>
+          <p style="font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7;margin-bottom:20px"
+            data-i18n="gov.ag.desc">Organe souverain de la SAS BUAME GROUP. Décisions ordinaires et extraordinaires.
+            Réunion annuelle obligatoire dans les 6 mois de clôture.</p>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div
+              style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.25)"
+              data-i18n="gov.ag.item1">▸ Approbation des comptes annuels</div>
+            <div
+              style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.25)"
+              data-i18n="gov.ag.item2">▸ Nomination des dirigeants</div>
+            <div
+              style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.25)"
+              data-i18n="gov.ag.item3">▸ Modification des statuts</div>
+            <div
+              style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.25)"
+              data-i18n="gov.ag.item4">▸ Augmentation de capital</div>
+          </div>
+        </div>
+        <div
+          style="background:rgba(200,168,75,0.06);padding:44px 36px;border:1px solid rgba(200,168,75,0.2);position:relative;overflow:hidden"
+          class="reveal reveal-delay-1">
+          <div
+            style="position:absolute;top:20px;right:24px;font-family:'Cormorant Garamond',serif;font-size:64px;font-weight:300;color:rgba(200,168,75,0.1)">
+            CA</div>
+          <div style="font-size:32px;margin-bottom:20px">⚖️</div>
+          <div
+            style="font-family:'Syne',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px"
+            data-i18n="gov.ca.title">Conseil d'Administration</div>
+          <p style="font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7;margin-bottom:20px"
+            data-i18n="gov.ca.desc">Président + 4 Administrateurs indépendants minimum. Réunions trimestrielles. Comités
+            spécialisés dédiés.</p>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div
+              style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.4)"
+              data-i18n="gov.ca.item1">▸ Comité Audit & Risques</div>
+            <div
+              style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.4)"
+              data-i18n="gov.ca.item2">▸ Comité Rémunérations & Nominations</div>
+            <div
+              style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.4)"
+              data-i18n="gov.ca.item3">▸ Comité Stratégie & Investissements</div>
+            <div
+              style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.4)"
+              data-i18n="gov.ca.item4">▸ Comité RSE & Développement Durable</div>
+          </div>
+        </div>
+        <div
+          style="background:var(--navy-light);padding:44px 36px;border:1px solid rgba(200,168,75,0.1);position:relative;overflow:hidden"
+          class="reveal reveal-delay-2">
+          <div
+            style="position:absolute;top:20px;right:24px;font-family:'Cormorant Garamond',serif;font-size:64px;font-weight:300;color:rgba(200,168,75,0.07)">
+            DG</div>
+          <div style="font-size:32px;margin-bottom:20px">🎯</div>
+          <div
+            style="font-family:'Syne',sans-serif;font-size:12px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:12px"
+            data-i18n="gov.dg.title">Direction Générale</div>
+          <p style="font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7;margin-bottom:20px"
+            data-i18n="gov.dg.desc">CEO + 3 DG Adjoints (Finance, Opérations, Stratégie). Représentation légale,
+            exécution de la stratégie groupe.</p>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div
+              style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.25)"
+              data-i18n="gov.dg.item1">▸ CEO — Directeur Général Groupe</div>
+            <div
+              style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.25)"
+              data-i18n="gov.dg.item2">▸ CFO — Finances Consolidées</div>
+            <div
+              style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.25)"
+              data-i18n="gov.dg.item3">▸ COO — Opérations & Filiales</div>
+            <div
+              style="font-size:12px;color:rgba(255,255,255,0.35);padding:8px;border-left:1px solid rgba(200,168,75,0.25)"
+              data-i18n="gov.dg.item4">▸ CSO — Stratégie & Expansion</div>
+          </div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:2px">
+        <div
+          style="background:rgba(200,168,75,0.04);padding:32px;border:1px solid rgba(200,168,75,0.08);text-align:center"
+          class="reveal">
+          <div style="font-size:28px;margin-bottom:12px">📋</div>
+          <div
+            style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px"
+            data-i18n="gov.p1.title">Transparence</div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.4);line-height:1.6" data-i18n="gov.p1.desc">Reporting
+            mensuel consolidé à tous les organes</div>
+        </div>
+        <div
+          style="background:rgba(200,168,75,0.04);padding:32px;border:1px solid rgba(200,168,75,0.08);text-align:center"
+          class="reveal reveal-delay-1">
+          <div style="font-size:28px;margin-bottom:12px">🔒</div>
+          <div
+            style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px"
+            data-i18n="gov.p2.title">Conformité OHADA</div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.4);line-height:1.6" data-i18n="gov.p2.desc">Respect total
+            des Actes Uniformes OHADA</div>
+        </div>
+        <div
+          style="background:rgba(200,168,75,0.04);padding:32px;border:1px solid rgba(200,168,75,0.08);text-align:center"
+          class="reveal reveal-delay-2">
+          <div style="font-size:28px;margin-bottom:12px">🔍</div>
+          <div
+            style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px"
+            data-i18n="gov.p3.title">Audit Externe</div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.4);line-height:1.6" data-i18n="gov.p3.desc">Cabinet
+            d'audit indépendant — niveau Big 4 recommandé</div>
+        </div>
+        <div
+          style="background:rgba(200,168,75,0.04);padding:32px;border:1px solid rgba(200,168,75,0.08);text-align:center"
+          class="reveal reveal-delay-3">
+          <div style="font-size:28px;margin-bottom:12px">⚡</div>
+          <div
+            style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px"
+            data-i18n="gov.p4.title">Anti-Corruption</div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.4);line-height:1.6" data-i18n="gov.p4.desc">Code éthique
+            groupe — Politique tolérance zéro</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RSE -->
+    <section style="background:var(--off-white);padding:120px 8%">
+      <div class="section-eyebrow" data-i18n="gov.rse.eyebrow">RSE & Développement Durable</div>
+      <h2 class="section-title" data-i18n="gov.rse.title">L'entreprise <em>responsable</em></h2>
+      <p class="section-subtitle" style="margin-bottom:60px" data-i18n="gov.rse.sub">BUAME GROUP intègre les objectifs
+        de développement durable de l'ONU dans chaque décision stratégique.</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+        <div class="reveal"
+          style="padding:36px;background:#fff;border:1px solid rgba(0,0,0,0.06);border-top:3px solid #22c55e">
+          <div style="font-size:36px;margin-bottom:16px">🌱</div>
+          <div
+            style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#22c55e;margin-bottom:12px"
+            data-i18n="gov.env.title">Environnement</div>
+          <div style="font-size:14px;color:var(--text-mid);line-height:1.7" data-i18n="gov.env.desc">Certification ISO
+            14001 en cible pour BUAME Construction. Agriculture durable et éco-certifiée pour BUAME Agro. Réduction
+            empreinte carbone mesurée annuellement.</div>
+        </div>
+        <div class="reveal reveal-delay-1"
+          style="padding:36px;background:#fff;border:1px solid rgba(0,0,0,0.06);border-top:3px solid #4A90C4">
+          <div style="font-size:36px;margin-bottom:16px">👥</div>
+          <div
+            style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#4A90C4;margin-bottom:12px"
+            data-i18n="gov.social.title">Social</div>
+          <div style="font-size:14px;color:var(--text-mid);line-height:1.7" data-i18n="gov.social.desc">480+ emplois
+            directs prévus An 3. Formation continue 20h/an financée. Assurance santé famille pour tous les CDI. Parité
+            et inclusion active.</div>
+        </div>
+        <div class="reveal reveal-delay-2"
+          style="padding:36px;background:#fff;border:1px solid rgba(0,0,0,0.06);border-top:3px solid var(--gold)">
+          <div style="font-size:36px;margin-bottom:16px">🏆</div>
+          <div
+            style="font-family:'Syne',sans-serif;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:12px"
+            data-i18n="gov.gov.title">Gouvernance</div>
+          <div style="font-size:14px;color:var(--text-mid);line-height:1.7" data-i18n="gov.gov.desc">Transparence
+            totale, anti-corruption, conformité OHADA. Reporting ESG annuel publié. Comité RSE dédié au Conseil
+            d'Administration.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="footer-logo"><img src="logo.png" alt="BUAME GROUP" class="footer-logo-img"
+              onerror="this.style.display='none'"><span>◆ BUAME GROUP</span></div>
+          <div class="footer-tagline" data-i18n="footer.tagline">"L'Afrique par les Africains — construire, commercer,
+            habiter, nourrir, transporter, informer."</div>
+          <div class="footer-desc" data-i18n="footer.desc">Conglomérat panafricain SAS basé à Lomé, Togo. 6 filiales, 4
+            pays, une vision. OHADA — Droit togolais.</div>
+          <div class="social-links"><a class="social-link" href="#" aria-label="LinkedIn">in</a><a class="social-link"
+              href="#" aria-label="Twitter/X">𝕏</a><a class="social-link" href="#" aria-label="Facebook">f</a><a
+              class="social-link" href="#" aria-label="YouTube">▶</a><a class="social-link" href="#"
+              aria-label="Instagram">◎</a></div>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.col.filiales">Filiales</div>
+          <ul class="footer-links">
+            <li><a href="filiales.html">BUAME Construction</a></li>
+            <li><a href="filiales.html">BUAME Market</a></li>
+            <li><a href="filiales.html">BUAME Logistics</a></li>
+            <li><a href="filiales.html">BUAME Immobilier</a></li>
+            <li><a href="filiales.html">BUAME Agro</a></li>
+            <li><a href="filiales.html">BUAME Médias</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.col.groupe">Groupe</div>
+          <ul class="footer-links">
+            <li><a href="groupe.html" data-i18n="footer.link.about">À propos</a></li>
+            <li><a href="gouvernance.html" data-i18n="footer.link.gov">Gouvernance</a></li>
+            <li><a href="direction.html" data-i18n="footer.link.dir">Direction Exécutive</a></li>
+            <li><a href="actualites.html" data-i18n="footer.link.news">Actualités</a></li>
+            <li><a href="blog.html" data-i18n="footer.link.blog">Blog Expert</a></li>
+            <li><a href="recrutement.html" data-i18n="footer.link.careers">Carrières</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title" data-i18n="footer.col.legal">Mentions Légales</div>
+          <ul class="footer-links">
+            <li><a href="#" data-i18n="footer.link.mentions">Mentions légales</a></li>
+            <li><a href="#" data-i18n="footer.link.privacy">Politique de confidentialité</a></li>
+            <li><a href="#" data-i18n="footer.link.cookies">Cookies</a></li>
+            <li><a href="#" data-i18n="footer.link.cgv">CGV / CGU</a></li>
+            <li><a href="#" data-i18n="footer.link.ohada">Droit OHADA</a></li>
+          </ul>
+          <div style="margin-top:24px;padding:20px;border:1px solid rgba(200,168,75,0.15);border-radius:4px">
+            <div class="footer-col-title" style="margin-bottom:10px" data-i18n="footer.newsletter">Newsletter</div>
+            <div style="display:flex;gap:8px"><input type="email" id="newsletterEmail"
+                data-i18n-placeholder="footer.newsletter.placeholder" placeholder="Email"
+                style="flex:1;padding:10px 14px;background:rgba(255,255,255,0.04);border:1px solid rgba(200,168,75,0.2);color:var(--white);font-size:13px;outline:none;border-radius:2px"><button
+                onclick="subscribeNewsletter()"
+                style="padding:10px 18px;background:var(--gold);color:var(--navy);border:none;cursor:pointer;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;border-radius:2px">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-legal" data-i18n="footer.copyright">© 2025 BUAME GROUP SAS — Lomé, Togo. Tous droits
+          réservés.</div>
+        <div class="footer-legal" data-i18n="footer.legal2">Droit OHADA — RCCM Togo — <a href="#">ISO en cours</a></div>
+      </div>
+    </footer>
+    <div class="modal-overlay" id="filialeModal">
+      <div class="modal"><button class="modal-close" onclick="closeModal()">×</button>
+        <div id="modalContent"></div>
       </div>
     </div>
-    <div><div class="footer-col-title">Filiales</div><ul class="footer-links"><li><a href="filiales.html">BUAME Construction</a></li><li><a href="filiales.html">BUAME Trade</a></li><li><a href="filiales.html">BUAME Logistics</a></li><li><a href="filiales.html">BUAME Immobilier</a></li><li><a href="filiales.html">BUAME Agro</a></li><li><a href="filiales.html">BUAME Médias</a></li></ul></div>
-    <div><div class="footer-col-title">Groupe</div><ul class="footer-links"><li><a href="groupe.html">À propos</a></li><li><a href="gouvernance.html">Gouvernance</a></li><li><a href="direction.html">Direction Exécutive</a></li><li><a href="actualites.html">Actualités</a></li><li><a href="blog.html">Blog Expert</a></li><li><a href="recrutement.html">Carrières</a></li></ul></div>
-    <div>
-      <div class="footer-col-title">Mentions Légales</div>
-      <ul class="footer-links"><li><a href="#">Mentions légales</a></li><li><a href="#">Politique de confidentialité</a></li><li><a href="#">Cookies</a></li><li><a href="#">CGV / CGU</a></li><li><a href="#">Droit OHADA</a></li></ul>
-      <div style="margin-top:24px;padding:20px;border:1px solid rgba(200,168,75,0.15);border-radius:4px">
-        <div style="font-family:'Syne',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px">Newsletter</div>
-        <div style="display:flex;gap:8px"><input type="email" placeholder="Email" id="newsletterEmail" style="flex:1;padding:10px 14px;background:rgba(255,255,255,0.04);border:1px solid rgba(200,168,75,0.2);color:var(--white);font-size:13px;outline:none;border-radius:2px"><button onclick="subscribeNewsletter()" style="padding:10px 18px;background:var(--gold);color:var(--navy);border:none;cursor:pointer;font-family:'Syne',sans-serif;font-size:12px;font-weight:700;border-radius:2px">→</button></div>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-legal">© 2025 BUAME GROUP SAS — Lomé, Togo. Tous droits réservés.</div>
-    <div class="footer-legal">Droit OHADA — RCCM Togo — <a href="#">ISO en cours</a></div>
-  </div>
-</footer>
-<div class="modal-overlay" id="filialeModal"><div class="modal"><button class="modal-close" onclick="closeModal()">×</button><div id="modalContent"></div></div></div>
-<div id="toast"></div>
-<script src="script.js"></script>
-</body>
+    <div id="toast"></div>
+    <script src="script.js"></script>
+  </body>
+
 </html>
